@@ -211,18 +211,22 @@
                         <p class="title fz-40">
                             メッセージ
                         </p>
-                        <span class="link fz-14">
-                            message
-                        </span>
+                        <a href="./message" target="_self" class="link">
+                            <span class=" fz-14">
+                                message
+                            </span>
+                        </a>
                     </div>
 
                     <div class=" right col-lg-6 col-md-12 box d-flex flex-column  align-items-center">
                         <p class="title fz-40">
                             沿革
                         </p>
-                        <span class="link fz-14">
-                            history
-                        </span>
+                        <a href="./history" target="_self" class="link">
+                            <span class=" fz-14">
+                                history
+                            </span>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -246,7 +250,9 @@
 
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
-
+    <script>
+        document.querySelector('.navbar li a').classList.add('active');
+    </script>
 
 </body>
 
