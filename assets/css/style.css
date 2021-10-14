@@ -299,9 +299,12 @@ section {
   color: rgba(186, 29, 36, 1)!important;
 }
 
-.navbar .active:hover{
+
+.navbar .active:hover,
+.navbar .active:focus{
   color: #fff!important
 }
+
 .navbar a {
   cursor: pointer;
 }

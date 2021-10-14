@@ -41,11 +41,13 @@
   let selectHeader = select('#header')
   if (selectHeader) {
     const headerScrolled = () => {
+      
       if (window.scrollY > 100) {
         selectHeader.classList.add('header-scrolled')
       } else {
         selectHeader.classList.remove('header-scrolled')
       }
+      select('.navbar ul').style.top = selectHeader.clientHeight - 4 + "px";
     }
     window.addEventListener('load', headerScrolled)
     onscroll(document, headerScrolled)
@@ -81,8 +83,12 @@
    */
   on('click', '.navbar .dropdown > a', function (e) {
     if (select('#navbar').classList.contains('navbar-mobile')) {
-      e.preventDefault()
-      this.nextElementSibling.classList.toggle('dropdown-active')
+      e.preventDefault();
+      var eleIcon = e.target.parentNode.querySelectorAll('.bi');
+      var ele = select(".dropdown-active");
+      ele && (ele != this.nextElementSibling)&& ele.classList.toggle('dropdown-active');
+      this.nextElementSibling.classList.toggle('dropdown-active');
+      eleIcon[0].className =  eleIcon[0].classList.contains('bi-chevron-down') ?  'bi bi-chevron-up' : 'bi bi-chevron-down';
     }
   }, true)
 
