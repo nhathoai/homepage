@@ -72,6 +72,7 @@
    * Mobile nav toggle
    */
   on('click', '.mobile-nav-toggle', function (e) {
+    select('body').style.overflow = select('#navbar').classList.contains('navbar-mobile')? 'hidden' : '';
     select('#navbar').classList.toggle('navbar-mobile');
     select('#navbar ul').style.top = select("#header").offsetHeight + "px"
     this.classList.toggle('bi-list')
