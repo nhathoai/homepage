@@ -26,8 +26,9 @@ a:hover {
 
 .s-border {
   border: 2px solid #ba1d24;
-  padding: 5px 10px;
+  padding: 5px 30px;
   color: #ba1d24;
+  font-size: 14px;
 }
 
 .s-border:hover {
@@ -78,11 +79,11 @@ section {
   content: "";
   display: inline-block;
   border-top: .5rem solid #ba1d24;
-  ;
   width: 1rem;
-  top: 50%;
+  top: 40%;
   position: absolute;
 }
+
 
 .section-header h2:after {
   margin: 0 1rem;
@@ -671,10 +672,10 @@ Hero
 
 .introduce .signature span:before {
   content: "";
-  display: inline-block;
-  border-top: .2rem solid #ba1d24;
-  width: 1rem;
-  margin: 0 0.5rem;
+    display: inline-block;
+    border-top: .2rem solid #ba1d24;
+    width: 40px;
+    margin: 4px 0.5rem;
 }
 
 .introduce .content {
@@ -692,40 +693,39 @@ Hero
 
 .service h4 {
   font-size: 20px;
+    font-weight: bold;
+    padding: 20px 0;
+    margin-bottom: 0;
 }
 
 .service .signature {
   text-align: right;
   font-weight: 600;
+  font-size: 18px;
 }
 
 .service .box {
   text-align: center;
   background: #fff;
   box-shadow: 0 5px 15px rgb(0 0 0 / 15%);
-  border-radius: 10px;
-  padding: 20px 0px;
+  border-radius: 3px;
+  margin-right: 20px;
+  padding-bottom: 35px;
 }
 
 .service .box ul {
   text-align: left;
-  list-style: none;
-  height: 7.5rem;
+    list-style: none;
+    height: 8.5rem;
+    margin: 15px 0px;
 }
 
 .service .box li:before {
   content: "●";
-  font-size: 1rem;
   color: #ba1d24;
   vertical-align: middle;
   margin-right: 1rem;
 }
-
-.service .box img {
-  height: 10rem;
-  padding: 5px;
-}
-
 
 /*
 # News
@@ -744,6 +744,7 @@ Hero
   border-left: 0;
   display: flex;
   padding: 1rem;
+  align-items: center;
 }
 
 .news .box:not(:first-of-type) {
@@ -764,11 +765,11 @@ Hero
 
 .news .box .date,
 .news .box .link {
-  margin-right: 2rem;
+  margin-right: 25px;
 }
 
 .news .box .link {
-  padding: 2px 20px;
+  padding: 2px 45px;
   background: #ffd0d0;
 }
 
@@ -790,13 +791,20 @@ Hero
 /*
 # Blog
 */
-
-.blog .post-box .post-title {
-  padding: 10px 0 30px;
-  font-weight: 700;
-  font-size: 20px;
+.blog .post-box{
+  background: #fff;
 }
 
+.blog .post-box .post-title {
+  padding-bottom: 30px;
+    font-weight: 700;
+    color: #000000;
+    font-size: 20px;
+}
+
+.blog .post-box .post-detail{
+  padding: 25px  10px;
+}
 .blog .post-box .post-detail .post-date {
   float: right;
   font-size: 18px;
@@ -804,13 +812,17 @@ Hero
 
 .blog .post-box .post-detail .category {
   font-size: 14px;
-  font-style: italic;
+  background: #ba1d24;
+  color: #fff;
+  padding: 2px 20px;
+
 }
 
 /*
 # Hiring
 */
 .hire {
+  height: 456px;
   position: relative;
   height: 25rem;
   width: 100%;
@@ -827,13 +839,14 @@ Hero
   background-image: url(../img/Recruit.png);
   background-size: cover;
   position: absolute;
-  background-position: center;
-  /* background-attachment: fixed; */
   top: 0px;
   right: 0px;
   bottom: 0px;
   left: 0px;
   opacity: 0.2;
+  background-repeat: no-repeat;
+    background-position: center center;
+  
 }
 
 .hire p,
@@ -844,7 +857,7 @@ Hero
 }
 
 .hire p.hire-header {
-  font-size: 2.5rem;
+  font-size: 40px;
   text-transform: uppercase;
 }
 
@@ -854,9 +867,8 @@ Hero
 }
 
 .hire span {
-  font-size: 1.5rem;
-  border: 3px solid;
-  padding: 0.1rem 1.5rem;
+  font-size: 48px;
+  font-weight: bold;
 }
 
 @media (max-width: 768px) {
@@ -883,10 +895,17 @@ Hero
 /*
 # Clients
 */
+.clients{
+  padding: 100px 0;
+}
 .clients .row div {
   align-items: center;
   display: flex;
   justify-content: center;
+}
+.clients img{
+  width: 320px;
+    height: 96px;
 }
 
 /*--------------------------------------------------------------
@@ -899,11 +918,11 @@ Hero
   /* background: #3C3B3D; */
   color: #fff;
   font-size: 1rem;
+  font-size: 12px;
 }
 
 .footer .footer-top {
   background-size: contain;
-  border-bottom: 1px solid #e1d3d3;
   padding: 60px 0 30px 0;
 }
 
@@ -954,26 +973,34 @@ Hero
   }
 }
 
+
 .footer .footer-top .footer-info {
   margin-bottom: 15px;
 }
 
-.footer .footer-top .footer-links-par {
-  flex-wrap: wrap;
+footer .footer-top .footer-info a{
+  font-size: 12px;
 }
 
-.footer .footer-top h4 {
-  font-size: 1.2rem;
-  position: relative;
-  padding-bottom: 12px;
+footer .footer-top .footer-info a p{
+  margin-bottom: 0;
 }
 
-.footer .footer-top p {
+.footer .footer-top .footer-info .name{
+  font-size: 16px;
   position: relative;
+  margin-bottom: 0;
 }
+
+.footer .footer-top .footer-info .mail {
+  text-transform: uppercase;
+  margin: 15px 0;
+}
+
 .footer .footer-links{
   padding-right: 5px;
 }
+
 .footer .footer-links a:hover {
   color: rgba(186, 29, 36, 1);
 }
@@ -981,6 +1008,7 @@ Hero
 .footer .footer-top .footer-links h4 {
   font-weight: 700;
   font-size: 16px;
+  margin-bottom: 20px;
 }
 
 .footer .footer-top .footer-links ul {
@@ -1011,25 +1039,26 @@ Hero
 }
 
 .footer .copyright {
-  margin: 15px 0 0px 0;
+  border-top: 1px solid #e1d3d3;
 }
 
-.footer .social-links a {
-  display: inline-block;
-  /* color: #fff; */
-  line-height: 0;
-  margin-right: 10px;
-  transition: 0.3s;
+.footer .copyright p,
+.footer .copyright a{
+  width: 33.33%;
+  margin: 1rem 0px;
 }
+
+.footer .copyright a{
+  text-align: center;
+}
+
 @media (max-width: 440px) {
   #office .box iframe{
     width: 100%;
   }
 }
 /*-----------------COMPANY-INFO--------------------*/
-.footer {
-  font-size: 14px;
-}
+
 
 .main-top p {
   padding-top: 80px;
