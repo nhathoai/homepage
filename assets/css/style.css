@@ -294,11 +294,13 @@ section {
   border: 2px solid;
   padding: 0.5rem 1rem;
 }
+
 .navbar .active{
   color: rgba(186, 29, 36, 1)!important;
 }
+
 .navbar .active:hover{
-  color: #fff
+  color: #fff!important
 }
 .navbar a {
   cursor: pointer;
