@@ -927,6 +927,11 @@ Hero
 }
 
 @media (max-width: 440px) {
+  .footer .footer-top .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   .footer .footer-top .footer-links {
     display: flex;
     flex-direction: column;
