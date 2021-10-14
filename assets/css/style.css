@@ -448,7 +448,7 @@ section {
   }
   
   .navbar-mobile {
-    overflow: scroll;
+    
   } 
 }
 
@@ -465,6 +465,7 @@ section {
   /* background: rgba(1, 22, 61, 0.9); */
   transition: 0.3s;
   z-index: 1000;
+  overflow: scroll;
 }
 
 .navbar-mobile .mobile-nav-toggle {
