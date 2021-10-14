@@ -478,6 +478,8 @@ section {
   transition: 0.3s;
   width: 100%;
   overflow: auto;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch; 
 }
 
 .navbar-mobile a,
