@@ -446,7 +446,14 @@ section {
   .navbar ul {
     display: none;
   }
+  
+  /* .navbar-mobile ul{
+    height: 200px;
+  } */
 }
+
+
+
 
 .navbar-mobile {
   position: fixed;
@@ -477,9 +484,7 @@ section {
   overflow-y: auto;
   transition: 0.3s;
   width: 100%;
-  overflow: auto;
-  overflow-y: auto;
-  -webkit-overflow-scrolling: touch; 
+  overflow: scroll;
 }
 
 .navbar-mobile a,
