@@ -296,6 +296,7 @@ section {
 }
 .navbar .active{
   color: rgba(186, 29, 36, 1)!important;
+  color: #fff;
 }
 .navbar a {
   cursor: pointer;
