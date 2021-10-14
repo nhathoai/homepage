@@ -447,9 +447,9 @@ section {
     display: none;
   }
   
-  /* .navbar-mobile ul{
-    height: 200px;
-  } */
+  .navbar-mobile {
+    overflow: scroll;
+  } 
 }
 
 
@@ -484,9 +484,9 @@ section {
   overflow-y: auto;
   transition: 0.3s;
   width: 100%;
-  overflow: scroll;
-  height: 290px;
+ 
 }
+
 
 .navbar-mobile a,
 .navbar-mobile a:focus {
