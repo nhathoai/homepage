@@ -380,7 +380,7 @@ section {
 }
 
 .navbar .dropdown ul li {
-  min-width: 200px;
+  /* min-width: 200px; */
 }
 
 .navbar .dropdown ul a {
@@ -396,6 +396,7 @@ section {
 .navbar .dropdown ul a:hover,
 .navbar .dropdown ul li:hover>a {
   color: rgba(186, 29, 36, 1);
+  width: 100%;
 }
 
 .navbar .dropdown:hover>ul {
@@ -420,11 +421,12 @@ section {
 .navbar .lang{
   font-family: 'Montserrat', sans-serif;
   margin-left: 20px;
-  margin-left: -100px!important;
+  margin-left: -90px!important;
 }
-/* .navbar .lang li{
+.navbar .lang li{
   display: flex;
-} */
+    align-items: center;
+}
 
 .navbar.navbar-mobile .lang{
   margin-left: 0!important;
