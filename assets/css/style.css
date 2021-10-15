@@ -1,10 +1,7 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
-@font-face {
-  font-family: testfont;
-  src: url("/assets/fonts/hiragino/Hiragino_Kaku_Gothic_Pro_W3.otf");
-}
+
 
 :root {
   scroll-behavior: smooth;
@@ -14,8 +11,7 @@ body {
   /* font-family: "Open Sans", sans-serif; */
   /* font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, メイリオ, Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", "ＭＳ ゴシック", "MS Gothic", "Noto Sans CJK JP", TakaoPGothic, sans-serif; */
   color: #5C5C5C;
-  /* font-family: Hiragino Kaku Gothic Pro; */
-  font-family: testfont;
+  font-family: Hiragino Kaku Gothic Pro;
   caret-color: transparent;
 }
 
@@ -426,6 +422,9 @@ section {
   margin-left: 20px;
   margin-left: -100px!important;
 }
+/* .navbar .lang li{
+  display: flex;
+} */
 
 .navbar.navbar-mobile .lang{
   margin-left: 0!important;
@@ -435,6 +434,7 @@ section {
   width: 30px;
     height: 24px;
     border: 1px solid #ddd;
+  margin-right: 5px;
 }
 
 
