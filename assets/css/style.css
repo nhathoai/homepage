@@ -977,16 +977,21 @@ Hero
   .footer .footer-top .footer-links {
     margin-bottom: 2rem;
   }
+
+  .footer-links-par{
+    flex-wrap: wrap;
+  }
+
+  .footer-links{
+    width: 50%;
+  }  
 }
 
 @media (max-width: 440px) {
-  .footer .footer-top .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .footer .footer-top .footer-links {
+  
+  .footer .footer-top .container,
+  .footer .footer-top .footer-links,
+  .footer .footer-top .footer-info {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -996,17 +1001,16 @@ Hero
     flex-direction: column;
   }
 
-  .footer .footer-top .footer-info {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
   .footer .copyright {
     display: flex;
     flex-direction: column;
     align-content: center;
     align-items: center;
+  }
+
+  .footer .copyright p, .footer .copyright a{
+    width: 100%!important;
+    text-align: center;
   }
 }
 
@@ -1062,6 +1066,7 @@ footer .footer-top .footer-info a p {
   padding: 10px 0;
   display: flex;
   align-items: center;
+  font-size: 12px;
 }
 
 .footer .footer-top .footer-links ul li:first-child {
