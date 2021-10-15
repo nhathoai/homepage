@@ -1138,7 +1138,7 @@ footer .footer-top .footer-info a p {
 
 #content .container-fluid {
   background: #fff;
-  padding: 4rem 7rem;
+  padding: 4rem 4rem;
 }
 
 #content .container-fluid .row {
@@ -1190,7 +1190,7 @@ footer .footer-top .footer-info a p {
 @media (min-width: 1400px) {
   #content .container-fluid {
     background: #fff;
-    padding: 7rem 12rem;
+    /* padding: 7rem 12rem; */
   }
 }
 
@@ -1400,12 +1400,12 @@ footer .footer-top .footer-info a p {
 .timeline-info {
   font-size: 12px;
   font-weight: 700;
-  letter-spacing: 3px;
+  /* letter-spacing: 3px; */
   margin: 0 0 0.5em 0;
-  text-transform: uppercase;
   white-space: nowrap;
   display: flex;
   justify-content: flex-end;
+  letter-spacing: -0.015em;
 }
 
 /*----- TIMELINE MARKER -----*/
@@ -1467,11 +1467,11 @@ footer .footer-top .footer-info a p {
 
 
 .timeline-centered .timeline-item-near{
-  height: 36px;
+  height: 45px;
 }
 
 .timeline-centered .timeline-item-near .timeline-marker:after{
-  height: 25px;
+  height: 34px;
 }
 
 .timeline-centered .timeline-marker {
@@ -1488,13 +1488,13 @@ footer .footer-top .footer-info a p {
 .timeline-item-left .timeline-info {
   float: left;
   text-align: right;
-  padding-right: 50px !important;
+  padding-right: 35px !important;
 }
 
 .timeline-item-right .timeline-info {
   float: right;
   text-align: left;
-  padding-left: 50px !important;
+  padding-left: 35px !important;
   justify-content: flex-start;
 }
 
@@ -1504,7 +1504,7 @@ footer .footer-top .footer-info a p {
   font-style: normal;
   font-weight: bold;
   font-size: 20px;
-  width: 200px;
+  width: 155px;
 }
 
 .timeline-info-content{
@@ -1512,20 +1512,17 @@ footer .footer-top .footer-info a p {
     font-family: Hiragino Kaku Gothic Pro;
     font-style: normal;
     font-weight: normal;
+    word-wrap: break-word;      /* IE 5.5-7 */
+  white-space: -moz-pre-wrap; /* Firefox 1.0-2.0 */
+      white-space: pre-wrap;      /* current browsers */
 }
 
-.timeline-item-left .timeline-info-date {
-  padding-left: 20px;
-}
-
-.timeline-item-right .timeline-info-date {
-  padding-right: 20px;
-}
 
 .timeline-item-left .timeline-info-content{
-  text-align: left;
+  text-align: right;
 }
 
 .timeline-item-right .timeline-info-content{
-  text-align: right;
+  text-align: left;
+  
 }
