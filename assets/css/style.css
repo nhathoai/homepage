@@ -1,6 +1,11 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+@font-face {
+  font-family: testfont;
+  src: url("/assets/fonts/hiragino/Hiragino_Kaku_Gothic_Pro_W3.otf");
+}
+
 :root {
   scroll-behavior: smooth;
 }
@@ -9,7 +14,8 @@ body {
   /* font-family: "Open Sans", sans-serif; */
   /* font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, メイリオ, Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", "ＭＳ ゴシック", "MS Gothic", "Noto Sans CJK JP", TakaoPGothic, sans-serif; */
   color: #5C5C5C;
-  font-family: Hiragino Kaku Gothic Pro;
+  /* font-family: Hiragino Kaku Gothic Pro; */
+  font-family: testfont;
   caret-color: transparent;
 }
 
@@ -29,6 +35,7 @@ a:hover {
   padding: 5px 30px;
   color: #ba1d24;
   font-size: 14px;
+  text-transform: uppercase;
 }
 
 .s-border:hover {
@@ -102,12 +109,12 @@ section {
   section {
     padding: 20px 0;
   }
-  
-  .section-header h2{
+
+  .section-header h2 {
     font-size: 28px;
   }
 
-  .section-header{
+  .section-header {
     padding-bottom: 10px;
   }
 }
@@ -296,14 +303,14 @@ section {
   padding: 0.5rem 1rem;
 }
 
-.navbar .active{
-  color: rgba(186, 29, 36, 1)!important;
+.navbar .active {
+  color: rgba(186, 29, 36, 1) !important;
 }
 
 
 .navbar .active:hover,
-.navbar .active:focus{
-  color: #fff!important
+.navbar .active:focus {
+  color: #fff !important
 }
 
 .navbar a {
@@ -414,6 +421,23 @@ section {
   visibility: visible;
 }
 
+.navbar .lang{
+  font-family: 'Montserrat', sans-serif;
+  margin-left: 20px;
+  margin-left: -100px!important;
+}
+
+.navbar.navbar-mobile .lang{
+  margin-left: 0!important;
+}
+
+.navbar .lang img{
+  width: 30px;
+    height: 24px;
+    border: 1px solid #ddd;
+}
+
+
 @media (max-width: 1366px) {
   .navbar .dropdown .dropdown ul {
     left: -90%;
@@ -447,10 +471,8 @@ section {
   .navbar ul {
     display: none;
   }
-  
-  .navbar-mobile {
-    
-  } 
+
+  .navbar-mobile {}
 }
 
 .navbar-mobile {
@@ -483,7 +505,7 @@ section {
   overflow-y: auto;
   transition: 0.3s;
   width: 100%;
- 
+
 }
 
 
@@ -619,7 +641,7 @@ Hero
   background-position: center;
   background-size: cover;
   padding-top: 80px;
-    padding-bottom: 0;
+  padding-bottom: 0;
 }
 
 .hero .container,
@@ -651,11 +673,13 @@ Hero
     height: 450px;
   }
 }
+
 @media (max-width: 450px) {
   .hero {
     height: 300px;
   }
 }
+
 /*--------------------------------------
 #  Main
 */
@@ -672,10 +696,10 @@ Hero
 
 .introduce .signature span:before {
   content: "";
-    display: inline-block;
-    border-top: .2rem solid #ba1d24;
-    width: 40px;
-    margin: 4px 0.5rem;
+  display: inline-block;
+  border-top: .2rem solid #ba1d24;
+  width: 40px;
+  margin: 4px 0.5rem;
 }
 
 .introduce .content {
@@ -693,9 +717,9 @@ Hero
 
 .service h4 {
   font-size: 20px;
-    font-weight: bold;
-    padding: 20px 0;
-    margin-bottom: 0;
+  font-weight: bold;
+  padding: 20px 0;
+  margin-bottom: 0;
 }
 
 .service .signature {
@@ -715,9 +739,9 @@ Hero
 
 .service .box ul {
   text-align: left;
-    list-style: none;
-    height: 8.5rem;
-    margin: 15px 0px;
+  list-style: none;
+  height: 8.5rem;
+  margin: 15px 0px;
 }
 
 .service .box li:before {
@@ -791,23 +815,25 @@ Hero
 /*
 # Blog
 */
-.blog .post-box{
+.blog .post-box {
   background: #fff;
 }
 
 .blog .post-box .post-title {
   padding-bottom: 30px;
-    font-weight: 700;
-    color: #000000;
-    font-size: 20px;
+  font-weight: 700;
+  color: #000000;
+  font-size: 20px;
 }
 
-.blog .post-box .post-detail{
-  padding: 25px  10px;
+.blog .post-box .post-detail {
+  padding: 25px 10px;
 }
+
 .blog .post-box .post-detail .post-date {
   float: right;
   font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .blog .post-box .post-detail .category {
@@ -832,6 +858,7 @@ Hero
   flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .hire::before {
@@ -845,8 +872,8 @@ Hero
   left: 0px;
   opacity: 0.2;
   background-repeat: no-repeat;
-    background-position: center center;
-  
+  background-position: center center;
+
 }
 
 .hire p,
@@ -862,13 +889,16 @@ Hero
 }
 
 .hire p.hire-body {
-  font-size: 3rem;
+  font-size: 48px;
   font-weight: 700;
 }
 
 .hire span {
-  font-size: 48px;
-  font-weight: bold;
+  font-size: 14px;
+  font-weight: 500;
+  border: 2px solid;
+  padding: 5px 50px;
+  text-transform: uppercase;
 }
 
 @media (max-width: 768px) {
@@ -885,27 +915,32 @@ Hero
   .hire span {
     font-size: 1em;
   }
-  .introduce .content{
+
+  .introduce .content {
     font-size: 16px;
   }
+
   .news .box .date {
     font-size: 16px;
   }
 }
+
 /*
 # Clients
 */
-.clients{
+.clients {
   padding: 100px 0;
 }
+
 .clients .row div {
   align-items: center;
   display: flex;
   justify-content: center;
 }
-.clients img{
+
+.clients img {
   width: 320px;
-    height: 96px;
+  height: 96px;
 }
 
 /*--------------------------------------------------------------
@@ -937,6 +972,7 @@ Hero
     background-position: center bottom;
   }
 }
+
 @media (max-width: 768px) {
   .footer .footer-top .footer-links {
     margin-bottom: 2rem;
@@ -944,11 +980,12 @@ Hero
 }
 
 @media (max-width: 440px) {
-  .footer .footer-top .container{
+  .footer .footer-top .container {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
+
   .footer .footer-top .footer-links {
     display: flex;
     flex-direction: column;
@@ -976,28 +1013,30 @@ Hero
 
 .footer .footer-top .footer-info {
   margin-bottom: 15px;
+  font-family: 'Montserrat', sans-serif;
 }
 
-footer .footer-top .footer-info a{
+footer .footer-top .footer-info a {
   font-size: 12px;
 }
 
-footer .footer-top .footer-info a p{
+footer .footer-top .footer-info a p {
   margin-bottom: 0;
 }
 
-.footer .footer-top .footer-info .name{
+.footer .footer-top .footer-info .name {
   font-size: 16px;
   position: relative;
   margin-bottom: 0;
 }
+
 
 .footer .footer-top .footer-info .mail {
   text-transform: uppercase;
   margin: 15px 0;
 }
 
-.footer .footer-links{
+.footer .footer-links {
   padding-right: 5px;
 }
 
@@ -1009,6 +1048,7 @@ footer .footer-top .footer-info a p{
   font-weight: 700;
   font-size: 16px;
   margin-bottom: 20px;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .footer .footer-top .footer-links ul {
@@ -1043,28 +1083,35 @@ footer .footer-top .footer-info a p{
 }
 
 .footer .copyright p,
-.footer .copyright a{
+.footer .copyright a {
   width: 33.33%;
   margin: 1rem 0px;
 }
 
-.footer .copyright a{
+.footer .copyright a {
   text-align: center;
 }
 
+.footer .copyright p {
+  font-family: 'Montserrat', sans-serif;
+}
+
 @media (max-width: 440px) {
-  #office .box iframe{
+  #office .box iframe {
     width: 100%;
   }
 }
+
 /*-----------------COMPANY-INFO--------------------*/
 
 
 .main-top p {
-  padding-top: 80px;
-    padding-bottom: 0;
+  padding-top: 50px;
+  padding-bottom: 0;
   font-size: 60px;
   font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  text-align: center;
 }
 
 #content {
@@ -1130,7 +1177,7 @@ footer .footer-top .footer-info a p{
   }
 }
 
-@media screen and (max-width: 1200px) and (min-width: 910px){
+@media screen and (max-width: 1200px) and (min-width: 910px) {
   #content {
     padding: 40px 80px;
   }
@@ -1152,7 +1199,7 @@ footer .footer-top .footer-info a p{
 }
 
 
-@media (max-width: 600px) { 
+@media (max-width: 600px) {
   #content {
     padding: 20px 20px;
   }
@@ -1161,7 +1208,7 @@ footer .footer-top .footer-info a p{
     padding: 0rem 1rem;
   }
 
-  #content .name::before{
+  #content .name::before {
     content: "";
     position: absolute;
     width: 0%;
@@ -1173,22 +1220,24 @@ footer .footer-top .footer-info a p{
     transition: 0.25s ease-out;
   }
 
-  #content .ct{
+  #content .ct {
     justify-content: flex-end;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
   }
-  .main-top p{
+
+  .main-top p {
     font-size: 40px;
   }
-  #main-top{
+
+  #main-top {
     /* height: 200px; */
   }
 }
 
 @media (max-width: 420px) {
-  #office .box iframe{
+  #office .box iframe {
     width: 100%;
   }
 }
@@ -1203,6 +1252,14 @@ footer .footer-top .footer-info a p{
 
 #office .header {
   font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.office .address{
+  padding-top: 15px;
+}
+.office .tel{
+  font-family: 'Montserrat', sans-serif;
 }
 
 #other .left,
@@ -1268,10 +1325,11 @@ footer .footer-top .footer-info a p{
 
 @media (max-width: 440px) {
 
-  #content .name{
+  #content .name {
     font-size: 16px;
   }
-  #content .ct{
+
+  #content .ct {
     font-size: 12px;
   }
 
@@ -1280,14 +1338,15 @@ footer .footer-top .footer-info a p{
     height: 200px;
   }
 
-  .other .title{
+  .other .title {
     font-size: 30px;
   }
 
-  .other .link{
+  .other .link {
     font-size: 12px;
   }
 }
+
 /*
 # CompanyMessage 
 */
