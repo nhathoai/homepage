@@ -418,24 +418,25 @@ section {
   visibility: visible;
 }
 
-.navbar .lang{
+.navbar .lang {
   font-family: 'Montserrat', sans-serif;
   margin-left: 20px;
-  margin-left: -90px!important;
+  margin-left: -90px !important;
 }
-.navbar .lang li{
+
+.navbar .lang li {
   display: flex;
-    align-items: center;
+  align-items: center;
 }
 
-.navbar.navbar-mobile .lang{
-  margin-left: 0!important;
+.navbar.navbar-mobile .lang {
+  margin-left: 0 !important;
 }
 
-.navbar .lang img{
+.navbar .lang img {
   width: 30px;
-    height: 24px;
-    border: 1px solid #ddd;
+  height: 24px;
+  border: 1px solid #ddd;
   margin-right: 5px;
 }
 
@@ -980,17 +981,17 @@ Hero
     margin-bottom: 2rem;
   }
 
-  .footer-links-par{
+  .footer-links-par {
     flex-wrap: wrap;
   }
 
-  .footer-links{
+  .footer-links {
     width: 50%;
-  }  
+  }
 }
 
 @media (max-width: 440px) {
-  
+
   .footer .footer-top .container,
   .footer .footer-top .footer-links,
   .footer .footer-top .footer-info {
@@ -1010,8 +1011,9 @@ Hero
     align-items: center;
   }
 
-  .footer .copyright p, .footer .copyright a{
-    width: 100%!important;
+  .footer .copyright p,
+  .footer .copyright a {
+    width: 100% !important;
     text-align: center;
   }
 }
@@ -1119,6 +1121,13 @@ footer .footer-top .footer-info a p {
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   text-align: center;
+}
+
+.main-top__link {
+  margin-top: 20px;
+  margin-left: 40px;
+  font-size: 14px;
+  font-weight: normal;
 }
 
 #content {
@@ -1262,10 +1271,11 @@ footer .footer-top .footer-info a p {
   font-family: 'Montserrat', sans-serif;
 }
 
-.office .address{
+.office .address {
   padding-top: 15px;
 }
-.office .tel{
+
+.office .tel {
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -1355,5 +1365,151 @@ footer .footer-top .footer-info a p {
 }
 
 /*
-# CompanyMessage 
+# history 
 */
+
+.timeline {
+  line-height: 1.4em;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.timeline h1,
+.timeline h2,
+.timeline h3,
+.timeline h4,
+.timeline h5,
+.timeline h6 {
+  line-height: inherit;
+}
+
+/*----- TIMELINE ITEM -----*/
+.timeline-item {
+  padding-left: 40px;
+  position: relative;
+}
+
+.timeline-item:last-child {
+  padding-bottom: 0;
+}
+
+/*----- TIMELINE INFO -----*/
+.timeline-info {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  margin: 0 0 0.5em 0;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+/*----- TIMELINE MARKER -----*/
+.timeline-marker {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 15px;
+}
+
+.timeline-marker:before {
+  background: #BA1D24;
+  /* border: 2px solid transparent; */
+  border-radius: 100%;
+  content: "";
+  display: block;
+  height: 16px;
+  position: absolute;
+  width: 16px;
+  /* transition: background 0.3s ease-in-out, border 0.3s ease-in-out; */
+}
+
+.timeline-marker:after {
+  content: "";
+  width: 1px;
+  background: #5C5C5C;
+  display: block;
+  position: absolute;
+  top: 15px;
+  bottom: 0;
+  left: 8px;
+  height: 96px;
+}
+
+.timeline-item:last-child .timeline-marker:after {
+  content: none;
+}
+
+
+.timeline-centered,
+.timeline-centered .timeline-item,
+.timeline-centered .timeline-info,
+.timeline-centered .timeline-marker,
+.timeline-centered .timeline-content {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.timeline-centered .timeline-item {
+  padding-bottom: 40px;
+  overflow: hidden;
+}
+
+.timeline-centered .timeline-marker {
+  position: absolute;
+  left: 50%;
+  margin-left: -7.5px;
+}
+
+.timeline-centered .timeline-info,
+.timeline-centered .timeline-content {
+  width: 50%;
+}
+
+.timeline-centered>.timeline-item:nth-child(odd) .timeline-info {
+  float: left;
+  text-align: right;
+  padding-right: 30px;
+}
+
+.timeline-centered>.timeline-item:nth-child(odd) .timeline-content {
+  float: right;
+  text-align: left;
+  padding-left: 30px;
+}
+
+.timeline-centered>.timeline-item:nth-child(even) .timeline-info {
+  float: right;
+  text-align: left;
+  padding-left: 30px;
+}
+
+.timeline-centered>.timeline-item:nth-child(even) .timeline-content {
+  float: left;
+  text-align: right;
+  padding-right: 30px;
+}
+
+.timeline-centered>.timeline-item.period .timeline-content {
+  float: none;
+  padding: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.timeline-centered .timeline-item.period {
+  padding: 50px 0 90px;
+}
+
+.timeline-centered .period .timeline-marker:after {
+  height: 30px;
+  bottom: 0;
+  top: auto;
+}
+
+.timeline-centered .period .timeline-title {
+  left: auto;
+}

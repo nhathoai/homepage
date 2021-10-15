@@ -30,12 +30,15 @@
 </head>
 
 <body>
-    <include src="./header.html"></include>
-    <div id="header"></div>
+    <div id="header"></div>ss
     <!-- ======= Hero Section ======= -->
     <section id="main-top" class="main-top d-flex align-items-center">
-        <div class="container d-flex justify-content-center">
-            
+        <div class="container-fluid">
+            <div class="main-top__link">
+                <a href="./">
+                    トップ
+                </a> > 沿革
+            </div>
             <div class="row">
                 <p>沿革</p>
             </div>
@@ -44,8 +47,79 @@
 
 
     <main id="main">
+        <!-- ======= content Section ======= -->
+        <section id="content" class="content">
+            <div class="container-fluid">
+                <div class="row example-centered">
+                    <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2">
+                        <ul class="timeline timeline-centered">
+                            <li class="timeline-item">
+                                <div class="timeline-info">
+                                    <span>March 12, 2016</span>
+                                </div>
+                                <div class="timeline-marker"></div>
+                                <div class="timeline-content">
+                                    <h3 class="timeline-title">Event Title</h3>
+                                    <p>Nullam vel sem. Nullam vel sem. Integer ante arcu, accumsan a, consectetuer eget,
+                                        posuere ut, mauris. Donec orci lectus, aliquam ut, faucibus non, euismod id,
+                                        nulla. Donec vitae sapien ut libero venenatis faucibus. ullam dictum felis
+                                        eu pede mollis pretium. Pellentesque ut neque.</p>
+                                </div>
+                            </li>
+                            <li class="timeline-item">
+                                <div class="timeline-info">
+                                    <span>March 23, 2016</span>
+                                </div>
+                                <div class="timeline-marker"></div>
+                                <div class="timeline-content">
+                                    <h3 class="timeline-title">Event Title</h3>
+                                    <p>Nullam vel sem. Nullam vel sem. Integer ante arcu, accumsan a, consectetuer eget,
+                                        posuere ut, mauris. Donec orci lectus, aliquam ut, faucibus non, euismod id,
+                                        nulla. Donec vitae sapien ut libero venenatis faucibus. ullam dictum felis
+                                        eu pede mollis pretium. Pellentesque ut neque. </p>
+                                </div>
+                            </li>
+                            <li class="timeline-item period">
+                                <div class="timeline-info"></div>
+                                <div class="timeline-marker"></div>
+                                <div class="timeline-content">
+                                    <h2 class="timeline-title">April 2016</h2>
+                                </div>
+                            </li>
+                            <li class="timeline-item">
+                                <div class="timeline-info">
+                                    <span>April 02, 2016</span>
+                                </div>
+                                <div class="timeline-marker"></div>
+                                <div class="timeline-content">
+                                    <h3 class="timeline-title">Event Title</h3>
+                                    <p>Nullam vel sem. Nullam vel sem. Integer ante arcu, accumsan a, consectetuer eget,
+                                        posuere ut, mauris. Donec orci lectus, aliquam ut, faucibus non, euismod id,
+                                        nulla. Donec vitae sapien ut libero venenatis faucibus. ullam dictum felis
+                                        eu pede mollis pretium. Pellentesque ut neque. </p>
+                                </div>
+                            </li>
+                            <li class="timeline-item">
+                                <div class="timeline-info">
+                                    <span>April 28, 2016</span>
+                                </div>
+                                <div class="timeline-marker"></div>
+                                <div class="timeline-content">
+                                    <h3 class="timeline-title">Event Title</h3>
+                                    <p>Nullam vel sem. Nullam vel sem. Integer ante arcu, accumsan a, consectetuer eget,
+                                        posuere ut, mauris. Donec orci lectus, aliquam ut, faucibus non, euismod id,
+                                        nulla. Donec vitae sapien ut libero venenatis faucibus. ullam dictum felis
+                                        eu pede mollis pretium. Pellentesque ut neque. </p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
 
+        </section><!-- End content Section -->
 
+        <!-- =======  Other Section ======= -->
         <div id="other" class="other">
             <div class="container-fluid">
                 <div class="row">
@@ -54,18 +128,22 @@
                         <p class="title fz-40">
                             メッセージ
                         </p>
-                        <span class="link fz-14">
-                            message
-                        </span>
+                        <a href="./message" target="_self" class="link">
+                            <span class=" fz-14">
+                                message
+                            </span>
+                        </a>
                     </div>
 
                     <div class=" right col-lg-6 col-md-12 box d-flex flex-column  align-items-center">
                         <p class="title fz-40">
-                            会社情報
+                            沿革
                         </p>
-                        <a href="" ></a><span class="link fz-14">
-                            About us
-                        </span>
+                        <a href="./history" target="_self" class="link">
+                            <span class=" fz-14">
+                                history
+                            </span>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -92,7 +170,6 @@
     <script>
         document.querySelector('.navbar li a').classList.add('active');
     </script>
-
 
 </body>
 
