@@ -52,8 +52,20 @@ a:hover {
   font-size: 16px;
 }
 
+.fz-30 {
+  font-size: 30px;
+}
+
+.fz-20 {
+  font-size: 20px;
+}
+
 .fz-40 {
   font-size: 40px;
+}
+
+.fz-200 {
+  font-size: 200px;
 }
 
 /*--------------------------------------------------------------
@@ -1554,9 +1566,10 @@ footer .footer-top .footer-info a p {
 /*
 faq
 */
-.faq-content{
-  padding:0 0 54px;
+.faq-content {
+  padding: 0 0 54px;
 }
+
 .faq-category {
   padding: 88px 160px;
   background: rgb(245 245 245);
@@ -1680,9 +1693,10 @@ faq
   border-bottom: 1px solid #5C5C5C;
 }
 
-.accordion .accordion-item:first-child h2{
+.accordion .accordion-item:first-child h2 {
   border-top: 1px solid #5C5C5C;
 }
+
 .faq-content-title {
 
   font-family: Hiragino Kaku Gothic Pro;
@@ -1694,4 +1708,21 @@ faq
   color: #BA1D24;
   margin-bottom: 30px;
   margin-top: 54px;
+}
+
+/*
+# Error
+*/
+#error {
+  background-image: linear-gradient(110deg, rgba(227, 64, 64, 0.7) 50%, #BA1D24 50%);
+  width: 100%;
+  height: 678px;
+  color: #fff;
+  font-family: Montserrat;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: -0.015em;
 }

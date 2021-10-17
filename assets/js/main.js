@@ -139,7 +139,7 @@
       let eles = select('.faq-content .row', true);
       let header = select('#header');
       let offset = header.offsetHeight;
-  
+    
       if (!header.classList.contains('header-scrolled')) {
         offset -= 10
       }
