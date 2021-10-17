@@ -1131,7 +1131,8 @@ footer .footer-top .footer-info a p {
   font-weight: normal;
 }
 
-#content {
+#content,
+#content-timeline {
   padding: 88px 160px;
   background: rgb(245 245 245);
 }
@@ -1368,6 +1369,10 @@ footer .footer-top .footer-info a p {
 /*
 # history 
 */
+#content-timeline .container-fluid {
+  background: #fff;
+  padding: 4rem 26px;
+}
 
 .timeline {
   line-height: 1.4em;
@@ -1377,30 +1382,15 @@ footer .footer-top .footer-info a p {
   width: 100%;
 }
 
-.timeline h1,
-.timeline h2,
-.timeline h3,
-.timeline h4,
-.timeline h5,
-.timeline h6 {
-  line-height: inherit;
-}
-
-/*----- TIMELINE ITEM -----*/
 .timeline-item {
   padding-left: 40px;
   position: relative;
 }
 
-.timeline-item:last-child {
-  padding-bottom: 0;
-}
 
-/*----- TIMELINE INFO -----*/
 .timeline-info {
   font-size: 12px;
   font-weight: 700;
-  /* letter-spacing: 3px; */
   margin: 0 0 0.5em 0;
   white-space: nowrap;
   display: flex;
@@ -1408,7 +1398,6 @@ footer .footer-top .footer-info a p {
   letter-spacing: -0.015em;
 }
 
-/*----- TIMELINE MARKER -----*/
 .timeline-marker {
   position: absolute;
   top: 0;
@@ -1419,7 +1408,6 @@ footer .footer-top .footer-info a p {
 
 .timeline-marker:before {
   background: #BA1D24;
-  /* border: 2px solid transparent; */
   border-radius: 100%;
   content: "";
   display: block;
@@ -1428,11 +1416,6 @@ footer .footer-top .footer-info a p {
   width: 16px;
 }
 
-.timeline-item-right .timeline-marker:before{
-  background: transparent;
-  border: 4px solid #BA1D24;
-  content: "";
-}
 .timeline-marker:after {
   content: "";
   width: 1px;
@@ -1445,8 +1428,10 @@ footer .footer-top .footer-info a p {
   height: 96px;
 }
 
-.timeline-item:last-child .timeline-marker:after {
-  content: none;
+.timeline-item-right .timeline-marker:before {
+  background: transparent;
+  border: 4px solid #BA1D24;
+  content: "";
 }
 
 
@@ -1455,22 +1440,23 @@ footer .footer-top .footer-info a p {
 .timeline-centered .timeline-info,
 .timeline-centered .timeline-marker,
 .timeline-centered .timeline-content {
-  /* display: block; */
   margin: 0;
   padding: 0;
 }
 
+.timeline-item:last-child .timeline-marker:after {
+  content: none;
+}
+
 .timeline-centered .timeline-item {
-  padding-bottom: 40px;
   height: 112px;
 }
 
-
-.timeline-centered .timeline-item-near{
+.timeline-centered .timeline-item-near {
   height: 45px;
 }
 
-.timeline-centered .timeline-item-near .timeline-marker:after{
+.timeline-centered .timeline-item-near .timeline-marker:after {
   height: 34px;
 }
 
@@ -1485,44 +1471,227 @@ footer .footer-top .footer-info a p {
   width: 50%;
 }
 
-.timeline-item-left .timeline-info {
-  float: left;
-  text-align: right;
-  padding-right: 35px !important;
-}
-
-.timeline-item-right .timeline-info {
-  float: right;
-  text-align: left;
-  padding-left: 35px !important;
-  justify-content: flex-start;
-}
-
 .timeline-info-date {
   color: #BA1D24;
   font-family: Hiragino Kaku Gothic Pro;
   font-style: normal;
   font-weight: bold;
   font-size: 20px;
-  width: 155px;
+  width: 145px;
+  display: inline-block;
 }
 
-.timeline-info-content{
+
+.timeline-info-content {
   font-size: 14px;
-    font-family: Hiragino Kaku Gothic Pro;
-    font-style: normal;
-    font-weight: normal;
-    word-wrap: break-word;      /* IE 5.5-7 */
-  white-space: -moz-pre-wrap; /* Firefox 1.0-2.0 */
-      white-space: pre-wrap;      /* current browsers */
+  font-family: Hiragino Kaku Gothic Pro;
+  font-style: normal;
+  font-weight: normal;
+  word-wrap: break-word;
+  white-space: -moz-pre-wrap;
+  white-space: pre-wrap;
 }
 
-
-.timeline-item-left .timeline-info-content{
+.timeline-item-left .timeline-info-content {
   text-align: right;
 }
 
-.timeline-item-right .timeline-info-content{
+.timeline-info-content {
+  width: calc(100% - 145px);
+}
+
+.timeline-item-right .timeline-info {
+  float: right;
   text-align: left;
-  
+  padding-left: 35px;
+  justify-content: flex-start;
+}
+
+.timeline-item-left .timeline-info {
+  padding-right: 35px;
+}
+
+.timeline-item-left .timeline-info-date {
+  text-align: right;
+}
+
+@media (max-width: 1300px) {
+
+  #content-timeline {
+    padding: 88px 50px;
+  }
+
+  .timeline-centered .timeline-item {
+    height: 180px;
+  }
+
+  .timeline-marker:after {
+    height: 165px;
+  }
+
+  .timeline-centered .timeline-item-near {
+    height: 90px;
+  }
+
+  .timeline-centered .timeline-item-near .timeline-marker:after {
+    height: 75px;
+  }
+
+  .timeline-info-date {
+    width: 105px;
+    font-size: 16px;
+  }
+
+  .timeline-item-right .timeline-info {
+    padding-left: 15px;
+  }
+
+  .timeline-item-left .timeline-info {
+    padding-right: 15px;
+  }
+}
+
+/*
+faq
+*/
+.faq-content{
+  padding:0 0 54px;
+}
+.faq-category {
+  padding: 88px 160px;
+  background: rgb(245 245 245);
+}
+
+.faq-category .faq-header .row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 31%);
+  justify-content: space-between;
+}
+
+.faq-category .faq-header button {
+  height: 64px;
+  font-family: Hiragino Kaku Gothic Pro;
+  border: none;
+  background: #fff;
+  border-radius: 10px;
+  color: #5C5C5C;
+  font-size: 14px;
+  text-align: left;
+  margin-bottom: 32px;
+  background-image: url(../img/Arrow.svg);
+  background-repeat: no-repeat;
+  background-position: center right 22px;
+  padding-left: 22px;
+}
+
+.faq-content {
+  background: #fff;
+}
+
+.faq-content .container {
+  padding: 0px 54px;
+}
+
+.faq-content .accordion-item {
+  width: 100%;
+}
+
+.faq-content .accordion-button,
+.faq-content .accordion-body {
+  color: #5C5C5C;
+  font-family: Hiragino Kaku Gothic Pro;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 20px;
+  letter-spacing: -0.015em;
+  color: #5C5C5C;
+}
+
+.faq-content .accordion-button:after {
+  background-image: url(../img/Plus.svg);
+  background-repeat: no-repeat;
+  content: "";
+  width: 16px;
+  height: 16px;
+  background-size: 1rem;
+}
+
+.faq-content .accordion-header .accordion-button,
+.faq-content .accordion-body {
+  padding: 22px 32px;
+}
+
+.faq-content .accordion-header .accordion-button:before {
+  content: "Q";
+  font-family: Hiragino Kaku Gothic Pro;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 20px;
+  letter-spacing: -0.015em;
+  color: #BA1D24;
+  margin-right: 40px;
+}
+
+.faq-content .accordion-body:before {
+  content: "A";
+  font-family: Hiragino Kaku Gothic Pro;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 20px;
+  letter-spacing: -0.015em;
+  color: #BA1D24;
+  margin-right: 40px;
+}
+
+.faq-content .accordion-body {
+  display: flex;
+  align-items: center;
+}
+
+.faq-content .accordion-body:after {
+  background-image: url(../img/Minus.svg);
+  background-repeat: no-repeat;
+  content: "";
+  width: 16px;
+  height: 4px;
+  background-size: 1rem;
+  flex-shrink: 0;
+  margin-left: auto;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #fff
+}
+
+.accordion-button:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.accordion-item {
+  border: none;
+}
+
+.accordion-header,
+.accordion-body {
+  border-bottom: 1px solid #5C5C5C;
+}
+
+.accordion .accordion-item:first-child h2{
+  border-top: 1px solid #5C5C5C;
+}
+.faq-content-title {
+
+  font-family: Hiragino Kaku Gothic Pro;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 30px;
+  letter-spacing: -0.015em;
+  color: #BA1D24;
+  margin-bottom: 30px;
+  margin-top: 54px;
 }
