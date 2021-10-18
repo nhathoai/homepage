@@ -1648,6 +1648,11 @@ faq
   background-size: 1rem;
 }
 
+.faq-content .accordion-button:not(.collapsed):after {
+  content: "";
+  background-image: url(../img/Minus.svg);
+}
+
 .faq-content .accordion-header .accordion-button,
 .faq-content .accordion-body {
   padding: 22px 32px;
@@ -1680,17 +1685,6 @@ faq
 .faq-content .accordion-body {
   display: flex;
   align-items: center;
-}
-
-.faq-content .accordion-body:after {
-  background-image: url(../img/Minus.svg);
-  background-repeat: no-repeat;
-  content: "";
-  width: 16px;
-  height: 4px;
-  background-size: 1rem;
-  flex-shrink: 0;
-  margin-left: auto;
 }
 
 .accordion-button:not(.collapsed) {
