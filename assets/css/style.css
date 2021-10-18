@@ -1154,7 +1154,13 @@ footer .footer-top .footer-info a p {
   font-size: 14px;
   font-weight: normal;
 }
-
+@media (max-width: 768px) {
+  .main-top__link {
+    margin-top: 60px;
+    margin-left: 0;
+    font-size: 12px;
+  }
+}
 #content,
 #content-timeline {
   padding: 88px 160px;
