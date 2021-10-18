@@ -11,8 +11,7 @@ body {
   /* font-family: "Open Sans", sans-serif; */
   /* font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, メイリオ, Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", "ＭＳ ゴシック", "MS Gothic", "Noto Sans CJK JP", TakaoPGothic, sans-serif; */
   color: #5C5C5C;
-  /* font-family: Hiragino Kaku Gothic Pro ; */
-  font-family: 'Montserrat', sans-serif !important;
+  font-family: Hiragino Kaku Gothic Pro ;
   caret-color: transparent;
 }
 
@@ -1280,13 +1279,25 @@ footer .footer-top .footer-info a p {
   margin-bottom: 1rem;
 }
 
+#office .office-content{
+  margin-top: 1.5em;
+}
+
+#office .office-content p {
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: -0.015em;
+  color: #5C5C5C
+}
+
 #office .header {
   font-weight: bold;
   font-family: 'Montserrat', sans-serif;
 }
 
 .office .address {
-  padding-top: 15px;
+  line-height: 24px;
+  padding-bottom: 10px;
 }
 
 .office .tel {
