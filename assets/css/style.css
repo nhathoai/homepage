@@ -1053,7 +1053,7 @@ footer .footer-top .footer-info a {
   font-size: 12px;
 }
 
-footer .footer-top .footer-info a p {
+footer .footer-top .footer-info  p:not(.name, .mail) {
   margin-bottom: 0;
 }
 
@@ -1581,12 +1581,9 @@ faq
   padding-left: 22px;
 }
 
-.faq-content {
-  background: #fff;
-}
-
 .faq-content .container {
   padding: 0px 54px;
+  background: #fff;
 }
 
 .faq-content .accordion-item {
@@ -1689,15 +1686,18 @@ faq
 }
 
 @media (max-width: 1300px) {
-  #content-timeline{
+
+  .faq-category {
+    padding: 60px 60px;
+    background: rgb(245 245 245);
+  }
+
+  .faq-category .faq-header .row{
     grid-template-columns: repeat(auto-fit, 48%);
   }
 }
 
 @media (max-width: 900px) {
-  .faq-category{
-    padding: 3rem 10px;
-  }
 
   .faq-category .faq-header .row{
     grid-template-columns: repeat(auto-fit, 100%);
@@ -1705,6 +1705,12 @@ faq
 }
 
 @media (max-width: 768px) {
+
+  .faq-category {
+    padding: 60px 10px;
+    background: rgb(245 245 245);
+  }
+  
   .faq-content .container{
     padding: 0;
   }
