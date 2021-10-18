@@ -1150,7 +1150,7 @@ footer .footer-top .footer-info a p {
 
 #content .container-fluid {
   background: #fff;
-  padding: 4rem 4rem;
+  padding: 7rem 12rem;
 }
 
 #content .container-fluid .row {
@@ -1161,37 +1161,20 @@ footer .footer-top .footer-info a p {
 #content .name {
   font-weight: 700;
   font-size: 20px;
-  position: relative;
 }
 
-#content .name::before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 1px;
-  bottom: -10px;
-  left: 0;
-  background: #BA1D24;
-  border-radius: 5px;
-  transition: 0.25s ease-out;
+
+
+#content .row{
+  background: linear-gradient(to right, #000000 15%, #BA1D24 20%) bottom;
+  background-repeat: no-repeat;
+  background-size: 100% 2px;
 }
 
 #content .ct {
   font-weight: 400;
   font-size: 14px;
   position: relative;
-}
-
-#content .ct:before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 1px;
-  bottom: -10px;
-  left: 0;
-  background: #000000;
-  border-radius: 5px;
-  transition: 0.25s ease-out;
 }
 
 #content .ct .link {
@@ -1275,6 +1258,10 @@ footer .footer-top .footer-info a p {
   line-height: 2.2;
 }
 
+#office .row{
+  justify-content: center;
+}
+
 #office .box {
   margin-bottom: 1rem;
 }
@@ -1282,6 +1269,11 @@ footer .footer-top .footer-info a p {
 #office .office-content{
   margin-top: 1.5em;
   width: 400px;
+}
+@media (max-width: 440px) {
+  #office .office-content{
+    width: 100%;
+  }
 }
 
 #office .office-content p {
@@ -1296,13 +1288,27 @@ footer .footer-top .footer-info a p {
   font-family: 'Montserrat', sans-serif;
 }
 
-.office .address {
+#office .office-content p.address {
   line-height: 24px;
-  padding-bottom: 10px;
 }
 
-.office .tel {
+#office .tel {
   font-family: 'Montserrat', sans-serif;
+}
+
+#office pre{
+  font-size: 12px;
+}
+
+#office .office-content p.office-link{
+  font-family: Hiragino Kaku Gothic Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: -0.015em;
+  text-decoration-line: underline;
+  color: #BA1D24;
 }
 
 #other .left,
