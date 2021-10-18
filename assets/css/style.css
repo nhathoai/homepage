@@ -1150,7 +1150,7 @@ footer .footer-top .footer-info a p {
 
 #content .container-fluid {
   background: #fff;
-  padding: 7rem 12rem;
+  padding: 7rem 6rem;
 }
 
 #content .container-fluid .row {
@@ -1185,7 +1185,7 @@ footer .footer-top .footer-info a p {
 @media (min-width: 1400px) {
   #content .container-fluid {
     background: #fff;
-    /* padding: 7rem 12rem; */
+    padding: 7rem 12rem;
   }
 }
 
@@ -1194,9 +1194,9 @@ footer .footer-top .footer-info a p {
     padding: 40px 80px;
   }
 
-  /* #content .container-fluid {
+   #content .container-fluid {
     padding: 1rem 2rem;
-  } */
+  } 
 }
 
 @media (max-width: 900px) {
