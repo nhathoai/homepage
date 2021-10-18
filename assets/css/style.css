@@ -34,6 +34,9 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
+  font-weight: 500;
+  line-height: 14px;
+  letter-spacing: -0.015em;
 }
 
 .s-border:hover {
