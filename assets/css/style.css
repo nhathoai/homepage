@@ -25,13 +25,15 @@ a:hover {
   color: rgba(186, 29, 36, 1)
 }
 
-
 .s-border {
-  border: 2px solid #ba1d24;
-  padding: 5px 30px;
+  width: 160px;
+  height: 40px;
+  border: 3px solid #ba1d24;
   color: #ba1d24;
-  font-size: 14px;
   text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .s-border:hover {
@@ -98,7 +100,7 @@ section {
   content: "";
   display: inline-block;
   border-top: .5rem solid #ba1d24;
-  width: 1rem;
+  width: 24px;
   top: 40%;
   position: absolute;
 }
@@ -770,6 +772,10 @@ Hero
   margin-right: 1rem;
 }
 
+.service .link{
+  display: flex;
+  justify-content: center;
+}
 /*
 # News
 */
@@ -912,13 +918,13 @@ Hero
   font-weight: 700;
 }
 
-.hire span {
+.hire .s-border{
   font-size: 14px;
   font-weight: 500;
-  border: 2px solid;
-  padding: 5px 50px;
+  border-color: #FFFFFF;
   text-transform: uppercase;
 }
+
 
 @media (max-width: 768px) {
   .hire p.hire-header {
@@ -1463,6 +1469,37 @@ footer .footer-top .footer-info a p {
   left: 7.5px;
   height: 100%;
 }
+
+.timeline-info-left{
+  text-align: right;
+  padding-right: 1em;
+}
+
+.timeline-info-right{
+  padding-left: 1em;
+}
+
+
+.timeline-info-date{
+  color: #BA1D24;
+  font-family: Hiragino Kaku Gothic Pro;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  display: inline-block;
+}
+
+.timeline-info-content {
+  font-size: 14px;
+  font-family: Hiragino Kaku Gothic Pro;
+  font-style: normal;
+  font-weight: normal;
+  word-wrap: break-word;
+  white-space: -moz-pre-wrap;
+  white-space: pre-wrap;
+}
+
+
 /*
 faq
 */
