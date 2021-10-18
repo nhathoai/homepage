@@ -1686,6 +1686,30 @@ faq
   margin-top: 54px;
 }
 
+@media (max-width: 1300px) {
+  #content-timeline{
+    padding: 60px 60px;
+  }
+  .faq-category .faq-header .row{
+    grid-template-columns: repeat(auto-fit, 48%);
+  }
+}
+
+@media (max-width: 900px) {
+  .faq-category{
+    padding: 3rem 10px;
+  }
+
+  .faq-category .faq-header .row{
+    grid-template-columns: repeat(auto-fit, 100%);
+  }
+}
+
+@media (max-width: 768px) {
+  .faq-content .container{
+    padding: 0;
+  }
+}
 /*
 # Error
 */
