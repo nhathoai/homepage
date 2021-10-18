@@ -1449,7 +1449,7 @@ footer .footer-top .footer-info a p {
   position: relative;
 }
 
-.timeline-marker:before {
+.timeline-item .timeline-marker:before {
   background: #BA1D24;
   border-radius: 100%;
   content: "";
@@ -1459,7 +1459,7 @@ footer .footer-top .footer-info a p {
   width: 16px;
 }
 
-.timeline-marker:after {
+.timeline-item .timeline-marker:after {
   content: "";
   width: 1px;
   background: #5C5C5C;
@@ -1469,6 +1469,9 @@ footer .footer-top .footer-info a p {
   /* bottom: 0; */
   left: 7.5px;
   height: 100%;
+}
+.timeline-item:last-child .timeline-marker:after{
+  content: none;
 }
 
 .timeline-info-left{
