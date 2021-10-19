@@ -1064,7 +1064,6 @@ footer .footer-top .footer-info  p:not(.name, .mail) {
 
 
 .footer .footer-top .footer-info .mail {
-  text-transform: uppercase;
   margin: 15px 0;
 }
 
