@@ -155,6 +155,7 @@ let main = (function () {
     let pageHistory = window.location.href.indexOf("company");
   
     if(pageHistory >= 0){
+      let hash = select('.office .container .row', true);
       let header = select('#header');
       let offset = header.offsetHeight;
       let selectors = select('.office .container .row', true);
@@ -162,14 +163,16 @@ let main = (function () {
       if (!header.classList.contains('header-scrolled')) {
         offset -= 10
       }
-      let top = selectors[index].offsetTop;
-  
-      window.scrollTo({
-        top: top - offset,
-        behavior: 'smooth'
-      })
+      if(index >= 0 && hash.length > 0){
+        let top = selectors[index >= 0 ? index: hash.length - 1 ].offsetTop;
+
+        window.scrollTo({
+          top: top - offset,
+          behavior: 'smooth'
+        })
+      }
     }else{
-      window.location.href = "./company";
+      window.location.href = "./company#" + index;
     }
   }
 
