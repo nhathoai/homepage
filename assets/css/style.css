@@ -1043,7 +1043,6 @@ Hero
   }
 }
 
-
 .footer .footer-top .footer-info {
   margin-bottom: 15px;
   font-family: 'Montserrat', sans-serif;
@@ -1054,7 +1053,7 @@ footer .footer-top .footer-info a {
 }
 
 footer .footer-top .footer-info  p:not(.name, .mail) {
-  margin-bottom: 0;
+  margin-bottom: 5px;
 }
 
 .footer .footer-top .footer-info .name {
