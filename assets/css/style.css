@@ -2,6 +2,15 @@
 # General
 --------------------------------------------------------------*/
 
+ /* @media (min-width: 1200px){
+.container, .container-lg, .container-md, .container-sm, .container-xl {
+    max-width: 1046px;
+}   */
+
+/* @media (min-width: 1400px){
+.container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    max-width: 1320px;
+} */
 
 :root {
   scroll-behavior: smooth;
@@ -72,11 +81,67 @@ a:hover {
   font-size: 200px;
 }
 
+.pd-0{
+  padding: 0!important
+}
+
+.st-14-fw-6 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: -0.015em;
+  color: #5C5C5C;
+}
+
+.st-14-fw-5 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: -0.015em;
+  color: #5C5C5C;
+}
+
+.st-14-un{
+  font-family: 'Hiragino Kaku Gothic Pro';
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: -0.015em;
+  text-decoration-line: underline;
+  color: #BA1D24;
+}
+
+.st-18-bold {
+  font-family: 'Hiragino Kaku Gothic Pro';
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 34px;
+  letter-spacing: -0.015em;
+  color: #5C5C5C;
+}
+
+.under{
+  text-decoration-line: underline;
+}
+
+.mr-t-36{
+  margin-top: 36px;
+}
+
+.mr-bt-36{
+  margin-bottom: 36px;
+}
 /*--------------------------------------------------------------
 # Sections
 --------------------------------------------------------------*/
+#main-top{
+  height: 316px;
+}
 section {
-  padding: 50px 0;
+  /* padding: 50px 0; */
   overflow: hidden;
 }
 
@@ -1765,6 +1830,7 @@ Privacy
   font-family: "Hiragino Sans", "Hiragino Kaku Gothic Std";
   padding: 100px 70px;
 }
+
 .privacy p {
   font-size: 12px;
   letter-spacing: -0.015em;
@@ -1787,6 +1853,7 @@ Privacy
   }
 
 }
+
 @media (max-width: 900px) {
 
   #privacy .container-fluid {
@@ -1803,4 +1870,114 @@ Privacy
   #privacy .container-fluid {
     padding: 3rem 1rem;
   }
+}
+
+/*
+# Contact
+*/
+#contact{
+  display: flex;
+  justify-content: space-around;
+}
+
+#contact .container {
+  margin: 88px 0px;
+  box-shadow: 0px 4px 10px rgb(0 0 0 / 25%);
+}
+
+.contact form {
+  margin: 64px auto;
+  max-width: 480px;
+}
+
+.contact form p {
+  font-family: Hiragino Kaku Gothic Pro;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 20px;
+  letter-spacing: -0.015em;
+  color: #BA1D24;
+}
+
+.contact form div.error {
+  display: none;
+}
+
+.contact form div label:first-child {
+  font-family: Hiragino Kaku Gothic Pro;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 16px;
+  padding-bottom: 16px;
+  letter-spacing: -0.015em;
+  color: #5C5C5C;
+  padding-top: 32px;
+}
+
+.contact form input:not([type='radio'], [type='checkbox']) {
+  width: 480px;
+  height: 48px;
+  background: #F5F5F5;
+  border: none;
+  caret-color: auto;
+}
+
+.contact form select {
+  background: #F5F5F5;
+  border: none;
+  height: 48px;
+  font-family: Hiragino Kaku Gothic Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: -0.015em;
+  color: #5C5C5C;
+}
+
+.contact form input[type=radio],
+.contact form input[type=checkbox] {
+  width: 16px;
+  height: 16px;
+  margin-right: 12px;
+}
+
+.contact textarea {
+  height: 200px;
+  background: #F5F5F5;
+  border: none;
+  caret-color: auto;
+}
+
+.contact textarea:focus,
+.contact input[type=text]:focus,
+.contact input[type=email]:focus,
+.contact input[type=number]:focus {
+  border-color: #ba1d24;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem hsl(357deg 73% 42% / 20%);
+}
+
+.contact .contact-right {
+  /* width: 320px; */
+  padding: 135px 24px;
+  background: #F5F5F5;
+}
+
+.contact button{
+  width: 320px;
+  height: 64px;
+  left: 230px;
+  top: 1138px;
+  border: 3px solid #BA1D24;
+  box-sizing: border-box;
+  background: #FFFFFF;
+  color: #BA1D24;
+}
+
+.contact button:hover{
+  background: #BA1D24;
+  color: #FFFFFF;
 }
