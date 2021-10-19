@@ -163,7 +163,7 @@ let main = (function () {
       if (!header.classList.contains('header-scrolled')) {
         offset -= 10
       }
-      if(index >= 0 && hash.length > 0){
+      if(index >= 0 || hash.length > 0){
         let top = selectors[index >= 0 ? index: hash.length - 1 ].offsetTop;
 
         window.scrollTo({
@@ -173,7 +173,7 @@ let main = (function () {
       }
       
     }else{
-      if(index > 0){
+      if(index >= 0){
         window.location.href = "./company#" + index;
       }
     }
