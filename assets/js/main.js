@@ -173,7 +173,9 @@ let main = (function () {
       }
       
     }else{
-      window.location.href = "./company#" + index;
+      if(index > 0){
+        window.location.href = "./company#" + index;
+      }
     }
     return false;
   }
