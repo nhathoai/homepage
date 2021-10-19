@@ -155,7 +155,7 @@ let main = (function () {
     let pageHistory = window.location.href.indexOf("company");
   
     if(pageHistory >= 0){
-      let hash = select('.office .container .row', true);
+      let hash = window.location.hash.substr(1);
       let header = select('#header');
       let offset = header.offsetHeight;
       let selectors = select('.office .container .row', true);
@@ -164,7 +164,7 @@ let main = (function () {
         offset -= 10
       }
       if(index >= 0 || hash.length > 0){
-        let top = selectors[index >= 0 ? index: hash.length - 1 ].offsetTop;
+        let top = selectors[index >= 0 ? index: hash].offsetTop;
 
         window.scrollTo({
           top: top - offset,
