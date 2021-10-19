@@ -171,9 +171,11 @@ let main = (function () {
           behavior: 'smooth'
         })
       }
+      return false;
     }else{
       window.location.href = "./company#" + index;
     }
+
   }
 
   openHistory();
