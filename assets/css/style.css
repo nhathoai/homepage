@@ -11,7 +11,7 @@ body {
   /* font-family: "Open Sans", sans-serif; */
   /* font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, メイリオ, Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", "ＭＳ ゴシック", "MS Gothic", "Noto Sans CJK JP", TakaoPGothic, sans-serif; */
   color: #5C5C5C;
-  font-family: Hiragino Kaku Gothic Pro ;
+  font-family: "Hiragino Kaku Gothic Pro";
   caret-color: transparent;
 }
 
@@ -775,10 +775,11 @@ Hero
   margin-right: 1rem;
 }
 
-.service .link{
+.service .link {
   display: flex;
   justify-content: center;
 }
+
 /*
 # News
 */
@@ -921,7 +922,7 @@ Hero
   font-weight: 700;
 }
 
-.hire .s-border{
+.hire .s-border {
   font-size: 14px;
   font-weight: 500;
   border-color: #FFFFFF;
@@ -1052,7 +1053,7 @@ footer .footer-top .footer-info a {
   font-size: 12px;
 }
 
-footer .footer-top .footer-info  p:not(.name, .mail) {
+footer .footer-top .footer-info p:not(.name, .mail) {
   margin-bottom: 5px;
 }
 
@@ -1152,6 +1153,7 @@ footer .footer-top .footer-info  p:not(.name, .mail) {
   font-size: 14px;
   font-weight: normal;
 }
+
 @media (max-width: 768px) {
   .main-top__link {
     margin-top: 60px;
@@ -1159,6 +1161,7 @@ footer .footer-top .footer-info  p:not(.name, .mail) {
     font-size: 12px;
   }
 }
+
 #content,
 #content-timeline {
   padding: 88px 160px;
@@ -1167,7 +1170,7 @@ footer .footer-top .footer-info  p:not(.name, .mail) {
 
 #content .container-fluid {
   background: #fff;
-  padding: 7rem 6rem;
+  padding: 100px 70px;
 }
 
 #content .container-fluid .row {
@@ -1182,7 +1185,7 @@ footer .footer-top .footer-info  p:not(.name, .mail) {
 
 
 
-#content .row{
+#content .row {
   background: linear-gradient(to right, #000000 15%, #BA1D24 20%) bottom;
   background-repeat: no-repeat;
   background-size: 100% 2px;
@@ -1202,19 +1205,19 @@ footer .footer-top .footer-info  p:not(.name, .mail) {
 @media (min-width: 1400px) {
   #content .container-fluid {
     background: #fff;
-    padding: 7rem 12rem;
+    padding: 100px 12rem;
   }
 }
 
-@media (max-width: 1300px)  {
+@media (max-width: 1300px) {
   #content {
     padding: 60px 60px;
   }
 
 
-   #content .container-fluid {
+  #content .container-fluid {
     padding: 1rem 2rem;
-  } 
+  }
 }
 
 @media (max-width: 900px) {
@@ -1232,7 +1235,7 @@ footer .footer-top .footer-info  p:not(.name, .mail) {
   }
 
   #content .container-fluid {
-    padding: 0rem 1rem;
+    padding: 3rem 1rem;
   }
 
   #content .name::before {
@@ -1270,7 +1273,7 @@ footer .footer-top .footer-info  p:not(.name, .mail) {
   line-height: 2.2;
 }
 
-#office .row{
+#office .row {
   justify-content: center;
 }
 
@@ -1278,12 +1281,13 @@ footer .footer-top .footer-info  p:not(.name, .mail) {
   margin-bottom: 1rem;
 }
 
-#office .office-content{
+#office .office-content {
   margin-top: 1.5em;
   width: 420px;
 }
+
 @media (max-width: 440px) {
-  #office .office-content{
+  #office .office-content {
     width: 100%;
   }
 }
@@ -1308,12 +1312,12 @@ footer .footer-top .footer-info  p:not(.name, .mail) {
   font-family: 'Montserrat', sans-serif;
 }
 
-#office pre{
+#office pre {
   font-size: 12px;
 }
 
-#office .office-content p.office-link{
-  font-family: Hiragino Kaku Gothic Pro;
+#office .office-content p.office-link {
+  font-family: "Hiragino Kaku Gothic Pro";
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -1430,11 +1434,11 @@ footer .footer-top .footer-info  p:not(.name, .mail) {
   height: 111px;
 }
 
-.timeline-item.timeline-item-short{
+.timeline-item.timeline-item-short {
   height: 35px;
 }
 
-.timeline-item.timeline-item-last{
+.timeline-item.timeline-item-last {
   height: 54px;
 }
 
@@ -1467,6 +1471,7 @@ footer .footer-top .footer-info  p:not(.name, .mail) {
   position: absolute;
   width: 16px;
 }
+
 .timeline-item .timeline-marker.circle:before {
   background: transparent;
   border: 4px solid #BA1D24;
@@ -1484,26 +1489,28 @@ footer .footer-top .footer-info  p:not(.name, .mail) {
   border: 1px solid #5C5C5C;
   background: #5C5C5C;
 }
-.timeline-item:last-child{
+
+.timeline-item:last-child {
   height: auto;
 }
-.timeline-item:last-child .timeline-marker:after{
+
+.timeline-item:last-child .timeline-marker:after {
   content: none;
 }
 
-.timeline-info-left{
+.timeline-info-left {
   text-align: right;
   padding-right: 24px;
 }
 
-.timeline-info-right{
+.timeline-info-right {
   padding-left: 24px;
 }
 
 
-.timeline-info-date{
+.timeline-info-date {
   color: #BA1D24;
-  font-family: Hiragino Kaku Gothic Pro;
+  font-family: "Hiragino Kaku Gothic Pro";
   font-style: normal;
   font-weight: bold;
   font-size: 20px;
@@ -1512,21 +1519,22 @@ footer .footer-top .footer-info  p:not(.name, .mail) {
 
 .timeline-info-content {
   font-size: 14px;
-  font-family: Hiragino Kaku Gothic Pro;
+  font-family: "Hiragino Kaku Gothic Pro";
   font-style: normal;
   font-weight: normal;
   word-wrap: break-word;
   white-space: -moz-pre-wrap;
   white-space: pre-wrap;
 }
+
 @media (max-width: 1300px) {
-  #content-timeline{
+  #content-timeline {
     padding: 60px 60px;
   }
 }
 
 @media (max-width: 900px) {
-  #content-timeline{
+  #content-timeline {
     padding: 60px 10px;
   }
 }
@@ -1535,9 +1543,11 @@ footer .footer-top .footer-info  p:not(.name, .mail) {
   .timeline-item.timeline-item-short {
     height: 45px;
   }
-  .timeline-item{
+
+  .timeline-item {
     height: 171px;
   }
+
   .timeline-item.timeline-item-last {
     height: 64px;
   }
@@ -1565,7 +1575,7 @@ faq
 
 .faq-category .faq-header button {
   height: 64px;
-  font-family: Hiragino Kaku Gothic Pro;
+  font-family: "Hiragino Kaku Gothic Pro";
   border: none;
   background: #fff;
   border-radius: 10px;
@@ -1591,7 +1601,7 @@ faq
 .faq-content .accordion-button,
 .faq-content .accordion-body {
   color: #5C5C5C;
-  font-family: Hiragino Kaku Gothic Pro;
+  font-family: "Hiragino Kaku Gothic Pro";
   font-style: normal;
   font-weight: bold;
   font-size: 20px;
@@ -1621,7 +1631,7 @@ faq
 
 .faq-content .accordion-header .accordion-button:before {
   content: "Q";
-  font-family: Hiragino Kaku Gothic Pro;
+  font-family: "Hiragino Kaku Gothic Pro";
   font-style: normal;
   font-weight: bold;
   font-size: 20px;
@@ -1633,7 +1643,7 @@ faq
 
 .faq-content .accordion-body:before {
   content: "A";
-  font-family: Hiragino Kaku Gothic Pro;
+  font-family: "Hiragino Kaku Gothic Pro";
   font-style: normal;
   font-weight: bold;
   font-size: 20px;
@@ -1672,7 +1682,7 @@ faq
 
 .faq-content-title {
 
-  font-family: Hiragino Kaku Gothic Pro;
+  font-family: "Hiragino Kaku Gothic Pro";
   font-style: normal;
   font-weight: bold;
   font-size: 30px;
@@ -1690,14 +1700,14 @@ faq
     background: rgb(245 245 245);
   }
 
-  .faq-category .faq-header .row{
+  .faq-category .faq-header .row {
     grid-template-columns: repeat(auto-fit, 48%);
   }
 }
 
 @media (max-width: 900px) {
 
-  .faq-category .faq-header .row{
+  .faq-category .faq-header .row {
     grid-template-columns: repeat(auto-fit, 100%);
   }
 }
@@ -1708,20 +1718,22 @@ faq
     padding: 60px 10px;
     background: rgb(245 245 245);
   }
-  
-  .faq-content .container{
+
+  .faq-content .container {
     padding: 0;
   }
 
-  .faq-content-title{
+  .faq-content-title {
     padding-left: 32px;
     font-size: 20px;
   }
 
-  .faq-content .accordion-button, .faq-content .accordion-body{
+  .faq-content .accordion-button,
+  .faq-content .accordion-body {
     font-size: 15px;
   }
 }
+
 /*
 # Error
 */
@@ -1737,4 +1749,58 @@ faq
   justify-content: center;
   align-items: center;
   letter-spacing: -0.015em;
+}
+
+/*
+Privacy
+*/
+#privacy {
+  padding: 88px 160px;
+  background: rgb(245 245 245);
+}
+
+#privacy .container-fluid {
+  background: #FFFFFF;
+  /* font-family: "Hiragino Kaku Gothic Pro"; */
+  font-family: "Hiragino Sans", "Hiragino Kaku Gothic Std";
+  padding: 100px 70px;
+}
+.privacy p {
+  font-size: 12px;
+  letter-spacing: -0.015em;
+  line-height: 1.8;
+}
+
+.privacy h3 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  letter-spacing: -0.015em;
+  margin-top: 38px;
+  margin-bottom: 15px;
+}
+
+
+@media (max-width: 1300px) {
+  #privacy {
+    padding: 60px 60px;
+  }
+
+}
+@media (max-width: 900px) {
+
+  #privacy .container-fluid {
+    /* padding: 1rem 2rem; */
+  }
+}
+
+
+@media (max-width: 768px) {
+  #privacy {
+    padding: 60px 10px;
+  }
+
+  #privacy .container-fluid {
+    padding: 3rem 1rem;
+  }
 }
