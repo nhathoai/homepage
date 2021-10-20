@@ -1975,6 +1975,9 @@ Privacy
   background: #F5F5F5;
   border: none;
   caret-color: auto;
+  padding: 0.75rem;
+  font-size: 0.8rem;
+  color: #5C5C5C;
 }
 
 .contact textarea:focus,
