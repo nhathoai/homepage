@@ -1992,8 +1992,9 @@ Privacy
 .contact .contact-right {
   /* width: 320px; */
   padding: 135px 24px;
-  background: #F5F5F5;    background: hsl(357deg 73% 42% / 10%);
-  
+  background: #F5F5F5;
+  background: hsl(357deg 73% 42% / 10%);
+
 }
 
 .contact button {
@@ -2010,4 +2011,53 @@ Privacy
 .contact button:hover {
   background: #BA1D24;
   color: #FFFFFF;
+}
+
+.lang-phone {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  z-index: 1;
+  overflow-y: scroll;
+  background-color: white;
+  box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
+  position: absolute;
+  top: -202px;
+  width: 300px;
+  max-height: 200px;
+}
+
+.lang-phone li {
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  padding: 10px 20px 10px 5px;
+}
+
+.lang-phone li:hover {
+  background: #e9ecef;
+  cursor: pointer;
+}
+
+.lang-phone li img {
+  width: 25px;
+  height: 20px;
+  border: 1px solid hsl(0deg 0% 0% / 8%)
+}
+
+.lang-phone li span {
+  padding: 0 1rem;
+  font-size: 16px;
+}
+
+.select-flag {
+
+  position: relative;
+}
+
+.flag {
+  width: 100px;
+  background: whitesmoke;
+  height: 100%;
+  margin-right: 5px;
 }

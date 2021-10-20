@@ -51,12 +51,12 @@
         <section id="contact" class="contact">
             <div class="container">
                 <div class="row ">
-                    <div class="d-flex flex-row pd-0 justify-content-between form-row"  >
+                    <div class="d-flex flex-row pd-0 justify-content-between form-row">
                         <form action="#" class="d-flex flex-column needs-validation" novalidate>
                             <p>お気軽にお問い合わせください。</p>
                             <div class="d-flex flex-column">
                                 <label for="">貴社名</label>
-                                <input type="text" name="company" maxlength="127" value=""  class="">
+                                <input type="text" name="company" maxlength="127" value="" class="">
                             </div>
                             <div class="d-flex flex-column">
                                 <label for="" class="required">お名前</label>
@@ -71,23 +71,67 @@
                             <div>
                                 <label for="">電話番号</label>
                                 <div class="d-flex flex-row">
-                                    <select name="" id="" style="
-                                    margin-right: 15px;
-                                ">
-                                        <option value="">ベトナム(+84)</option>
-                                        <option value="">日本(+81)</option>
-                                        <option value="">シンガポール(+65)</option>
-                                        <option value="">ミャンマー(+95)</option>
-                                        <option value="">マレーシア(+60)</option>
-                                        <option value="">タイ(+66)</option>
-                                        <option value="">ラオス(+856)</option>
-                                        <option value="">カンボジア(+855)</option>
-                                        <option value="">フィリピン(+63)</option>
-                                        <option value="">ブルネイ(+673)</option>
-                                        <option value="">インドネシア(+62)</option>
-                                        <option value="">韓国(+82)</option>
-                                        <option value="">中国(+86)</option>
-                                    </select>
+                                    <div class="select-flag">
+                                        <div class="flag">
+
+                                        </div>
+                                        <ul class="lang-phone">
+                                            <li value="">
+                                                <img src="./assets/img/language/vn.svg" alt="">
+                                                <span>ベトナム (+84)</span>
+                                            </li>
+                                            <li value="">
+                                                <img src="./assets/img/language/jp.svg" alt="">
+                                                <span>日本 (+81)</span>
+                                            </li>
+                                            <li value="">
+                                                <img src="./assets/img/language/sg.svg" alt="">
+                                                <span>シンガポール (+65)</span>
+                                                <span></span>
+                                            </li>
+                                            <li value="">
+                                                <img src="./assets/img/language/my.svg" alt="">
+                                                <span>ミャンマー (+95)</span>
+                                            </li>
+                                            <li value="">
+                                                <img src="./assets/img/language/mm.svg" alt="">
+                                                <span>マレーシア (+60)</span>
+                                            </li>
+                                            <li value="">
+                                                <img src="./assets/img/language/th.svg" alt="">
+                                                <span>タイ (+66)</span>
+                                            </li>
+                                            <li value="">
+                                                <img src="./assets/img/language/la.svg" alt="">
+                                                <span>ラオス (+856)</span>
+                                            </li>
+                                            <li value="">
+                                                <img src="./assets/img/language/cn.svg" alt="">
+                                                <span>カンボジア (+855)</span>
+                                            </li>
+                                            <li value="">
+                                                <img src="./assets/img/language/ph.svg" alt="">
+                                                <span>フィリピン (+63)</span>
+                                            </li>
+
+                                            <li value="">
+                                                <img src="./assets/img/language/bn.svg" alt="">
+                                                <span>ブルネイ (+673)</span>
+                                            </li>
+                                            <li value="">
+                                                <img src="./assets/img/language/id.svg" alt="">
+                                                <span>インドネシア (+62)</span>
+                                            </li>
+                                            <li value="">
+                                                <img src="./assets/img/language/kr.svg" alt="">
+                                                <span>韓国 (+82)</span>
+                                            </li>
+                                            <li value="">
+                                                <img src="./assets/img/language/cn.svg" alt="">
+                                                <span>中国 (+86)</span>
+                                            </li>
+                                        </ul>
+                                    </div>
                                     <input type="text" name="tel" maxlength="30" value="">
                                 </div>
                                 <div class="error"></div>
@@ -100,7 +144,7 @@
                                     </div>
 
                                     <div class="d-flex flex-row align-items-center" style="margin-bottom: 10px;">
-                                        <input type="radio" name="radio-group"  value="bpo">
+                                        <input type="radio" name="radio-group" value="bpo">
                                         <label for="" class="fz-14">BPOソリューションについて</label>
                                     </div>
 
@@ -122,14 +166,13 @@
                             </div>
                             <div class="d-flex flex-column">
                                 <label for="">お問い合わせ内容</label>
-                                <textarea maxlength="200" type="text" name="comment"
-                                    ></textarea><label for="content"></label>
+                                <textarea maxlength="200" type="text" name="comment"></textarea><label
+                                    for="content"></label>
                                 <div class="error"></div>
                             </div>
                             <div class="d-flex align-items-center justify-content-center flex-column mr-t-36 mr-bt-36">
                                 <div class="d-flex  align-items-center justify-content-center">
-                                    <input type="checkbox" name="accept-terms"
-                                    value="false">
+                                    <input type="checkbox" name="accept-terms" value="false">
                                     <div class="st-18-bold under">個人情報保護方針に同意してください。</div>
                                 </div>
                                 <div class="error"></div>
