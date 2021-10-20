@@ -26,7 +26,6 @@ let main = (function () {
       select(el, all).addEventListener(type, listener)
     }
   }
-
   /**
    * Easy on scroll event listener 
    */
@@ -182,28 +181,32 @@ let main = (function () {
 
   openHistory();
 
-  // window.addEventListener('load', function() {
-  //   // Fetch all the forms we want to apply custom Bootstrap validation styles to
-  //   var forms = document.getElementsByClassName('needs-validation');
-  //   // Loop over them and prevent submission
-  //   var validation = Array.prototype.filter.call(forms, function(form) {
-  //     form.addEventListener('submit', function(event) {
-  //       if (form.checkValidity() === false) {
-  //         event.preventDefault();
-  //         event.stopPropagation();
-  //       }
-  //       form.classList.add('was-validated');
-  //     }, false);
-  //   });
-  // }, false);
-
   on('submit', '.contact form', function (e) {
-    validated([this.elements["radio-group"] ,this.elements["name"], this.elements["email"], this.elements["tel"], this.elements["comment"], this.elements["accept-terms"]]);
+    validated([this.elements["radio-group"] ,
+              this.elements["name"], 
+              this.elements["email"], 
+              this.elements["tel"], 
+              this.elements["comment"], 
+              this.elements["accept-terms"]]);
 
     e.preventDefault();
     e.stopPropagation();
   })
+  
+  on('focusout', '.contact input', function (e) {
+    validated([this]);
+  }, true);
+
+  on('focusout', '.contact textarea', function (e) {
+    validated([this]);
+  }, true);
+
+  on('click', '.contact input[type=checkbox]', function (e) {
+    validated([this]);
+  }, true);
+
   on('click', '[name=radio-group]', function (e) {
+    
     const selectEle = select('.content-service');
     selectEle.innerHTML = "";
     if (this.value == 'it') {
@@ -226,35 +229,37 @@ let main = (function () {
   }, true)
 
   function validated(eles) {
-    const err = false;
+    let err = false;
+    let errEle;
+    let txt = "";
 
     eles.forEach(function name(ele) {
       const name =  ele && ele.name;
       const val = ele.value;
-      let errEle =  ele.parentNode && (ele.parentNode.querySelector('.error') || ele.parentNode.parentNode.querySelector('.error'))
+      errEle =  ele.parentNode && (ele.parentNode.querySelector('.error') || ele.parentNode.parentNode.querySelector('.error'));
 
       if (name == "name") {
-        errEle.innerText = (val.length <= 1) ? "貴社名は1文字以上で入力してください。" : "";
-        errEle.innerText = (val.length == 0) ? "お名前を入力してください" : "";
+        txt = (val.length <= 1) ? "貴社名は1文字以上で入力してください。" : "";
+        txt = (val.length == 0) ? "お名前を入力してください" : txt;
       }
 
       if (name == "email") {
-        errEle.innerText = (/\S+@\S+\.\S+/.test(val)) ? "有効なメールアドレスを入力してください" : "";
-        errEle.innerText = (val.length == 0) ? "メールアドレスを入力してください" : "";
+        txt = (/\S+@\S+\.\S+/.test(val)) ? "有効なメールアドレスを入力してください" : "";
+        txt = (val.length == 0) ? "メールアドレスを入力してください" : txt;
       }
 
       if (name == "tel") {
         const match = val.match(/\d/g);
-        errEle.innerText = (!match || (match && match.length < 8)) ? "有効な電話番号を入力してください" : "";
+        txt = (!match || (match && match.length < 8)) ? "有効な電話番号を入力してください" : "";
       }
 
       if (name == "comment") {
-        errEle.innerText = (val.length <= 1) ? "貴社名は1文字以上で入力してください。" : "";
-        errEle.innerText = (val.length == 0) ? "お問い合わせ内容を記入してください" : "";
+        txt = (val.length <= 1) ? "貴社名は1文字以上で入力してください。" : "";
+        txt = (val.length == 0) ? "お問い合わせ内容を記入してください" : txt;
       }
 
       if (name == "accept-terms") {
-        errEle.innerText = (!ele.checked) ? "当社個人情報保護方針に同意してください" : "";
+        txt = (!ele.checked) ? "当社個人情報保護方針に同意してください" : "";
       }
       
       if (ele[0] && ele[0].name == 'radio-group') {
@@ -263,9 +268,16 @@ let main = (function () {
         })
 
         errEle = ele[0].parentNode.parentNode.querySelector('.error');
-        errEle.innerText = (arrChecked == 0) ? "お問い合わせ内容を選択してください" : "";
+        txt = (arrChecked == 0) ? "お問い合わせ内容を選択してください" : "";
+      }
+
+      errEle.innerText = txt;
+      if(txt){
+        err = true;
       }
     })
+
+    return err;
   }
   return {
     openHistory: openHistory
