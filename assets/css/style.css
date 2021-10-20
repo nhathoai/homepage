@@ -2,7 +2,7 @@
 # General
 --------------------------------------------------------------*/
 
- /* @media (min-width: 1200px){
+/* @media (min-width: 1200px){
 .container, .container-lg, .container-md, .container-sm, .container-xl {
     max-width: 1046px;
 }   */
@@ -86,8 +86,8 @@ a:hover {
   font-size: 200px;
 }
 
-.pd-0{
-  padding: 0!important
+.pd-0 {
+  padding: 0 !important
 }
 
 .st-14-fw-6 {
@@ -110,7 +110,7 @@ a:hover {
   color: #5C5C5C;
 }
 
-.st-14-un{
+.st-14-un {
   font-family: 'Hiragino Kaku Gothic Pro';
   font-size: 14px;
   line-height: 14px;
@@ -128,21 +128,22 @@ a:hover {
   color: #5C5C5C;
 }
 
-.under{
+.under {
   text-decoration-line: underline;
 }
 
-.mr-t-36{
+.mr-t-36 {
   margin-top: 36px;
 }
 
-.mr-bt-36{
+.mr-bt-36 {
   margin-bottom: 36px;
 }
+
 /*--------------------------------------------------------------
 # Sections
 --------------------------------------------------------------*/
-#main-top{
+#main-top {
   height: 316px;
 }
 
@@ -150,9 +151,10 @@ section#introduce,
 section#service,
 section#news,
 section#blog,
-section#hire{
+section#hire {
   padding: 56px 0px;
 }
+
 section {
   /* padding: 50px 0; */
   overflow: hidden;
@@ -1889,7 +1891,7 @@ Privacy
 /*
 # Contact
 */
-#contact{
+#contact {
   display: flex;
   justify-content: space-around;
 }
@@ -1931,16 +1933,21 @@ Privacy
   color: #5C5C5C;
   padding-top: 32px;
 }
+
 .contact form div label.required:first-child:after {
-  content:" *";
+  content: " *";
   color: red;
 }
+
 .contact form input:not([type='radio'], [type='checkbox']) {
   width: 480px;
   height: 48px;
   background: #F5F5F5;
   border: none;
   caret-color: auto;
+  padding: 0.75rem;
+  font-size: 0.8rem;
+  color: #5C5C5C;
 }
 
 .contact form select {
@@ -1985,7 +1992,7 @@ Privacy
   background: #F5F5F5;
 }
 
-.contact button{
+.contact button {
   width: 320px;
   height: 64px;
   left: 230px;
@@ -1996,7 +2003,7 @@ Privacy
   color: #BA1D24;
 }
 
-.contact button:hover{
+.contact button:hover {
   background: #BA1D24;
   color: #FFFFFF;
 }
