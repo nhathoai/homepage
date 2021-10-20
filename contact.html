@@ -37,10 +37,10 @@
             <div class="main-top__link">
                 <a href="./">
                     トップ
-                </a> > サイトポリシー&プライバシーポリシー
+                </a> > お問い合わせ
             </div>
             <div class="row">
-                <p>サイトポリシー&プライバシーポリシー</p>
+                <p>お問い合わせ</p>
             </div>
         </div>
     </section><!-- End Hero -->
@@ -51,23 +51,22 @@
         <section id="contact" class="contact">
             <div class="container">
                 <div class="row ">
-                    <div class="d-flex flex-row pd-0 justify-content-between">
-                        <form action="#" class="d-flex flex-column">
+                    <div class="d-flex flex-row pd-0 justify-content-between form-row"  >
+                        <form action="#" class="d-flex flex-column needs-validation" novalidate>
                             <p>お気軽にお問い合わせください。</p>
                             <div class="d-flex flex-column">
                                 <label for="">会社名</label>
-                                <input type="text" name="companyName" maxlength="127" value="">
-                                <div class="error">貴社名を入力してください。</div>
+                                <input type="text" name="companyName" maxlength="127" value=""  class="">
                             </div>
                             <div class="d-flex flex-column">
-                                <label for="">お名前*</label>
-                                <input type="text" name="companyName" maxlength="127" value="">
-                                <div class="error">お名前を入力してください。</div>
+                                <label for="" class="required">お名前</label>
+                                <input type="text" name="name" maxlength="127" value="" required>
+                                <div class="invalid-feedback">お名前を入力してください</div>
                             </div>
                             <div class="d-flex flex-column">
-                                <label for="">メールアドレス**</label>
-                                <input type="email" name="email" maxlength="100" value="">
-                                <div class="error">メールアドレスを入力してください。</div>
+                                <label for="" class="required">メールアドレス</label>
+                                <input type="email" name="email" maxlength="100" value="" required>
+                                <div class="invalid-feedback">メールアドレスを入力してください</div>
                             </div>
                             <div>
                                 <label for="">電話番号</label>
@@ -89,7 +88,7 @@
                                         <option value="">韓国(+82)</option>
                                         <option value="">中国(+86)</option>
                                     </select>
-                                    <input type="email" name="email" maxlength="100" value="">
+                                    <input type="tel" name="tel" maxlength="30" value="">
                                 </div>
                                 <div class="error">有効な電話番号を入力してください。</div>
                             </div>
@@ -123,9 +122,9 @@
                             </div>
                             <div class="d-flex flex-column">
                                 <label for="">お問い合わせ内容</label>
-                                <textarea maxlength="200" type="text" name="content"
-                                    class="sc-qQxXP efhDEa sc-qQMSE hfjXpC"></textarea><label for="content"></label>
-                                <div class="sc-psCJM iWBtuO error">お問い合わせ内容を記入してください。</div>
+                                <textarea maxlength="200" type="text" name="comment"
+                                    ></textarea><label for="content"></label>
+                                <div>お問い合わせ内容を記入してください。</div>
                             </div>
                             <div class="d-flex flex-row align-items-center justify-content-center">
                                 <input type="checkbox" name="acceptTerms" class="mr-t-36 mr-bt-36"
@@ -133,7 +132,7 @@
                                 <div class="st-18-bold under">個人情報保護方針に同意してください。</div>
                             </div>
                             <div class="d-flex justify-content-center">
-                                <button type="submit" class="">Send</button>
+                                <button type="submit" class="contact-sm">Send</button>
                             </div>
                         </form>
                         <div class="contact-right lign-items-center justify-content-center">

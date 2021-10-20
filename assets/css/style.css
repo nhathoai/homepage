@@ -1930,7 +1930,10 @@ Privacy
   color: #5C5C5C;
   padding-top: 32px;
 }
-
+.contact form div label.required:first-child:after {
+  content:" *";
+  color: red;
+}
 .contact form input:not([type='radio'], [type='checkbox']) {
   width: 480px;
   height: 48px;
