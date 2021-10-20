@@ -56,17 +56,17 @@
                             <p>お気軽にお問い合わせください。</p>
                             <div class="d-flex flex-column">
                                 <label for="">会社名</label>
-                                <input type="text" name="companyName" maxlength="127" value=""  class="">
+                                <input type="text" name="company" maxlength="127" value=""  class="">
                             </div>
                             <div class="d-flex flex-column">
                                 <label for="" class="required">お名前</label>
                                 <input type="text" name="name" maxlength="127" value="" required>
-                                <div class="invalid-feedback">お名前を入力してください</div>
+                                <div class="error"></div>
                             </div>
                             <div class="d-flex flex-column">
                                 <label for="" class="required">メールアドレス</label>
                                 <input type="email" name="email" maxlength="100" value="" required>
-                                <div class="invalid-feedback">メールアドレスを入力してください</div>
+                                <div class="error"></div>
                             </div>
                             <div>
                                 <label for="">電話番号</label>
@@ -90,22 +90,22 @@
                                     </select>
                                     <input type="tel" name="tel" maxlength="30" value="">
                                 </div>
-                                <div class="error">有効な電話番号を入力してください。</div>
+                                <div class="error"></div>
                             </div>
                             <div class="d-flex flex-row justify-content-between" style=" margin-top: 60px;">
                                 <div>
                                     <div class="d-flex flex-row align-items-center" style="margin-bottom: 10px;">
-                                        <input type="radio" name="radio-group">
+                                        <input type="radio" name="radio-group" value="it">
                                         <label for="" class="fz-14">ITソリューションについて</label>
                                     </div>
 
                                     <div class="d-flex flex-row align-items-center" style="margin-bottom: 10px;">
-                                        <input type="radio" name="radio-group">
+                                        <input type="radio" name="radio-group"  value="bpo">
                                         <label for="" class="fz-14">BPOソリューションについて</label>
                                     </div>
 
                                     <div class="d-flex flex-row align-items-center" style="margin-bottom: 10px;">
-                                        <input type="radio" name="radio-group">
+                                        <input type="radio" name="radio-group" value="hr">
                                         <label for="" class="fz-14">HRソリューションについて</label>
                                     </div>
 
@@ -113,23 +113,25 @@
                                         <input type="radio" name="radio-group">
                                         <label for="" class="fz-14">その他</label>
                                     </div>
+                                    <div class="error"></div>
                                 </div>
-                                <select name="" id="">
-                                    <option value="">オフショア開発について</option>
-                                    <option value="">拠点進出について</option>
-                                    <option value="">お見積もりの相談/その他</option>
+                                <select name="" class="content-service">
                                 </select>
                             </div>
                             <div class="d-flex flex-column">
                                 <label for="">お問い合わせ内容</label>
                                 <textarea maxlength="200" type="text" name="comment"
                                     ></textarea><label for="content"></label>
-                                <div>お問い合わせ内容を記入してください。</div>
+                                <div class="error"></div>
                             </div>
-                            <div class="d-flex flex-row align-items-center justify-content-center">
-                                <input type="checkbox" name="acceptTerms" class="mr-t-36 mr-bt-36"
+                            <div >
+                                <div class="d-flex flex-row align-items-center justify-content-center">
+                                    <input type="checkbox" name="accept-terms" class="mr-t-36 mr-bt-36"
                                     value="false">
-                                <div class="st-18-bold under">個人情報保護方針に同意してください。</div>
+                                    <div class="st-18-bold under">個人情報保護方針に同意してください。</div>
+                                </div>
+                                <div class="error"></div>
+
                             </div>
                             <div class="d-flex justify-content-center">
                                 <button type="submit" class="contact-sm">Send</button>

@@ -198,11 +198,75 @@ let main = (function () {
   // }, false);
 
   on('submit', '.contact form', function (e) {
-    debugger
+    validated([this.elements["radio-group"] ,this.elements["name"], this.elements["email"], this.elements["tel"], this.elements["comment"], this.elements["accept-terms"]]);
+
     e.preventDefault();
     e.stopPropagation();
   })
+  on('click', '[name=radio-group]', function (e) {
+    const selectEle = select('.content-service');
+    selectEle.innerHTML = "";
+    if (this.value == 'it') {
+      selectEle.insertAdjacentHTML('beforeend', '<option value="オフショア開発について">オフショア開発について</option>');
+      selectEle.insertAdjacentHTML('beforeend', '<option value="拠点進出について">拠点進出について</option>');
+      selectEle.insertAdjacentHTML('beforeend', '<option value="お見積もりの相談">お見積もりの相談</option>');
+      selectEle.insertAdjacentHTML('beforeend', '<option value="その他">その他</option>');
+    } else if (this.value == 'bpo') {
+      selectEle.insertAdjacentHTML('beforeend', '<option value="CADアウトソーシングについて">CADアウトソーシングについて</option>');
+      selectEle.insertAdjacentHTML('beforeend', '<option value="拠点進出について">拠点進出について</option>');
+      selectEle.insertAdjacentHTML('beforeend', '<option value="お見積もりの相談">お見積もりの相談</option>');
+      selectEle.insertAdjacentHTML('beforeend', '<option value="その他">その他</option>');
+    } else if (this.value == 'hr') {
+      selectEle.insertAdjacentHTML('beforeend', '<option value="採用支援について">採用支援について</option>');
+      selectEle.insertAdjacentHTML('beforeend', '<option value="人材派遣について">人材派遣について</option>');
+      selectEle.insertAdjacentHTML('beforeend', '<option value="人事コンサルティングについて">人事コンサルティングについて</option>');
+      selectEle.insertAdjacentHTML('beforeend', '<option value="教育・ビジネス研修について">教育・ビジネス研修について</option>');
+      selectEle.insertAdjacentHTML('beforeend', '<option value="その他">その他</option>');
+    }
+  }, true)
 
+  function validated(eles) {
+    const err = false;
+
+    eles.forEach(function name(ele) {
+      const name =  ele && ele.name;
+      const val = ele.value;
+      let errEle =  ele.parentNode && (ele.parentNode.querySelector('.error') || ele.parentNode.parentNode.querySelector('.error'))
+
+      if (name == "name") {
+        errEle.innerText = (val.length <= 1) ? "貴社名は1文字以上で入力してください。" : "";
+        errEle.innerText = (val.length == 0) ? "お名前を入力してください" : "";
+      }
+
+      if (name == "email") {
+        errEle.innerText = (/\S+@\S+\.\S+/.test(val)) ? "有効なメールアドレスを入力してください" : "";
+        errEle.innerText = (val.length == 0) ? "メールアドレスを入力してください" : "";
+      }
+
+      if (name == "tel") {
+        const match = val.match(/\d/g);
+        errEle.innerText = (!match || (match && match.length < 8)) ? "有効な電話番号を入力してください" : "";
+      }
+
+      if (name == "comment") {
+        errEle.innerText = (val.length <= 1) ? "貴社名は1文字以上で入力してください。" : "";
+        errEle.innerText = (val.length == 0) ? "お問い合わせ内容を記入してください" : "";
+      }
+
+      if (name == "accept-terms") {
+        errEle.innerText = (!ele.checked) ? "当社個人情報保護方針に同意してください" : "";
+      }
+      
+      if (ele[0] && ele[0].name == 'radio-group') {
+        const arrChecked = Array.from(ele).filter(function name(ele) {
+          return ele.checked;
+        })
+
+        errEle = ele[0].parentNode.parentNode.querySelector('.error');
+        errEle.innerText = (arrChecked == 0) ? "お問い合わせ内容を選択してください" : "";
+      }
+    })
+  }
   return {
     openHistory: openHistory
   }
