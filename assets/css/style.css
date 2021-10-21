@@ -56,6 +56,7 @@ a:hover {
 .s-border:hover {
   background: #ba1d24;
   color: #fff;
+  box-shadow: rgb(155 155 155 / 40%) 1px 6px 15px 0px;
 }
 
 .fz-12 {
@@ -2022,7 +2023,7 @@ Privacy
   background-color: white;
   box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
   position: absolute;
-  top: -200px;
+  top: 48px;
   width: 300px;
   max-height: 200px;
   visibility: hidden;
@@ -2050,14 +2051,19 @@ Privacy
   border: 1px solid hsl(0deg 0% 0% / 8%)
 }
 
-.lang-phone li span {
-  padding: 0 1rem;
-  font-size: 16px;
+
+.select-flag span{
+    font-size: 14px;
 }
 
-.select-flag {
+.lang-phone span{
+  padding: 0 1rem;
+}
+
+.select-flag  {
   cursor: pointer;
   position: relative;
+  font-size: 1rem;
 }
 
 .flag {
@@ -2067,9 +2073,25 @@ Privacy
   margin-right: 5px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
+  padding: 0px 10px;
+  position: relative;
+}
+
+.flag img{
+  margin-right: 1rem;
 }
 .select-flag:hover .lang-phone{
   opacity: 1;
-  /* transition: visibility 0s, opacity 0.5s linear; */
+}
+
+.flag::before{
+  content: "";
+    background-image: url(../img/Arrow.svg);
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-position: center right;
+    position: absolute;
+    right: 5px;
 }
