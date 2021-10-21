@@ -2022,9 +2022,12 @@ Privacy
   background-color: white;
   box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
   position: absolute;
-  top: -202px;
+  top: -200px;
   width: 300px;
   max-height: 200px;
+  visibility: hidden;
+  transition: 0.1s;
+  opacity: 0;
 }
 
 .lang-phone li {
@@ -2037,9 +2040,11 @@ Privacy
 .lang-phone li:hover {
   background: #e9ecef;
   cursor: pointer;
+  z-index: 1;
+  position: relative;
 }
 
-.lang-phone li img {
+.select-flag  img {
   width: 25px;
   height: 20px;
   border: 1px solid hsl(0deg 0% 0% / 8%)
@@ -2051,13 +2056,20 @@ Privacy
 }
 
 .select-flag {
-
+  cursor: pointer;
   position: relative;
 }
 
 .flag {
-  width: 100px;
+  width: 200px;
   background: whitesmoke;
   height: 100%;
   margin-right: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.select-flag:hover .lang-phone{
+  opacity: 1;
+  /* transition: visibility 0s, opacity 0.5s linear; */
 }

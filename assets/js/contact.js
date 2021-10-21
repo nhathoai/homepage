@@ -119,3 +119,26 @@
 
         return err;
     }
+
+
+    on("click", '.lang-phone', function (e) {
+        const tagName = e.target.tagName.toLowerCase();
+        let liEle = e.target;
+
+        if(tagName == "img" || tagName == "span"){
+            liEle = e.target.parentNode;
+        }
+        
+        select('.flag').innerHTML = liEle.innerHTML;
+
+        select('.lang-phone').style.visibility = "hidden";
+
+    })
+
+    on("mouseover", '.select-flag', function (e) {
+        select('.lang-phone').style.visibility = "visible";
+    })
+
+    on("mouseout", '.select-flag', function (e) {
+        select('.lang-phone').style.visibility = "hidden";
+    })
