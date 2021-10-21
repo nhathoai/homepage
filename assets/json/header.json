@@ -1,0 +1,20 @@
+{
+    "ja": {
+        "message" : "メッセージ" ,
+        "company" : "会社情報" ,
+        "history" : "沿革" ,
+        "it" : "ITソリューション" ,
+        "bpo" : "BPOソリューション" ,
+        "hr" : "BPOソリューション" ,
+        "blog" : "ブログ" ,
+        "news" : "ニュース" ,
+        "career" : "採用情報" ,
+        "fqa" : "よくある質問" ,
+        "contact" : "お問い合わせ" ,
+        "language" : "Language" ,
+        "ja" : "日本語",
+        "en" : "English",
+        "vn" : "Tiếng Việt",
+        "kr" : "한국"
+    }
+}
