@@ -2,21 +2,6 @@
 # General
 --------------------------------------------------------------*/
 
-/* @media (min-width: 1200px){
-.container, .container-lg, .container-md, .container-sm, .container-xl {
-    max-width: 1046px;
-}   */
-
-/* @media (min-width: 1400px){
-.container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
-    max-width: 1320px;
-} */
-
-/* .container {
-  width: 1046px;
-} */
-
-
 :root {
   scroll-behavior: smooth;
 }
@@ -116,7 +101,6 @@ a:hover {
   font-size: 14px;
   line-height: 14px;
   letter-spacing: -0.015em;
-  text-decoration-line: underline;
   color: #BA1D24;
 }
 
@@ -1903,10 +1887,16 @@ Privacy
   width: 1026px;
 }
 
+.contact .contact-form{
+  display: flex;
+}
+
 .contact form {
   margin: 64px auto;
   max-width: 480px;
 }
+
+
 
 .contact form p {
   font-family: Hiragino Kaku Gothic Pro;
@@ -2097,3 +2087,28 @@ Privacy
     transform: scale(0.8);
 }
 
+@media (max-width: 1000px) {
+  #contact .container{
+    width: 100%;
+  }
+  .contact .contact-form{
+    flex-direction: column-reverse;
+  }
+  
+  .contact form {
+    margin: 64px auto;
+    max-width: 480px;
+  }
+
+}
+
+
+@media (max-width: 500px) {
+  .contact form input:not([type='radio'], [type='checkbox']){
+    width: 100%;
+  }
+  .contact form {
+    max-width: 100%;
+    margin: 10px;
+  }
+}

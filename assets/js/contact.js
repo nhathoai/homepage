@@ -84,13 +84,13 @@
             }
 
             if (name == "email") {
-                txt = (!/\S+@\S+\.\S+/.test(val)) ? "有効なメールアドレスを入力してください" : "";
+                txt = (/^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/.test(val)) ? "有効なメールアドレスを入力してください" : "";
                 txt = (val.length == 0) ? "メールアドレスを入力してください" : txt;
             }
 
             if (name == "tel") {
-                const match = val.match(/\d/g);
-                txt = (!match || (match && match.length < 8)) ? "有効な電話番号を入力してください" : "";
+                const match = val.match(/\s*(?:\+?(\d{1,2}))?[-. ]*(\d{2,3})[-. ]*(\d{3,4})[-. ]*(\d{3,4})(?: *x(\d+))?\s*$/im);
+                txt = (!match) ? "有効な電話番号を入力してください" : "";
             }
 
             if (name == "comment") {
