@@ -388,12 +388,6 @@ section {
   color: rgba(186, 29, 36, 1) !important;
 }
 
-
-.navbar .active:hover,
-.navbar .active:focus {
-  color: #fff !important
-}
-
 .navbar a {
   cursor: pointer;
 }
@@ -464,9 +458,6 @@ section {
   font-size: 14px;
 }
 
-.navbar .dropdown ul li {
-  /* min-width: 200px; */
-}
 
 .navbar .dropdown ul a {
   padding: 10px 20px;
@@ -560,7 +551,11 @@ section {
     display: none;
   }
 
-  .navbar-mobile {}
+  
+.navbar .active:hover,
+.navbar .active:focus {
+  color: #fff !important
+}
 }
 
 .navbar-mobile {
