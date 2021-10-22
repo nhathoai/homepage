@@ -1820,12 +1820,14 @@ faq
 /*
 Privacy
 */
-#privacy {
+#privacy,
+#recruit {
   padding: 88px 160px;
   background: rgb(245 245 245);
 }
 
-#privacy .container-fluid {
+#privacy .container-fluid,
+#recruit .container-fluid{
   background: #FFFFFF;
   /* font-family: "Hiragino Kaku Gothic Pro"; */
   font-family: "Hiragino Sans", "Hiragino Kaku Gothic Std";
@@ -2100,6 +2102,10 @@ Privacy
     max-width: 480px;
   }
 
+  .contact .contact-right{
+    padding: 24px;
+  }
+
 }
 
 
@@ -2112,3 +2118,17 @@ Privacy
     margin: 10px;
   }
 }
+
+/*
+#Recruit
+*/
+
+.recruit{
+  font-size: 18px;
+  font-weight: bold;
+}
+
+ #recruit .container-fluid{
+   border: 3px solid;
+   border-radius: 5px;
+ }
