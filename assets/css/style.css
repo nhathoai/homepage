@@ -1481,8 +1481,9 @@ footer .footer-top .footer-info p:not(.name, .mail) {
 # history 
 */
 #content-timeline .container-fluid {
-  background: #fff;
+  /* background: #0dcaf0; */
   padding: 122px 0;
+  background: #FFFFFF;
 }
 
 .timeline {
@@ -1496,15 +1497,17 @@ footer .footer-top .footer-info p:not(.name, .mail) {
 .timeline-item {
   position: relative;
   display: flex;
-  height: 111px;
+  /* height: 111px; */
+  height: 160px;
 }
 
 .timeline-item.timeline-item-short {
-  height: 35px;
+  height: 80px;
 }
 
 .timeline-item.timeline-item-last {
-  height: 54px;
+  /* height: 54px; */
+  height: 105px;
 }
 
 .timeline-item .timeline-info-left,
@@ -1560,7 +1563,7 @@ footer .footer-top .footer-info p:not(.name, .mail) {
 }
 
 .timeline-item:last-child .timeline-marker:after {
-  content: none;
+  content: "";
 }
 
 .timeline-info-left {
@@ -1590,8 +1593,39 @@ footer .footer-top .footer-info p:not(.name, .mail) {
   word-wrap: break-word;
   white-space: -moz-pre-wrap;
   white-space: pre-wrap;
+
+  display: inline-block;
+  padding: 20px;
+  border-radius: 0.25em;
+  position: relative;
+  font-size: 16px;
+  line-height: 24px;
+  color: #303e49;
+  font-weight: 400;
+  width: 455px;
+  background: #dc3545;
+  color: #FFFFFF;
 }
 
+.timeline-info-content::before {
+
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  position: absolute;
+}
+
+.timeline-info-left .timeline-info-content::before {
+  border-left: 10px solid #dc3545;
+  right: -10px;
+}
+.timeline-info-right .timeline-info-content::before {
+  border-right: 10px solid #dc3545;
+  left: -10px;
+}
 @media (max-width: 1300px) {
   #content-timeline {
     padding: 60px 60px;
@@ -1618,14 +1652,9 @@ footer .footer-top .footer-info p:not(.name, .mail) {
   }
 }
 
-
-
 /*
 faq
 */
-.faq-content {
-  padding: 0 0 54px;
-}
 
 .faq-category {
   padding: 88px 160px;
@@ -1757,9 +1786,10 @@ faq
   margin-top: 64px;
 }
 
-.faq-content .row:first-child .faq-content-title{
+.faq-content .row:first-child .faq-content-title {
   margin-top: 0px;
 }
+
 @media (max-width: 1300px) {
 
   .faq-category {
@@ -2044,8 +2074,9 @@ Privacy
 
 .select-flag img {
   width: 25px;
-  height: 20px;
-  border: 1px solid hsl(0deg 0% 0% / 8%)
+  height: auto;
+  border: 1px solid hsl(0deg 0% 0% / 8%);
+  padding: 0.5px;
 }
 
 

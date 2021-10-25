@@ -21,6 +21,11 @@ let main = (function () {
    * Easy event listener function
    */
   const on = (type, el, listener, all = false) => {
+
+    if(!select(el, all)){
+      return;
+    }
+
     if (all) {
       select(el, all).forEach(e => e.addEventListener(type, listener))
     } else {
