@@ -1605,6 +1605,8 @@ footer .footer-top .footer-info p:not(.name, .mail) {
   width: 455px;
   background: #dc3545;
   color: #FFFFFF;
+
+  margin-top: -22px;
 }
 
 .timeline-info-content::before {
