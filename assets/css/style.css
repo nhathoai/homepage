@@ -1498,7 +1498,7 @@ footer .footer-top .footer-info p:not(.name, .mail) {
   position: relative;
   display: flex;
   /* height: 111px; */
-  height: 160px;
+  height: 140px;
 }
 
 .timeline-item.timeline-item-short {
@@ -1600,13 +1600,15 @@ footer .footer-top .footer-info p:not(.name, .mail) {
   position: relative;
   font-size: 16px;
   line-height: 24px;
-  color: #303e49;
+  /* color: #303e49; */
   font-weight: 400;
   width: 455px;
   background: #dc3545;
   color: #FFFFFF;
 
   margin-top: -22px;
+
+  /* background: #FFFFFF; */
 }
 
 .timeline-info-content::before {
