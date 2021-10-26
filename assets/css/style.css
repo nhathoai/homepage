@@ -1577,7 +1577,7 @@ footer .footer-top .footer-info p:not(.name, .mail) {
 
 
 .timeline-info-date {
-  color: #BA1D24;
+  /* color: #BA1D24; */
   font-family: "Hiragino Kaku Gothic Pro";
   font-style: normal;
   font-weight: bold;
