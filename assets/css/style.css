@@ -586,11 +586,14 @@ Hero
 /*--------------------------------------
 #  Main
 */
-#main {}
 
 /*--------------------------------------
 #  introduce
 */
+
+section#introduce {
+  padding: 104px 0 48px 0;
+}
 
 .introduce .signature {
   text-align: right;
@@ -607,8 +610,13 @@ Hero
 
 .introduce .content {
   font-size: 18px;
+  margin-bottom: 36px;
 }
 
+.introduce .content p{
+  margin: 0;
+  line-height: 2;
+}
 /*--------------------------------------
 #  Service
 */
