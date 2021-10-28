@@ -392,7 +392,7 @@ section#hire {
 
 .navbar .lang img {
   width: 30px;
-  height: 24px;
+  height: 23px;
   border: 1px solid #ddd;
   margin-right: 5px;
 }
@@ -546,17 +546,9 @@ section#hire {
   border-bottom: none;
 }
 
-.navbar.navbar-mobile .lang li a{
-  flex: 1;
-}
-
 /*--------------------------------------
 #  Logo group
 */
-
-.logo-group {
-  /* margin: 0 20px 0 20px; */
-}
 .fb path:hover {
   fill: #1877f2 !important;
 }
@@ -564,14 +556,6 @@ section#hire {
 .lk:hover {
   fill: #0073b0 !important;
 }
-
-/*--------------------------------------
-#  Language
-*/
-.lang a:hover {
-  color: rgba(186, 29, 36, 1);
-}
-
 /*
 Hero
 */
