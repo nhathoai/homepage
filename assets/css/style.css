@@ -359,7 +359,6 @@ section#hire {
   transition: 0.3s;
   border-radius: 4px;
   font-size: 14px;
-  
 }
 .navbar .dropdown ul li{
   padding: 0 10px;
@@ -469,6 +468,7 @@ section#hire {
   background: rgba(186, 29, 36, 1);
 }
 
+
 .navbar-mobile a:hover,
 .navbar-mobile li:hover>a {
   color: #fff;
@@ -508,13 +508,9 @@ section#hire {
   background: rgb(0 0 0 / 15%);
   border-left: none;
   border-right: none;
-  padding: 0;
 }
 
-.navbar-mobile .dropdown ul li:last-child{
-  border-bottom: none;
-}
-debugger
+
 .navbar-mobile .dropdown .dropdown-active {
   display: block;
 }
@@ -544,7 +540,6 @@ debugger
   border-left: none;
   border-right: none;
   background: #fff;
-  padding: 0px 10px;
 }
 
 .navbar.navbar-mobile .lang li:last-child{
