@@ -973,7 +973,7 @@ footer .footer-top .footer-info p:not(.name, .mail) {
   }
 }
 
-@media (max-width: 720px) {
+@media (max-width: 768px) {
 
   .footer .footer-top .footer-links {
     margin-bottom: 2rem;
