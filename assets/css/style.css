@@ -869,7 +869,7 @@ section#introduce {
 # Clients
 */
 .clients {
-  padding: 100px 0;
+  padding: 96px 0;
 }
 
 .clients .row div {
@@ -887,10 +887,7 @@ section#introduce {
 # Footer
 --------------------------------------------------------------*/
 .footer {
-  /* background: rgb(0 0 0 / 8%); */
-  /* clip-path: polygon(30% 0, 100% 10%, 100% 100%, 0 100%, 0 4%); */
   background: #1e242bf0;
-  /* background: #3C3B3D; */
   color: #fff;
   font-size: 1rem;
   font-size: 12px;
