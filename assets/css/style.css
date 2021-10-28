@@ -710,7 +710,9 @@ section#introduce {
 
 .news .box .date {
   font-size: 18px;
+  width: 108px;
 }
+
 
 .news .box .date,
 .news .box .link {
@@ -720,12 +722,12 @@ section#introduce {
 .news .box .link {
   padding: 3.7px 45px;
   background: #ffd0d0;
+  width: 170px;
 }
 
 .news p {
   margin: 0;
 }
-
 
 @media (max-width: 992px) {
   .news .row .box {
@@ -734,6 +736,14 @@ section#introduce {
 
   .news .row .box span:first-child {
     flex: 1;
+  }
+
+  .news .box .date, .news .box .link{
+    margin-right: 0;
+  }
+
+  .news .row .box p{
+    margin-top: 1rem;
   }
 }
 
