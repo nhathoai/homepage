@@ -573,35 +573,13 @@ Hero
 .hero .row,
 .hero .hero-slider {
   height: 100%;
-  /* width: 1366px; */
   width: 100%;
 }
 
-.swiper-pagination-bullet-active {
-  background: rgba(186, 29, 36, 1) !important;
-}
-
-@media screen and (max-width: 1025px) and (min-width: 768px) {
+@media (max-width: 1065px) {
   .hero {
-    height: 650px;
-  }
-}
-
-@media screen and (max-width: 767px) and (min-width: 650px) {
-  .hero {
-    height: 550px;
-  }
-}
-
-@media (max-width: 649px) {
-  .hero {
-    height: 450px;
-  }
-}
-
-@media (max-width: 450px) {
-  .hero {
-    height: 300px;
+    max-height: 100%;
+    height: auto;
   }
 }
 
