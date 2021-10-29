@@ -1260,6 +1260,10 @@ General
   .other .link {
     font-size: 12px;
   }
+
+  #office .office-content{
+    width: 100%;
+  }
 }
 
 
