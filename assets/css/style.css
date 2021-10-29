@@ -1768,6 +1768,7 @@ Privacy
   line-height: 14px;
   letter-spacing: var(--letter-style);
   color: #5C5C5C;
+  display: none;
 }
 
 .contact form input[type=radio],
