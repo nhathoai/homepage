@@ -1197,6 +1197,7 @@ footer .footer-top .footer-info p:not(.name, .mail) {
 
 #office pre {
   font-size: 12px;
+  font-family: var(--font-ja);
 }
 
 #office .office-content p.office-link {
