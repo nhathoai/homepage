@@ -1,0 +1,133 @@
+/****** MESSAGE ******/
+#contents,
+#contents-timeline {
+  padding: 88px 160px;
+  background: rgb(245 245 245);
+}
+
+#contents .container-fluid {
+  background: #ffffff;
+}
+
+#philosophy {
+  padding-top: 120px;
+  padding-bottom: 80px;
+  font-weight: bold;
+
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+} 
+#philosophy .title {
+  font-size: 20px;
+  line-height: 20px;
+}
+#philosophy .page-title {
+  padding-top: 64px;
+  font-size: 60px;
+  line-height: 60px;
+}
+#philosophy .description {
+  padding-top: 104px;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 18px;
+}
+#philosophy .link {
+  padding-top: 64px;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 18px;
+  color: #BA1D24;
+}
+
+#mission {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: bold;
+}
+#mission .title {
+  font-size: 20px;
+  line-height: 20px;
+}
+#mission .description {
+  padding-top: 80px;
+  font-size: 20px;
+  line-height: 20px;
+
+}
+
+#vision {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: bold;
+}
+#vision .title {
+  font-size: 20px;
+  line-height: 20px;
+}
+#vision .page-title {
+  padding-top: 64px;
+  font-size: 60px;
+  line-height: 60px;
+}
+#vision .description {
+  padding-top: 108px;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 18px;
+}
+
+#message {
+    padding-top: 84px;
+    padding-bottom: 80px;
+}
+#message .PasonaRed {
+    width: 16px;
+    height: 560px;
+    background: #BA1D24;
+    border: 1px solid #BA1D24;
+}
+#message .header {
+    width: 197px;
+    font-size: 40px;
+    line-height: 40px;
+    color: #BA1D24;
+}
+#message .content {
+    position: absolute;
+    width: 400px;
+    height: 360px;
+    padding-top: 40px;
+    font-size: 18px;
+    line-height: 18px;
+}
+#message .signature1 {
+    float: right;
+    padding-top: 62px;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 20px;
+}
+#message .avatar {
+    width: 400px;
+    height: 560px;
+}
+#message .space {
+    padding-top: 160px;
+}
+#message .border-left {
+    border-left: 16px solid #BA1D24;
+}
+#message .border-right {
+    border-right: 16px solid #BA1D24;
+}
