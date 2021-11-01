@@ -37,12 +37,16 @@ a:hover {
   font-weight: 500;
   line-height: 14px;
   letter-spacing: var(--letter-style);
+  font-size: var(--font-en);
+  transition: 0.3s;
 }
 
 .s-border:hover {
-  background: #ba1d24;
+  box-shadow: 
+  inset -6em 0 0 0 #ba1d24, inset 6em 0 0 0 #ba1d24;
+  /* background: #ba1d24; */
   color: #fff;
-  box-shadow: rgb(155 155 155 / 40%) 1px 6px 15px 0px;
+  /* box-shadow: rgb(155 155 155 / 40%) 1px 6px 15px 0px; */
 }
 
 .fz-12 {
@@ -816,8 +820,7 @@ section#introduce {
 
 }
 
-.hire p,
-.hire span {
+.hire p {
   position: relative;
   color: #ffffff;
   text-align: center;
@@ -834,10 +837,15 @@ section#introduce {
 }
 
 .hire .s-border {
-  font-size: 14px;
-  font-weight: 500;
   border-color: #FFFFFF;
-  text-transform: uppercase;
+  z-index: 1;
+  position: relative;
+  color: #FFFFFF;
+}
+
+.hire .s-border:hover{
+  box-shadow: inset -6em 0 0 0 #FFFFFF, inset 6em 0 0 0 #FFFFFF;
+  color: #ba1d24;
 }
 
 
