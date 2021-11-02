@@ -37,12 +37,16 @@ a:hover {
   font-weight: 500;
   line-height: 14px;
   letter-spacing: var(--letter-style);
+  font-size: var(--font-en);
+  transition: 0.5s;
 }
 
 .s-border:hover {
-  background: #ba1d24;
+  box-shadow: 
+  inset -6em 0 0 0 #ba1d24, inset 6em 0 0 0 #ba1d24;
+  /* background: #ba1d24; */
   color: #fff;
-  box-shadow: rgb(155 155 155 / 40%) 1px 6px 15px 0px;
+  /* box-shadow: rgb(155 155 155 / 40%) 1px 6px 15px 0px; */
 }
 
 .fz-12 {
@@ -816,8 +820,7 @@ section#introduce {
 
 }
 
-.hire p,
-.hire span {
+.hire p {
   position: relative;
   color: #ffffff;
   text-align: center;
@@ -834,10 +837,15 @@ section#introduce {
 }
 
 .hire .s-border {
-  font-size: 14px;
-  font-weight: 500;
   border-color: #FFFFFF;
-  text-transform: uppercase;
+  z-index: 1;
+  position: relative;
+  color: #FFFFFF;
+}
+
+.hire .s-border:hover{
+  box-shadow: inset -6em 0 0 0 #FFFFFF, inset 6em 0 0 0 #FFFFFF;
+  color: #ba1d24;
 }
 
 
@@ -1047,19 +1055,19 @@ General
   background: rgb(245 245 245);
 }
 
-#content .container-fluid {
+#content .container {
   background: #fff;
   padding: 120px 180px;
 }
 
-#content .container-fluid .row {
+#content .container .row {
   padding: 24px 0;
   display: flex;
   align-content: space-between;
   justify-content: flex-end;
 }
 
-#content .container-fluid .row:first-child {
+#content .container .row:first-child {
   padding-top: 0;
 }
 
@@ -1095,7 +1103,7 @@ General
     padding: 60px 60px;
   }
 
-  #content .container-fluid {
+  #content .container {
     padding: 120px 120px;
   }
 }
@@ -1105,7 +1113,7 @@ General
     padding: 60px 20px;
   }
 
-  #content .container-fluid {
+  #content .container {
     padding: 50px 50px;
   }
 
@@ -1270,8 +1278,7 @@ General
 /*
 # history 
 */
-#content-timeline .container-fluid {
-  /* background: #0dcaf0; */
+#content-timeline .container {
   padding: 122px 0;
   background: #FFFFFF;
 }
@@ -1371,6 +1378,7 @@ General
   font-weight: bold;
   font-size: 20px;
   display: inline-block;
+  color: #BA1D24;
 }
 
 .timeline-info-content {
@@ -1380,22 +1388,15 @@ General
   word-wrap: break-word;
   white-space: -moz-pre-wrap;
   white-space: pre-wrap;
-
   display: inline-block;
   padding: 20px;
   border-radius: 0.25em;
   position: relative;
-  font-size: 16px;
-  line-height: 24px;
-  /* color: #303e49; */
+  color: black;
   font-weight: 400;
-  width: 455px;
-  background: #dc3545;
-  color: #FFFFFF;
-
+  width: 410px;
+  background: #ffd0d0;
   margin-top: -22px;
-
-  /* background: #FFFFFF; */
 }
 
 .timeline-info-content::before {
@@ -1410,14 +1411,15 @@ General
 }
 
 .timeline-info-left .timeline-info-content::before {
-  border-left: 10px solid #dc3545;
+  border-left: 10px solid #ffd0d0;
   right: -10px;
 }
 
 .timeline-info-right .timeline-info-content::before {
-  border-right: 10px solid #dc3545;
+  border-right: 10px solid #ffd0d0;
   left: -10px;
 }
+
 
 @media (max-width: 1300px) {
   #content-timeline {
@@ -1425,13 +1427,28 @@ General
   }
 }
 
+@media (max-width: 1065px) {
+  .timeline-info-content{
+    width: 90%;
+  }
+
+  .timeline-item:not(:last-child){
+    height: auto;
+    min-height: 140px;
+    padding-bottom: 30px;
+  }
+
+  .timeline-item:not(:last-child) .timeline-marker:after{
+    height: calc(100% + 15px);
+  }
+}
 @media (max-width: 900px) {
   #content-timeline {
     padding: 60px 10px;
   }
 }
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .timeline-item.timeline-item-short {
     height: 45px;
   }
@@ -1443,7 +1460,7 @@ General
   .timeline-item.timeline-item-last {
     height: 64px;
   }
-}
+} */
 
 /*
 faq
@@ -1498,6 +1515,7 @@ faq
 .faq-content .accordion-button:after {
   background-image: url(../img/Plus.svg);
   background-repeat: no-repeat;
+  background-position: center center; 
   content: "";
   width: 16px;
   height: 16px;
@@ -1505,8 +1523,8 @@ faq
 }
 
 .faq-content .accordion-button:not(.collapsed):after {
-  content: "";
   background-image: url(../img/Minus.svg);
+  transform: rotate(180deg);
 }
 
 .faq-content .accordion-header .accordion-button,
@@ -1758,8 +1776,7 @@ Privacy
   color: #5C5C5C;
 }
 
-.contact form select {
-  background: #F5F5F5;
+.contact form select.content-service {
   border: none;
   height: 48px;
   font-style: normal;
@@ -1767,9 +1784,19 @@ Privacy
   font-size: 14px;
   line-height: 14px;
   letter-spacing: var(--letter-style);
-  color: #5C5C5C;
+  color: grey;
   display: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: #F5F5F5;
+  background-image: url("data:image/svg+xml;utf8,<svg fill='grey' height='40' viewBox='0 0 24 24' width='40' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+  background-repeat: no-repeat;
+  background-position-x: 100%;
+  background-position-y: 4px;
+  padding: 0.75rem;
+  width: 16rem;
 }
+
 
 .contact form input[type=radio],
 .contact form input[type=checkbox] {
@@ -1828,12 +1855,10 @@ Privacy
   padding: 0;
   margin: 0;
   z-index: 1;
-  overflow-y: scroll;
+  overflow-y: auto;
   background-color: white;
   box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
   position: absolute;
-  top: 48px;
-  width: 300px;
   max-height: 200px;
   visibility: hidden;
   transition: 0.1s;
@@ -1842,9 +1867,9 @@ Privacy
 
 .lang-phone li {
   display: flex;
-  /* justify-content: space-between; */
   align-items: center;
   padding: 10px 20px 10px 5px;
+  flex-wrap: wrap;
 }
 
 .lang-phone li:hover {
@@ -1870,6 +1895,11 @@ Privacy
   padding: 0 1rem;
 }
 
+.contact .pa-flag{
+  display: flex;
+  flex-direction: row;
+}
+
 .select-flag {
   cursor: pointer;
   position: relative;
@@ -1877,14 +1907,14 @@ Privacy
 }
 
 .flag {
-  width: 200px;
+  width: 220px;
   background: whitesmoke;
   height: 100%;
-  margin-right: 5px;
+  margin-right: 1rem;
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  padding: 0px 10px;
+  padding: 0.75rem;
   position: relative;
 }
 
@@ -1897,14 +1927,14 @@ Privacy
 }
 
 .flag::before {
-  right: 5px;
+  right: 8px;
   content: "";
   display: block;
   width: 0;
   height: 0;
   border-right: 8px solid transparent;
   border-left: 8px solid transparent;
-  border-top: 8px solid #5C5C5C;
+  border-top: 8px solid grey;
   position: absolute;
 }
 
@@ -1938,6 +1968,21 @@ Privacy
     max-width: 100%;
     margin: 10px;
   }
+
+  .contact .pa-flag{
+    flex-direction: column;
+  }
+
+  .contact .flag{
+    width: 100%;
+    margin-bottom: 5px;
+    min-height: 45px;
+  }
+
+  .contact .lang-phone{
+    top: 45px;
+    right: 0;
+  }
 }
 
 /*
@@ -1956,3 +2001,7 @@ Privacy
 #main-top:before {
   background-color: rgba(211, 101, 28, .7);
 }
+
+
+
+
