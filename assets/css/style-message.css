@@ -104,11 +104,8 @@
     letter-spacing: var(--letter-style);
     color: #5C5C5C;
 }
-#message .PasonaRed {
-    width: 16px;
-    height: 560px;
-    background: #BA1D24;
-    border: 1px solid #BA1D24;
+#message .box {
+  padding-left: 80px;
 }
 #message .header {
     width: 197px;
@@ -156,3 +153,17 @@
 #message .crop img {
     margin: 0px 0px 0px -100px;
 }
+@media screen and (max-width: 480px) {
+  #contents .container {
+    padding: 30px 20px;
+  }
+  #contents .contents {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .philosophy .mission .vision .message {
+    display: inline-block;
+    padding: 0 20px;
+  }
+}
+
