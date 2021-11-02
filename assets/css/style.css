@@ -1098,6 +1098,9 @@ General
   color: #BA1D24;
 }
 
+#content table{
+  line-height: 2;
+}
 @media (max-width: 1300px) {
   #content {
     padding: 60px 60px;
@@ -1291,6 +1294,7 @@ General
   #other .right {
     height: 300px;
   }
+  
 }
 
 @media (max-width: 440px) {
@@ -1301,6 +1305,14 @@ General
 
   #content .ct {
     font-size: 12px;
+  }
+
+  #content table{
+    width: 100%;
+  }
+
+  #content table.rule td{
+    width: 100%;
   }
 
   #other .left,
@@ -1319,6 +1331,7 @@ General
   #office .office-content{
     width: 100%;
   }
+
 }
 
 
