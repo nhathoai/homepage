@@ -1202,54 +1202,6 @@ General
   justify-content: center;
 }
 
-.other .left,
-.other .right {
-  position: relative;
-  /* background-color: #BA1D24; */
-  cursor: pointer;
-}
-
-.other .left a,
-.other .left p,
-.other .right a,
-.other .right p{
-  visibility: hidden;
-  opacity: 0;
-  transition: visibility 0s 0s, opacity 1s linear;
-}
-
-.other .left:hover a,
-.other .left:hover p,
-.other .right:hover a,
-.other .right:hover p{
-  visibility: visible;
-  transition: 2s;
-  opacity: 1;
-  transition: opacity 1.5s linear;
-}
-
-.other .md-1 {
-  position: absolute;
-  width: 50px;
-  height: 50px;
-  background: #BA1D24;
-  right: 50%;
-  top: -25px;
-  border-radius: 50%;
-  overflow: hidden;
-  opacity: 0.8;
-  transition: 0.6s;
-  z-index: 1;
-}
-
-.other .left:hover .md-1,
-.other .right:hover .md-1{
-  width: 100%;
-  top: 0;
-  right: 0;
-  border-radius: 0;
-  height: 100%;
-}
 
 .other .left:before,
 .other .right:after {
@@ -1265,6 +1217,7 @@ General
   
 }
 
+
 .other .left:before {
   background-image: url(../img/message/image1.jpg);
 }
@@ -1279,13 +1232,6 @@ General
   z-index: 1;
 }
 
-.other .link {
-  text-transform: uppercase;
-  font-family: var(--font-en);
-  border: 3px solid #FFFFFF;
-  box-sizing: border-box;
-  padding: .5rem 3rem;
-}
 
 @media (max-width: 768px) {
 
