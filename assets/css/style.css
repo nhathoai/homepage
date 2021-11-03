@@ -1929,7 +1929,7 @@ Privacy
 .lang-phone li {
   display: flex;
   align-items: center;
-  padding: 10px 20px 10px 5px;
+  padding: 10px 20px 10px 0.75rem;
   flex-wrap: wrap;
 }
 
@@ -1953,7 +1953,7 @@ Privacy
 }
 
 .lang-phone span {
-  padding: 0 1rem;
+  padding: 0 0.75rem;
 }
 
 .contact .pa-flag{
@@ -1980,7 +1980,7 @@ Privacy
 }
 
 .flag img {
-  margin-right: 1rem;
+  margin-right: 0.75rem;
 }
 
 .select-flag:hover .lang-phone {
