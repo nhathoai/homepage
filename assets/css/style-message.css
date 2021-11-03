@@ -154,7 +154,14 @@
     margin: 0px 0px 0px -100px;
 }
 @media screen and (max-width: 480px) {
-  #contents .container {
+  #contents,
+  #contents-timeline {
+    padding: 60px 20px;
+  }
+  #vision, #philosophy .page-title {
+    font-size: 28px;
+  }
+  /* #contents .container {
     padding: 30px 20px;
   }
   #contents .contents {
@@ -164,6 +171,6 @@
   .philosophy .mission .vision .message {
     display: inline-block;
     padding: 0 20px;
-  }
+  } */
 }
 
