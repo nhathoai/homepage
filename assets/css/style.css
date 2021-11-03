@@ -12,7 +12,6 @@ body {
   color: #5C5C5C;
   font-family: "Hiragino Kaku Gothic Pro";
   caret-color: transparent;
-  /* font-family: "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","メイリオ","MS PGothic",Verdana,Helvetica,sans-serif; */
 }
 
 a {
@@ -1855,6 +1854,7 @@ Privacy
   background-position-y: 4px;
   padding: 0.75rem;
   width: 16rem;
+  cursor: pointer;
 }
 
 
@@ -1863,6 +1863,7 @@ Privacy
   width: 20px;
   height: 16px;
   margin-right: 12px;
+  cursor: pointer;
 }
 
 .contact form input[type=checkbox] {
@@ -1921,7 +1922,7 @@ Privacy
   box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
   position: absolute;
   max-height: 200px;
-  visibility: hidden;
+  /* visibility: hidden; */
   transition: 0.1s;
   opacity: 0;
 }
@@ -1977,14 +1978,22 @@ Privacy
   justify-content: flex-start;
   padding: 0.75rem;
   position: relative;
+  -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 .flag img {
   margin-right: 0.75rem;
 }
-
+/*
+need change after
+*/
 .select-flag:hover .lang-phone {
-  opacity: 1;
+  /* opacity: 1; */
 }
 
 .flag::before {

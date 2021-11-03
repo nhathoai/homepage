@@ -128,25 +128,46 @@
         return err;
     }
 
+    var openDrop = false;
+    
+    on("click", ".flag", function (e) {
+        openDrop = !openDrop;
+        select('.lang-phone').style.opacity = openDrop? "1" : "0";
+        select('.lang-phone').style.visibility = openDrop? "visible" : "hidden";
+    })
+
+    on("click", 'body', function (e) {
+        const smTar = select('.select-flag').contains(e.target);
+        select('.lang-phone').style.visibility = smTar?  "" : "hidden" ;
+        select('.flag').style.boxShadow = smTar?   "0 0 0 0.2rem hsl(357deg 73% 42% / 20%)" : "";
+    })
 
     on("click", '.lang-phone', function (e) {
         const tagName = e.target.tagName.toLowerCase();
         let liEle = e.target;
+
+        if(tagName == "ul"){
+            return;
+        } 
 
         if(tagName == "img" || tagName == "span"){
             liEle = e.target.parentNode;
         }
         
         select('.flag').innerHTML = liEle.innerHTML;
-
+        
+        select('.lang-phone').style.opacity = "0";
         select('.lang-phone').style.visibility = "hidden";
 
+        openDrop = false;
+        // select('.flag').style.boxShadow = "0 0 0 0.2rem hsl(357deg 73% 42% / 20%)";
+
     })
 
-    on("mouseover", '.select-flag', function (e) {
-        select('.lang-phone').style.visibility = "visible";
-    })
+    
 
-    on("mouseout", '.select-flag', function (e) {
-        select('.lang-phone').style.visibility = "hidden";
-    })
+    // on("mouseover", '.select-flag', function (e) {
+    //     select('.lang-phone').style.visibility = "visible";
+    // })
+
+    
