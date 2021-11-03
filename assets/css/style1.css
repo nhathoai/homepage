@@ -201,7 +201,9 @@ body {
 }
 
 .other .left:hover a,
-.other .left:hover p
+.other .left:hover p,
+.other .left:active a,
+.other .left:active p
 /* .other .right:hover a, */
 /* .other .right:hover p */
 {
@@ -210,6 +212,7 @@ body {
   opacity: 1;
   transition: opacity 1.5s linear;
 }
+
 
 .other .md-1 {
   position: absolute;
