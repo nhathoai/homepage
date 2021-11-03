@@ -2072,3 +2072,228 @@ need change after
   background-color: rgba(211, 101, 28, .7);
 }
 
+/*
+#Message
+*/
+#contents,
+#contents-timeline {
+  padding: 88px 160px;
+  background: rgb(245 245 245);
+}
+
+#contents .container {
+  background: #ffffff;
+}
+
+#philosophy {
+  padding-top: 120px;
+  padding-bottom: 80px;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: bold;
+  font-family: var(--font-ja);
+  letter-spacing: var(--letter-style);
+  color: #5C5C5C;
+} 
+#philosophy .title {
+  font-size: 20px;
+  line-height: 35px;
+}
+#philosophy .page-title {
+  padding-top: 64px;
+  font-size: 60px;
+  line-height: 60px;
+  font-family: var(--font-en);
+}
+#philosophy .description {
+  padding-top: 104px;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 35px;
+}
+#philosophy .link {
+  padding-top: 64px;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 18px;
+  color: #BA1D24;
+}
+
+#mission {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: bold;
+  font-family: var(--font-ja);
+  letter-spacing: var(--letter-style);
+  color: #5C5C5C;
+}
+#mission .title {
+  font-size: 20px;
+  line-height: 20px;
+}
+#mission .description {
+  padding-top: 80px;
+  font-size: 20px;
+  line-height: 35px;
+
+}
+
+#vision {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: bold;
+  font-family: var(--font-ja);
+  letter-spacing: var(--letter-style);
+  color: #5C5C5C;
+}
+#vision .title {
+  font-size: 20px;
+  line-height: 20px;
+}
+#vision .page-title {
+  padding-top: 64px;
+  font-size: 60px;
+  line-height: 60px;
+  font-family: var(--font-en);
+}
+#vision .description {
+  padding-top: 108px;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 35px;
+}
+
+#message {
+    padding-top: 84px;
+    padding-bottom: 80px;
+    font-family: var(--font-ja);
+    letter-spacing: var(--letter-style);
+    color: #5C5C5C;
+}
+#message .box {
+  padding-left: 80px;
+  padding-right: 80px;
+}
+#message .header {
+    /* width: 197px; */
+    font-size: 40px;
+    line-height: 40px;
+    color: #BA1D24;
+}
+#message .content {
+    padding-top: 40px;
+    font-size: 18px;
+    line-height: 24px;
+}
+#message .signature {
+    float: right;
+    padding-top: 62px;
+    padding-right: 30px;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 34px;
+}
+#message .avatar {
+    height: 100%;
+    max-height: 560px;
+    padding-left: 80px;
+}
+#message .crop:nth-child(2) {
+    margin-left: 80px;
+}
+#message .space {
+    padding-top: 160px;
+}
+#message .border-left {
+    border-left: 16px solid #BA1D24;
+}
+#message .border-right {
+    border-right: 16px solid #BA1D24;
+}
+#message .crop {
+    width: 420px;
+    overflow: hidden;
+    display: block;
+    margin: auto;
+    padding-left: 80px;
+}
+
+#message .crop img {
+    margin: 0px 0px 0px -260px;
+}
+@media (max-width:1280px) {
+  #contents,
+  #contents-timeline {
+    padding: 60px 40px;
+  }
+
+  #message .box {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+@media (max-width: 1065px) {
+  #contents,
+  #contents-timeline {
+    padding: 60px 40px;
+  }
+
+  #message .box {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+@media (max-width: 801px) {
+  #message .avatar {
+    max-height: 300px;
+  }
+  #message .avatar:first-child {
+    padding-top: 20px;
+  }
+  #message .crop img {
+    margin: 0 0 0 -170px;
+  }
+  #message .row:last-child .box {
+    padding-top: 60px;
+  }
+}
+@media (max-width: 480px) {
+  #contents,
+  #contents-timeline {
+    padding: 60px 20px;
+  }
+  #vision, #philosophy .page-title {
+    font-size: 28px;
+  }
+  #message .box {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  #message .row:last-child .box {
+    padding-top: 60px;
+  }
+  #message .crop {
+    width: 100%;
+    overflow: hidden;
+    display: block;
+    margin: auto;
+    padding-left: 0;
+  }
+  #message .crop img {
+    margin: 0px 0px 0px -50px;
+    width: 100%;
+  }
+  #message .avatar:first-child {
+    padding-top: 30px;
+  }
+}
