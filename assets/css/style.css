@@ -2138,17 +2138,20 @@ need change after
 }
 #message .ms-header {
     padding: 0;
+    font-family: var(--font-en);
     font-size: 40px;
     line-height: 40px;
     color: #BA1D24;
     margin-bottom: 40px;
 }
 #message .ms-content {
+    font-family: var(--font-ja);
     width: 400px;
     font-size: 18px;
     line-height: 18px;
 }
 #message .ms-signature {
+    font-family: var(--font-ja);
     float: right;
     font-weight: bold;
     font-size: 20px;
@@ -2181,14 +2184,6 @@ need change after
 #message .ms-crop img {
     margin: 0px 0px 0px -175px;
 }
-#message .ms-signature-right {
-  display: none;
-  font-weight: bold;
-  font-size: 20px;
-  line-height: 30px;
-  margin-right: 51px;
-
-}
 
 @media (min-width: 1400px) {
   #message .ms-box {
@@ -2199,7 +2194,11 @@ need change after
     width: 100%;
   }
   #message .ms-crop {
-    margin-left: 86px;
+    margin-left: 0;
+  }
+  #message .row:nth-child(2) .ms-crop {
+    /* margin-left: 0; */
+    float: right;
   }
 }
 
@@ -2211,6 +2210,11 @@ need change after
 }
 
 @media (max-width: 1065px) {
+  #contents,
+  #contents-timeline {
+    padding: 60px 60px;
+  }
+
   #message .ms-box {
     padding-left: 40px;
   }
@@ -2221,11 +2225,15 @@ need change after
     width: 350px;
     overflow: hidden;
     display: block;
-    margin-left: 35px;
+    margin-left: 20px;
   }
   #message .ms-avatar {
     height: 570px;
   }
+  #message .ms-signature {
+    margin-right: 0;
+}
+
   #message .ms-crop img {
     margin: 0px 0px 0px -210px;
   }
@@ -2238,22 +2246,14 @@ need change after
   #contents-timeline {
     padding: 60px 20px;
   }
-  #message .ms-signature {
-    display: none;
-  }
-  #message .ms-signature-right {
-    display: block;
-    align-self: flex-end;
-  }
   #message .ms-second {
     order: 1;
     display: flex;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
+    justify-content: center;
   }
   #message .ms-first {
     order: 2;
-    display: flex;
-    flex-direction: column-reverse;
   }
   #message .ms-avatar {
     max-height: 350px;
@@ -2275,11 +2275,12 @@ need change after
     margin-bottom: 0;
     margin-left: 0px;
     padding-left: 20px;
-    padding-right: 35px;
+    padding-right: 20px;
   } 
   #message .ms-signature {
-    float: left;
-    padding: 1rem 20px;
+    padding-top: 1rem;
+    padding-right: 20px;
+    margin-right: 0;
   } 
   #message .row:nth-child(2) .ms-second {
     flex-direction: row-reverse;
@@ -2301,15 +2302,14 @@ need change after
 }
 
 @media (max-width: 430px) {
-  #message .ms-signature {
-    display: block;
-
+  #message .ms-crop {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin-right: 1rem;
   }
-  #message .ms-signature-right {
-    display: none;
-  }
-  #message .row:nth-child(2) .ms-signature {
-    align-self: flex-end;
+  #message .ms-crop img {
+    margin: -20px 0 0 -195px;
   }
 
 }
