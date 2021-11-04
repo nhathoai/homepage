@@ -2190,14 +2190,22 @@ need change after
     width: 100%;
     padding-right: 51px;
   }
+  #message .ms-first {
+    display: flex;
+    flex-direction: column;  
+    justify-content: space-between;
+  }
+  #message .ms-signature {
+    align-self: flex-end;
+  }
   #message .ms-content {
     width: 100%;
   }
   #message .ms-crop {
-    margin-left: 0;
+    margin-left: 50px;
   }
   #message .row:nth-child(2) .ms-crop {
-    /* margin-left: 0; */
+    margin-right: 50px;
     float: right;
   }
 }
