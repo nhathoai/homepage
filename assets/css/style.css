@@ -2126,28 +2126,37 @@ need change after
     letter-spacing: var(--letter-style);
     color: #5C5C5C;
 }
+#message .row:first-child {
+  margin-bottom: 160px;
+}
+#message .col-lg-6 {
+  padding: 0;
+}
 #message .box {
-  padding-left: 80px;
-  padding-right: 80px;
+  width: 400px;
+  margin-left: 64px;
+  margin-bottom: 62px;
+}
+#message .row:nth-child(2) .box {
+  margin-left: 35px;
 }
 #message .header {
-    /* width: 197px; */
+    padding: 0;
     font-size: 40px;
     line-height: 40px;
     color: #BA1D24;
+    margin-bottom: 40px;
 }
 #message .content {
-    padding-top: 40px;
     font-size: 18px;
-    line-height: 24px;
+    line-height: 18px;
 }
 #message .signature {
     float: right;
-    padding-top: 62px;
-    padding-right: 30px;
     font-weight: bold;
     font-size: 20px;
-    line-height: 34px;
+    line-height: 30px;
+    margin-right: 51px;
 }
 #message .avatar {
     height: 100%;
@@ -2167,136 +2176,93 @@ need change after
     border-right: 16px solid #BA1D24;
 }
 #message .crop {
-    width: 420px;
+    width: 400px;
     overflow: hidden;
     display: block;
-    margin: auto;
-    padding-left: 80px;
+    margin-left: 35px;
 }
-
+#message .row:nth-child(2) .crop {
+  margin-left: 80px;
+}
 #message .crop img {
-    margin: 0px 0px 0px -260px;
+    margin: 0px 0px 0px -175px;
 }
-@media (max-width:1280px) {
-  #contents,
-  #contents-timeline {
-    padding: 60px 40px;
-  }
 
-  #message .box {
-    padding-left: 40px;
-    padding-right: 40px;
-  }
-}
 @media (max-width: 1065px) {
   #contents,
   #contents-timeline {
-    padding: 60px 40px;
+    padding: 60px 60px;
   }
 
   #message .box {
-    padding-left: 20px;
-    padding-right: 20px;
+    margin-left: 20px;
+  }
+  #message .crop {
+    width: 350px;
+    overflow: hidden;
+    display: block;
+    margin-left: 35px;
+  }
+  #message .avatar {
+    height: 570px;
+  }
+  #message .crop img {
+    margin: 0px 0px 0px -210px;
+  }
+  #message .row:nth-child(2) .crop {
+    margin-left: 36px;
   }
 }
 @media (max-width: 991px) {
-  #message .avatar {
-    max-height: 300px;
+  #contents,
+  #contents-timeline {
+    padding: 60px 20px;
   }
-  #message .crop {
-    margin-left: 20px;
-  }
-  #message .crop img {
-    margin: 0 0 0 -170px;
-  }
-  #message .box {
-    padding-top: 60px;
-  }
+
   #message .first {
     order: 2;
   }
   #message .second {
     order: 1;
   }
+  #message .avatar {
+    max-height: 350px;
+  }
+  #message .crop {
+    width: 370px;
+    margin-left: 20px;
+  }
+  #message .crop img {
+    margin: 0 0 0 -90px;
+  }
+  #message .box {
+    width: 600px;
+    padding-top: 120px;
+    margin-bottom: 0;
+  } 
   #message .signature {
-    margin-top: -520px;
-    padding-right: 180px;
+    float: left;
+    margin-top: -480px;
+    margin-left: 20px;
+  } 
+  #message .row:nth-child(2) .signature {
+    float: right;
+    margin-right: 30px;
+  }
+  #message .row:nth-child(2) .crop {
+    float: right;
+    margin-right: 30px;
   }
 }
 @media (max-width: 767px) {
   #contents,
   #contents-timeline {
-    padding: 350px 60px 60px;
-  }
-  #contents .container {
-    max-width: 100%;
-  }
-  #vision, #philosophy .page-title {
-    font-size: 28px;
+    padding: 60px 10px;
   }
   #message .box {
-    padding: 120px 20px 0;
-  }
-  #message .crop {
-    width: 100%;
-    overflow: hidden;
-    display: block;
-    margin: auto;
-    padding-left: 0;
-  }
-  #message .crop img {
-    margin: 0px 0px 0px -50px;
-    /* width: 100%; */
-  }
+    width: 400px;
+  } 
   #message .signature {
-    margin-top: -590px;
-    padding-right: 100px;
-  }
-}
-@media (max-width: 600px) {
-  #message .signature {
-    margin-top: -670px;
-    padding-right: 20px;
-  }
-}
-@media (max-width: 520px) {
-  #message .signature {
-    margin-top: -740px;
-    padding-right: 10px;
-  }
-}
-@media (max-width: 480px) {
-  #contents,
-  #contents-timeline {
-    padding: 300px 20px 60px;
-  }
-  #philosophy .page-title {
-    font-size: 22px;
-  }
-  #vision .page-title {
-    font-size: 30px;
-  }
-  #message .signature {
-    margin-top: -670px;
-    padding-right: 10px;
-  }
-  #message .crop img {
-    margin: 0px 0px 0px -50px;
-    width: 100%;
-  }
-  #message .header {
-    font-size: 30px;
-  }
-}
-@media (max-width: 380px) {
-  #message .signature {
-    margin-top: -825px;
-    padding-right: 5px;
-  }
-}
-@media (max-width: 330px) {
-  #message .signature {
-    margin-top: -980px;
-    padding-right: 5px;
-  }
+    margin-top: -550px;
+  } 
 }
