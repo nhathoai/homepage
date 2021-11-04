@@ -2199,34 +2199,43 @@ need change after
     padding-right: 20px;
   }
 }
-@media (max-width: 801px) {
+@media (max-width: 991px) {
   #message .avatar {
     max-height: 300px;
   }
-  #message .avatar:first-child {
-    padding-top: 20px;
+  #message .crop {
+    margin-left: 20px;
   }
   #message .crop img {
     margin: 0 0 0 -170px;
   }
-  #message .row:last-child .box {
+  #message .box {
     padding-top: 60px;
   }
+  #message .first {
+    order: 2;
+  }
+  #message .second {
+    order: 1;
+  }
+  #message .signature {
+    margin-top: -520px;
+    padding-right: 180px;
+  }
 }
-@media (max-width: 480px) {
+@media (max-width: 767px) {
   #contents,
   #contents-timeline {
-    padding: 60px 20px;
+    padding: 350px 60px 60px;
+  }
+  #contents .container {
+    max-width: 100%;
   }
   #vision, #philosophy .page-title {
     font-size: 28px;
   }
   #message .box {
-    padding-left: 0;
-    padding-right: 0;
-  }
-  #message .row:last-child .box {
-    padding-top: 60px;
+    padding: 120px 20px 0;
   }
   #message .crop {
     width: 100%;
@@ -2237,9 +2246,57 @@ need change after
   }
   #message .crop img {
     margin: 0px 0px 0px -50px;
+    /* width: 100%; */
+  }
+  #message .signature {
+    margin-top: -590px;
+    padding-right: 100px;
+  }
+}
+@media (max-width: 600px) {
+  #message .signature {
+    margin-top: -670px;
+    padding-right: 20px;
+  }
+}
+@media (max-width: 520px) {
+  #message .signature {
+    margin-top: -740px;
+    padding-right: 10px;
+  }
+}
+@media (max-width: 480px) {
+  #contents,
+  #contents-timeline {
+    padding: 300px 20px 60px;
+  }
+  #philosophy .page-title {
+    font-size: 22px;
+  }
+  #vision .page-title {
+    font-size: 30px;
+  }
+  #message .signature {
+    margin-top: -670px;
+    padding-right: 10px;
+  }
+  #message .crop img {
+    margin: 0px 0px 0px -50px;
     width: 100%;
   }
-  #message .avatar:first-child {
-    padding-top: 30px;
+  #message .header {
+    font-size: 30px;
+  }
+}
+@media (max-width: 380px) {
+  #message .signature {
+    margin-top: -825px;
+    padding-right: 5px;
+  }
+}
+@media (max-width: 330px) {
+  #message .signature {
+    margin-top: -980px;
+    padding-right: 5px;
   }
 }
