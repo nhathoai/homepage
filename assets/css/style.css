@@ -1140,6 +1140,11 @@ General
   margin-bottom: 1rem;
 }
 
+#office .box .under {
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
 #office .office-content {
   margin-top: 1.5em;
   width: 420px;
@@ -1166,7 +1171,7 @@ General
   font-family: var(--font-en);
 }
 
-#office pre {
+#office .off-tel {
   font-size: 12px;
   font-family: var(--font-ja);
 }
