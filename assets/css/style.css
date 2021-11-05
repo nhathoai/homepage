@@ -1141,7 +1141,7 @@ General
 }
 
 #office .box .under {
-  margin-bottom: 8px;
+  margin-bottom: 0px;
   font-weight: bold;
 }
 
@@ -1153,7 +1153,7 @@ General
 
 #office .office-content p {
   font-size: 14px;
-  line-height: 14px;
+  line-height: 24px;
   letter-spacing: var(--letter-style);
   color: #5C5C5C
 }
@@ -1161,10 +1161,6 @@ General
 #office .header {
   font-weight: bold;
   font-family: var(--font-en);
-}
-
-#office .office-content p.address {
-  line-height: 24px;
 }
 
 #office .tel {
