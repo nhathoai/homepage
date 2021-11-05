@@ -2039,27 +2039,26 @@ need change after
   flex-direction: column;
   align-items: center;
   font-weight: bold;
-  font-family: var(--font-ja);
   letter-spacing: var(--letter-style);
   color: #5C5C5C;
 } 
-#philosophy .title {
+.ms-title {
   font-size: 20px;
   line-height: 35px;
 }
-#philosophy .page-title {
+.ms-page-title {
   padding-top: 64px;
   font-size: 60px;
   line-height: 60px;
   font-family: var(--font-en);
 }
-#philosophy .description {
+#philosophy .ms-description {
   padding-top: 104px;
   font-weight: normal;
   font-size: 18px;
   line-height: 35px;
 }
-#philosophy .link {
+#philosophy .ms-link {
   padding-top: 64px;
   font-weight: normal;
   font-size: 18px;
@@ -2075,19 +2074,13 @@ need change after
   flex-direction: column;
   align-items: center;
   font-weight: bold;
-  font-family: var(--font-ja);
   letter-spacing: var(--letter-style);
   color: #5C5C5C;
 }
-#mission .title {
-  font-size: 20px;
-  line-height: 20px;
-}
-#mission .description {
+#mission .ms-description {
   padding-top: 80px;
   font-size: 20px;
   line-height: 35px;
-
 }
 
 #vision {
@@ -2098,21 +2091,10 @@ need change after
   flex-direction: column;
   align-items: center;
   font-weight: bold;
-  font-family: var(--font-ja);
   letter-spacing: var(--letter-style);
   color: #5C5C5C;
 }
-#vision .title {
-  font-size: 20px;
-  line-height: 20px;
-}
-#vision .page-title {
-  padding-top: 64px;
-  font-size: 60px;
-  line-height: 60px;
-  font-family: var(--font-en);
-}
-#vision .description {
+#vision .ms-description {
   padding-top: 108px;
   font-weight: normal;
   font-size: 18px;
@@ -2122,7 +2104,6 @@ need change after
 #message {
     padding-top: 84px;
     padding-bottom: 80px;
-    font-family: var(--font-ja);
     letter-spacing: var(--letter-style);
     color: #5C5C5C;
 }
@@ -2145,13 +2126,11 @@ need change after
     margin-bottom: 40px;
 }
 #message .ms-content {
-    font-family: var(--font-ja);
     width: 400px;
     font-size: 18px;
     line-height: 18px;
 }
 #message .ms-signature {
-    font-family: var(--font-ja);
     float: right;
     font-weight: bold;
     font-size: 20px;
