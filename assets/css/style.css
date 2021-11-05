@@ -1140,6 +1140,11 @@ General
   margin-bottom: 1rem;
 }
 
+#office .box .under {
+  margin-bottom: 0px;
+  font-weight: bold;
+}
+
 #office .office-content {
   margin-top: 1.5em;
   width: 420px;
@@ -1148,7 +1153,7 @@ General
 
 #office .office-content p {
   font-size: 14px;
-  line-height: 14px;
+  line-height: 24px;
   letter-spacing: var(--letter-style);
   color: #5C5C5C
 }
@@ -1158,15 +1163,11 @@ General
   font-family: var(--font-en);
 }
 
-#office .office-content p.address {
-  line-height: 24px;
-}
-
 #office .tel {
   font-family: var(--font-en);
 }
 
-#office pre {
+#office .off-tel {
   font-size: 12px;
   font-family: var(--font-ja);
 }
