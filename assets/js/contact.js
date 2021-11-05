@@ -165,9 +165,3 @@
     })
 
     
-
-    // on("mouseover", '.select-flag', function (e) {
-    //     select('.lang-phone').style.visibility = "visible";
-    // })
-
-    

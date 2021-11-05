@@ -1881,7 +1881,7 @@ Privacy
   box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
   position: absolute;
   max-height: 200px;
-  /* visibility: hidden; */
+  visibility: hidden;
   transition: 0.1s;
   opacity: 0;
 }
