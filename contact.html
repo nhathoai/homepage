@@ -30,196 +30,200 @@
 </head>
 
 <body>
-    <div id="header"></div>
+    <script id="template" type="text/template">
 
-    <!-- ======= Hero Section ======= -->
-    <section id="main-top" class="main-top d-flex align-items-center">
-        <div class="container-fluid">
-            <div class="main-top__link">
-                <a href="./">
-                    トップ
-                </a> > お問い合わせ
+        <!-- ======= Hero Section ======= -->
+        <section id="main-top" class="main-top d-flex align-items-center">
+            <div class="container-fluid">
+                <div class="main-top__link">
+                    <a href="./">
+                        トップ
+                    </a> > お問い合わせ
+                </div>
+                <div class="row">
+                    <p>お問い合わせ</p>
+                </div>
             </div>
-            <div class="row">
-                <p>お問い合わせ</p>
-            </div>
-        </div>
-    </section><!-- End Hero -->
+        </section><!-- End Hero -->
 
 
-    <main id="main">
-        <!-- ======= privacy Section ======= -->
-        <section id="contact" class="contact">
-            <div class="container">
-                <div class="row ">
-                    <div class="pd-0 contact-form">
-                        <form action="#" class="d-flex flex-column needs-validation" novalidate>
-                            <p>お気軽にお問い合わせください。</p>
-                            <div class="d-flex flex-column">
-                                <label for="">貴社名</label>
-                                <input type="text" name="company" maxlength="127" value="" class="">
-                            </div>
-                            <div class="d-flex flex-column">
-                                <label for="" class="required">お名前</label>
-                                <input type="text" name="name" maxlength="127" class="test2">
-                                <div class="error"></div>
-                            </div>
-                            <div class="d-flex flex-column">
-                                <label for="" class="required">メールアドレス</label>
-                                <input type="email" name="email" maxlength="100" value="">
-                                <div class="error"></div>
-                            </div>
-                            <div>
-                                <label for="">電話番号</label>
-                                <div class="pa-flag">
-                                    <div class="select-flag">
-                                        <div class="flag">
-
-                                        </div>
-                                        <ul class="lang-phone">
-                                            <li value="">
-                                                <img src="./assets/img/language/vn.svg" alt="">
-                                                <span>ベトナム (+84)</span>
-                                            </li>
-                                            <li value="">
-                                                <img src="./assets/img/language/jp.svg" alt="">
-                                                <span>日本 (+81)</span>
-                                            </li>
-                                            <li value="">
-                                                <img src="./assets/img/language/sg.svg" alt="">
-                                                <span>シンガポール (+65)</span>
-                                                <span></span>
-                                            </li>
-                                            <li value="">
-                                                <img src="./assets/img/language/mm.svg" alt="">
-                                                <span>ミャンマー (+95)</span>
-                                            </li>
-                                            <li value="">
-                                                <img src="./assets/img/language/my.svg" alt="">
-                                                <span>マレーシア (+60)</span>
-                                            </li>
-                                            <li value="">
-                                                <img src="./assets/img/language/th.svg" alt="">
-                                                <span>タイ (+66)</span>
-                                            </li>
-                                            <li value="">
-                                                <img src="./assets/img/language/la.svg" alt="">
-                                                <span>ラオス (+856)</span>
-                                            </li>
-                                            <li value="">
-                                                <img src="./assets/img/language/kh.svg" alt="">
-                                                <span>カンボジア (+855)</span>
-                                            </li>
-                                            <li value="">
-                                                <img src="./assets/img/language/ph.svg" alt="">
-                                                <span>フィリピン (+63)</span>
-                                            </li>
-
-                                            <li value="">
-                                                <img src="./assets/img/language/bn.svg" alt="">
-                                                <span>ブルネイ (+673)</span>
-                                            </li>
-                                            <li value="">
-                                                <img src="./assets/img/language/id.svg" alt="">
-                                                <span>インドネシア (+62)</span>
-                                            </li>
-                                            <li value="">
-                                                <img src="./assets/img/language/kr.svg" alt="">
-                                                <span>韓国 (+82)</span>
-                                            </li>
-                                            <li value="">
-                                                <img src="./assets/img/language/cn.svg" alt="">
-                                                <span>中国 (+86)</span>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <input type="text" name="tel" maxlength="30" value="">
+        <main id="main">
+            <!-- ======= privacy Section ======= -->
+            <section id="contact" class="contact">
+                <div class="container">
+                    <div class="row ">
+                        <div class="pd-0 contact-form">
+                            <form action="#" class="d-flex flex-column needs-validation" novalidate>
+                                <p>お気軽にお問い合わせください。</p>
+                                <div class="d-flex flex-column">
+                                    <label for="">貴社名</label>
+                                    <input type="text" name="company" maxlength="127" value="" class="">
                                 </div>
-                                <div class="error"></div>
-                            </div>
-                            <div class="d-flex flex-row justify-content-between" style=" margin-top: 60px;">
+                                <div class="d-flex flex-column">
+                                    <label for="" class="required">お名前</label>
+                                    <input type="text" name="name" maxlength="127" class="test2">
+                                    <div class="error"></div>
+                                </div>
+                                <div class="d-flex flex-column">
+                                    <label for="" class="required">メールアドレス</label>
+                                    <input type="email" name="email" maxlength="100" value="">
+                                    <div class="error"></div>
+                                </div>
                                 <div>
-                                    <div class="d-flex flex-row align-items-center" style="margin-bottom: 10px;">
-                                        <input type="radio" name="radio-group" value="it">
-                                        <label for="" class="fz-14">ITソリューションについて</label>
-                                    </div>
+                                    <label for="">電話番号</label>
+                                    <div class="pa-flag">
+                                        <div class="select-flag">
+                                            <div class="flag">
 
-                                    <div class="d-flex flex-row align-items-center" style="margin-bottom: 10px;">
-                                        <input type="radio" name="radio-group" value="bpo">
-                                        <label for="" class="fz-14">BPOソリューションについて</label>
-                                    </div>
+                                            </div>
+                                            <ul class="lang-phone">
+                                                <li value="">
+                                                    <img src="./assets/img/language/vn.svg" alt="">
+                                                    <span>ベトナム (+84)</span>
+                                                </li>
+                                                <li value="">
+                                                    <img src="./assets/img/language/jp.svg" alt="">
+                                                    <span>日本 (+81)</span>
+                                                </li>
+                                                <li value="">
+                                                    <img src="./assets/img/language/sg.svg" alt="">
+                                                    <span>シンガポール (+65)</span>
+                                                    <span></span>
+                                                </li>
+                                                <li value="">
+                                                    <img src="./assets/img/language/mm.svg" alt="">
+                                                    <span>ミャンマー (+95)</span>
+                                                </li>
+                                                <li value="">
+                                                    <img src="./assets/img/language/my.svg" alt="">
+                                                    <span>マレーシア (+60)</span>
+                                                </li>
+                                                <li value="">
+                                                    <img src="./assets/img/language/th.svg" alt="">
+                                                    <span>タイ (+66)</span>
+                                                </li>
+                                                <li value="">
+                                                    <img src="./assets/img/language/la.svg" alt="">
+                                                    <span>ラオス (+856)</span>
+                                                </li>
+                                                <li value="">
+                                                    <img src="./assets/img/language/kh.svg" alt="">
+                                                    <span>カンボジア (+855)</span>
+                                                </li>
+                                                <li value="">
+                                                    <img src="./assets/img/language/ph.svg" alt="">
+                                                    <span>フィリピン (+63)</span>
+                                                </li>
 
-                                    <div class="d-flex flex-row align-items-center" style="margin-bottom: 10px;">
-                                        <input type="radio" name="radio-group" value="hr">
-                                        <label for="" class="fz-14">HRソリューションについて</label>
-                                    </div>
-
-                                    <div class="d-flex flex-row align-items-center" style="margin-bottom: 10px;">
-                                        <input type="radio" name="radio-group">
-                                        <label for="" class="fz-14">その他</label>
+                                                <li value="">
+                                                    <img src="./assets/img/language/bn.svg" alt="">
+                                                    <span>ブルネイ (+673)</span>
+                                                </li>
+                                                <li value="">
+                                                    <img src="./assets/img/language/id.svg" alt="">
+                                                    <span>インドネシア (+62)</span>
+                                                </li>
+                                                <li value="">
+                                                    <img src="./assets/img/language/kr.svg" alt="">
+                                                    <span>韓国 (+82)</span>
+                                                </li>
+                                                <li value="">
+                                                    <img src="./assets/img/language/cn.svg" alt="">
+                                                    <span>中国 (+86)</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <input type="text" name="tel" maxlength="30" value="">
                                     </div>
                                     <div class="error"></div>
                                 </div>
-                                <select name="" class="content-service" >
-                                </select>
-                            </div>
-                            <div class="d-flex flex-column">
-                                <label for="">お問い合わせ内容</label>
-                                <textarea maxlength="200" type="text" name="comment"></textarea><label
-                                    for="content"></label>
-                                <div class="error"></div>
-                            </div>
-                            <div class="d-flex align-items-center justify-content-start flex-column mr-t-36 mr-bt-36">
-                                <div class="d-flex  align-items-start justify-content-center">
-                                    <input type="checkbox" name="accept-terms" value="false">
-                                    <div class=""><a href="./policy" class="under ">当社個人情報保護方針</a> に同意される場合は、<br>
-                                        こちらにチェックをお願いします。</div>
-                                </div>
-                                <div class="error"></div>
+                                <div class="d-flex flex-row justify-content-between" style=" margin-top: 60px;">
+                                    <div>
+                                        <div class="d-flex flex-row align-items-center" style="margin-bottom: 10px;">
+                                            <input type="radio" name="radio-group" value="it">
+                                            <label for="" class="fz-14">ITソリューションについて</label>
+                                        </div>
 
-                            </div>
-                            <div class="d-flex justify-content-center">
-                                <button type="submit" class="contact-sm">送信</button>
-                            </div>
-                        </form>
-                        <div class="contact-right lign-items-center justify-content-center">
-                            <div>
-                                <p class="st-14-fw-6" style="
+                                        <div class="d-flex flex-row align-items-center" style="margin-bottom: 10px;">
+                                            <input type="radio" name="radio-group" value="bpo">
+                                            <label for="" class="fz-14">BPOソリューションについて</label>
+                                        </div>
+
+                                        <div class="d-flex flex-row align-items-center" style="margin-bottom: 10px;">
+                                            <input type="radio" name="radio-group" value="hr">
+                                            <label for="" class="fz-14">HRソリューションについて</label>
+                                        </div>
+
+                                        <div class="d-flex flex-row align-items-center" style="margin-bottom: 10px;">
+                                            <input type="radio" name="radio-group">
+                                            <label for="" class="fz-14">その他</label>
+                                        </div>
+                                        <div class="error"></div>
+                                    </div>
+                                    <select name="" class="content-service">
+                                    </select>
+                                </div>
+                                <div class="d-flex flex-column">
+                                    <label for="">お問い合わせ内容</label>
+                                    <textarea maxlength="200" type="text" name="comment"></textarea><label
+                                        for="content"></label>
+                                    <div class="error"></div>
+                                </div>
+                                <div
+                                    class="d-flex align-items-center justify-content-start flex-column mr-t-36 mr-bt-36">
+                                    <div class="d-flex  align-items-start justify-content-center">
+                                        <input type="checkbox" name="accept-terms" value="false">
+                                        <div class=""><a href="./policy" class="under ">当社個人情報保護方針</a> に同意される場合は、<br>
+                                            こちらにチェックをお願いします。</div>
+                                    </div>
+                                    <div class="error"></div>
+
+                                </div>
+                                <div class="d-flex justify-content-center">
+                                    <button type="submit" class="contact-sm">送信</button>
+                                </div>
+                            </form>
+                            <div class="contact-right lign-items-center justify-content-center">
+                                <div>
+                                    <p class="st-14-fw-6" style="
                                 margin-bottom: 32px;
                             ">PASONA TECH VIETNAM CO., LTD.</p>
-                                <p class="st-14-fw-5">Email: inquiry@pasonatech.vn</p>
-                                <p class="st-14-fw-5">電話番号: +84-28-3812-7150  <br>
-                                    (日本語/英語/ベトナム語)
-                                </p>
-                                <p class="st-14-un" style="
+                                    <p class="st-14-fw-5">Email: inquiry@pasonatech.vn</p>
+                                    <p class="st-14-fw-5">電話番号: +84-28-3812-7150 <br>
+                                        (日本語/英語/ベトナム語)
+                                    </p>
+                                    <p class="st-14-un" style="
                                 margin-top: 32px;
                             "> よくある質問は <a href="./fqa" class="under">こちら</a> </p>
-                                
+
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section><!-- End content Section -->
-    </main>
-    <div id="footer"></div>
+            </section><!-- End content Section -->
+        </main>
+    </script>
 
+    <div class="header"></div>
+    <div class="target-layout"></div>
     <a href="#" class="back-to-top">
         <div class="top"></div>
         <div class="arrow-up"></div>
         Top
     </a>
+    <div class="footer"></div>
+
     <!-- Vendor JS Files -->
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.js"></script>
     <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/mustache/mustache.min.js"></script>
     <script src="assets/vendor/aos/aos.js"></script>
-
 
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
-    <script src="assets/js/contact.js"></script>
     <script>
-        document.querySelector('.navbar li:nth-child(7) a').classList.add('active');
+        main.loadHtml('fqa')
     </script>
 </body>
 
