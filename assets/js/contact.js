@@ -164,7 +164,6 @@
         select('.lang-phone').style.zIndex = "-1";
 
         openDrop = false;
-        console.log("t")
 
     })
 
