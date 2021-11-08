@@ -1241,11 +1241,38 @@ General
   background-size: cover;
   flex-wrap: nowrap;
   justify-content: center;
+  transition: 0.5s linear;
 }
 
+.other .left,
+.other .right {
+  box-shadow: inset 0 0 0 12rem white;
+  position: relative;
+  cursor: pointer;
+}
+
+.other .link span{
+  font-size: 20px;
+}
+
+.other .right .title, 
+.other .right .link,
+.other .left .title, 
+.other .left .link{
+  color: black; 
+}
+
+.other .right:hover .title, 
+.other .right:hover .link,
+.other .left:hover .title, 
+.other .left:hover .link{
+  color: #FFFFFF;
+ 
+}
 
 .other .left:before,
 .other .right:after {
+  background-color:#ffd0d0;
   content: "";
   background-repeat: no-repeat;
   background-position: center;
@@ -1255,9 +1282,16 @@ General
   right: 0px;
   bottom: 0px;
   left: 0px;
-  
+  opacity: 0.2;
 }
 
+.other .left:hover,
+.other .right:hover{
+  background: #BA1D24;
+  box-shadow: inset 0 0 0 0px white;
+  color: #BA1D24;
+ 
+}
 
 .other .left:before {
   background-image: url(../img/message/image1.jpg);
