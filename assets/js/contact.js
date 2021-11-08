@@ -135,14 +135,12 @@
         select('.lang-phone').style.opacity = openDrop? "1" : "0";
         select('.lang-phone').style.visibility = openDrop? "visible" : "hidden";
         select('.lang-phone').style.zIndex = openDrop? "1" : "-1";
-        console.log("t")
     })
 
     on("click", 'body', function (e) {
         const smTar = select('.select-flag').contains(e.target);
         select('.lang-phone').style.visibility = smTar?  "" : "hidden" ;
         select('.flag').style.boxShadow = smTar?   "0 0 0 0.2rem hsl(357deg 73% 42% / 20%)" : "";
-        console.log("t")
     })
 
     on("click", '.lang-phone', function (e) {

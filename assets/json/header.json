@@ -1,20 +1,34 @@
 {
     "ja": {
+		"profile" : "会社概要",
         "message" : "メッセージ" ,
         "company" : "会社情報" ,
         "history" : "沿革" ,
+		"service" : "サービス",
         "it" : "ITソリューション" ,
         "bpo" : "BPOソリューション" ,
         "hr" : "BPOソリューション" ,
         "blog" : "ブログ" ,
         "news" : "ニュース" ,
-        "career" : "採用情報" ,
+		"recruit" : "採用情報", 
         "fqa" : "よくある質問" ,
         "contact" : "お問い合わせ" ,
-        "language" : "Language" ,
-        "ja" : "日本語",
-        "en" : "English",
-        "vn" : "Tiếng Việt",
-        "kr" : "한국"
-    }
+        "lang" : "Language" 
+    },
+    "vn" : {
+		"profile" : "会社概要",
+        "message" : "メッセージ" ,
+        "company" : "会社情報" ,
+        "history" : "沿革" ,
+		"service" : "サービス",
+        "it" : "ITソリューション" ,
+        "bpo" : "BPOソリューション" ,
+        "hr" : "BPOソリューション" ,
+        "blog" : "ブログ" ,
+        "news" : "ニュース" ,
+		"recurit" : "採用情報", 
+        "fqa" : "よくある質問" ,
+        "contact" : "お問い合わせ" ,
+        "lang" : "Language" 
+    } 
 }
