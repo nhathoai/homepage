@@ -1882,6 +1882,7 @@ Privacy
   position: absolute;
   max-height: 200px;
   /* visibility: hidden; */
+  z-index: -1;
   transition: 0.1s;
   opacity: 0;
   width: 220px;
