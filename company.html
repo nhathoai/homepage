@@ -30,8 +30,8 @@
 </head>
 
 <body>
-    <div id="header"></div>
-    <!-- ======= Hero Section ======= -->
+    <script id="template" type="text/template">
+        <!-- ======= Hero Section ======= -->
     <section id="main-top" class="main-top d-flex align-items-center">
         <div class="container-fluid">
             <div class="main-top__link">
@@ -285,24 +285,35 @@
 
         </div><!-- End content Section -->
     </main>
-    <div id="footer"></div>
+    </script>
 
+
+    <div class="header"></div>
+    <div class="target-layout"></div>
     <a href="#" class="back-to-top">
         <div class="top"></div>
         <div class="arrow-up"></div>
         Top
     </a>
+    <div class="footer"></div>
+
 
     <!-- Vendor JS Files -->
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.js"></script>
     <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/mustache/mustache.min.js"></script>
     <script src="assets/vendor/aos/aos.js"></script>
 
 
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
+
     <script>
-        document.querySelector('.navbar li a').classList.add('active');
+        main.loadHtml('company');
+    </script>
+
+    <script>
+        // document.querySelector('.navbar li a').classList.add('active');
     </script>
 
 </body>

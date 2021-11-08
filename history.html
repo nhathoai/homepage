@@ -16,7 +16,7 @@
     <link
         href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
         rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,600,700" rel="stylesheet">
     <!-- Vendor CSS Files -->
     <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
@@ -30,36 +30,37 @@
 </head>
 
 <body>
-    <div id="header"></div>
-    <!-- ======= Hero Section ======= -->
-    <section id="main-top" class="main-top d-flex align-items-center">
-        <div class="container-fluid">
-            <div class="main-top__link">
-                <a href="./">
-                    トップ
-                </a> > 沿革
+
+    <script id="template" type="text/template">
+        <!-- ======= Hero Section ======= -->
+        <section id="main-top" class="main-top d-flex align-items-center">
+            <div class="container-fluid">
+                <div class="main-top__link">
+                    <a href="./">
+                        トップ
+                    </a> > 沿革
+                </div>
+                <div class="row">
+                    <p>沿革</p>
+                </div>
             </div>
-            <div class="row">
-                <p>沿革</p>
-            </div>
-        </div>
-    </section><!-- End Hero -->
+        </section><!-- End Hero -->
 
 
-    <main id="main">
-        <!-- ======= content Section ======= -->
-        <section id="content-timeline" class="content-timeline">
-            <div class="container">
-                <div class="row-fluid ">
-                    <!-- col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 -->
+        <main id="main">
+            <!-- ======= content Section ======= -->
+            <section id="content-timeline" class="content-timeline">
+                <div class="container">
+                    <div class="row-fluid ">
+                        <!-- col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 -->
                         <ul class="timeline">
 
                             <li class="timeline-item">
-                                <div class="timeline-info-left" data-aos="flip-up" >
+                                <div class="timeline-info-left" data-aos="flip-up">
                                     <span class="timeline-info-date">2004年2月</span>
                                 </div>
                                 <div class="timeline-marker"></div>
-                                <div class="timeline-info-right" data-aos="flip-up"  >
+                                <div class="timeline-info-right" data-aos="flip-up">
                                     <div>
                                         <span class="timeline-info-content">CS Factory Co.,Ltd. 設立</span>
                                     </div>
@@ -68,236 +69,246 @@
 
 
                             <li class="timeline-item">
-                                <div class="timeline-info-left" data-aos="flip-up" >
+                                <div class="timeline-info-left" data-aos="flip-up">
                                     <span class="timeline-info-content">ラボ型進出支援サービス開始</span>
                                 </div>
                                 <div class="timeline-marker circle"></div>
-                                <div class="timeline-info-right" data-aos="flip-up" >
+                                <div class="timeline-info-right" data-aos="flip-up">
                                     <span class="timeline-info-date">2006年10月</span>
                                 </div>
                             </li>
-                            
+
                             <li class="timeline-item">
-                                <div class="timeline-info-left" data-aos="flip-up" >
+                                <div class="timeline-info-left" data-aos="flip-up">
                                     <span class="timeline-info-content">CADアウトソーシングサービス開始</span>
                                 </div>
                                 <div class="timeline-marker circle"></div>
-                                <div class="timeline-info-right" data-aos="flip-up" >
+                                <div class="timeline-info-right" data-aos="flip-up">
                                     <span class="timeline-info-date">2007年10月</span>
                                 </div>
                             </li>
 
                             <li class="timeline-item">
-                                <div class="timeline-info-left" data-aos="flip-up" >
+                                <div class="timeline-info-left" data-aos="flip-up">
                                     <span class="timeline-info-date">2008年5月</span>
                                 </div>
                                 <div class="timeline-marker"></div>
-                                <div class="timeline-info-right" data-aos="flip-up" >
-                                    <span class="timeline-info-content">Pasona Tech Vietnam Co.,Ltd 設立<br>※CS Factoryはパソナテックに事業譲渡をし、<br> PasonaTech Vietnamが誕生。</span>
+                                <div class="timeline-info-right" data-aos="flip-up">
+                                    <span class="timeline-info-content">Pasona Tech Vietnam Co.,Ltd 設立<br>※CS
+                                        Factoryはパソナテックに事業譲渡をし、<br> PasonaTech Vietnamが誕生。</span>
                                 </div>
                             </li>
 
                             <li class="timeline-item">
-                                <div class="timeline-info-left" data-aos="flip-up" >
+                                <div class="timeline-info-left" data-aos="flip-up">
                                     <span class="timeline-info-content">給与パッケージ販売開始</span>
                                 </div>
                                 <div class="timeline-marker circle"></div>
-                                <div class="timeline-info-right" data-aos="flip-up" >
+                                <div class="timeline-info-right" data-aos="flip-up">
                                     <span class="timeline-info-date">2009年11月</span>
                                 </div>
                             </li>
 
                             <li class="timeline-item">
-                                <div class="timeline-info-left " data-aos="flip-up" >
+                                <div class="timeline-info-left " data-aos="flip-up">
                                     <span class="timeline-info-content">日系独資100％の会社としては初の人材紹介事業開始</span>
                                 </div>
                                 <div class="timeline-marker circle"></div>
-                                <div class="timeline-info-right" data-aos="flip-up" >
+                                <div class="timeline-info-right" data-aos="flip-up">
                                     <span class="timeline-info-date">2011年11月</span>
                                 </div>
                             </li>
 
                             <li class="timeline-item">
-                                <div class="timeline-info-left" data-aos="flip-up" >
+                                <div class="timeline-info-left" data-aos="flip-up">
                                     <span class="timeline-info-date">2013年11月</span>
                                 </div>
                                 <div class="timeline-marker"></div>
-                                <div class="timeline-info-right" data-aos="flip-up" >
+                                <div class="timeline-info-right" data-aos="flip-up">
                                     <span class="timeline-info-content">ハノイ駐在員事務所設立</span>
                                 </div>
                             </li>
 
                             <li class="timeline-item timeline-item-short">
-                                <div class="timeline-info-left" data-aos="flip-up" >
+                                <div class="timeline-info-left" data-aos="flip-up">
                                     <span class="timeline-info-content">採用代行（RPO）サービス開始</span>
                                 </div>
                                 <div class="timeline-marker circle"></div>
-                                <div class="timeline-info-right" data-aos="flip-up" >
+                                <div class="timeline-info-right" data-aos="flip-up">
                                     <span class="timeline-info-date">2014年3月</span>
                                 </div>
                             </li>
 
                             <li class="timeline-item">
-                                <div class="timeline-info-left" data-aos="flip-up" >
+                                <div class="timeline-info-left" data-aos="flip-up">
                                     <span class="timeline-info-content">おもてなし研修開始</span>
                                 </div>
                                 <div class="timeline-marker circle"></div>
-                                <div class="timeline-info-right" data-aos="flip-up" >
+                                <div class="timeline-info-right" data-aos="flip-up">
                                     <span class="timeline-info-date">2014年6月</span>
                                 </div>
                             </li>
 
                             <li class="timeline-item timeline-item-short">
-                                <div class="timeline-info-left" data-aos="flip-up" >
+                                <div class="timeline-info-left" data-aos="flip-up">
                                     <span class="timeline-info-date">2015年6月</span>
                                 </div>
                                 <div class="timeline-marker"></div>
-                                <div class="timeline-info-right" data-aos="flip-up" >
+                                <div class="timeline-info-right" data-aos="flip-up">
                                     <span class="timeline-info-content">ハノイ駐在員事務所がハノイ支店へと変更</span>
                                 </div>
                             </li>
 
                             <li class="timeline-item">
-                                <div class="timeline-info-left" data-aos="flip-up" >
+                                <div class="timeline-info-left" data-aos="flip-up">
                                     <span class="timeline-info-content">産学連携先進技術者育成プログラム開始</span>
                                 </div>
                                 <div class="timeline-marker circle"></div>
-                                <div class="timeline-info-right" data-aos="flip-up" >
+                                <div class="timeline-info-right" data-aos="flip-up">
                                     <span class="timeline-info-date">2015年11月</span>
                                 </div>
                             </li>
 
 
                             <li class="timeline-item">
-                                <div class="timeline-info-left" data-aos="flip-up" >
+                                <div class="timeline-info-left" data-aos="flip-up">
                                     <span class="timeline-info-date">2018年7月</span>
                                 </div>
                                 <div class="timeline-marker"></div>
-                                <div class="timeline-info-right" data-aos="flip-up" >
+                                <div class="timeline-info-right" data-aos="flip-up">
                                     <span class="timeline-info-content">ホーチミンサテライトセンター 設立</span>
                                 </div>
                             </li>
 
                             <li class="timeline-item timeline-item-short">
-                                <div class="timeline-info-left" data-aos="flip-up" >
+                                <div class="timeline-info-left" data-aos="flip-up">
                                     <span class="timeline-info-date">2019年1月</span>
                                 </div>
                                 <div class="timeline-marker"></div>
-                                <div class="timeline-info-right" data-aos="flip-up" >
+                                <div class="timeline-info-right" data-aos="flip-up">
                                     <span class="timeline-info-content">ダナン支店 設立</span>
                                 </div>
                             </li>
 
                             <li class="timeline-item timeline-item-short">
-                                <div class="timeline-info-left" data-aos="flip-up" >
+                                <div class="timeline-info-left" data-aos="flip-up">
                                     <span class="timeline-info-content">ダナン市とMOU締結（Pasona Group）</span>
                                 </div>
                                 <div class="timeline-marker circle"></div>
-                                <div class="timeline-info-right" data-aos="flip-up" >
+                                <div class="timeline-info-right" data-aos="flip-up">
                                     <span class="timeline-info-date">2019年4月</span>
                                 </div>
                             </li>
 
                             <li class="timeline-item">
-                                <div class="timeline-info-left" data-aos="flip-up" >
+                                <div class="timeline-info-left" data-aos="flip-up">
                                     <span class="timeline-info-content">ペイロールアウトソーシングサービス開始</span>
                                 </div>
                                 <div class="timeline-marker circle"></div>
-                                <div class="timeline-info-right" data-aos="flip-up" >
+                                <div class="timeline-info-right" data-aos="flip-up">
                                     <span class="timeline-info-date">2019年7月</span>
                                 </div>
                             </li>
 
                             <li class="timeline-item">
-                                <div class="timeline-info-left" data-aos="flip-up" >
+                                <div class="timeline-info-left" data-aos="flip-up">
                                     <span class="timeline-info-content">ダナン市より市の発展に貢献した企業として表彰を受ける</span>
                                 </div>
                                 <div class="timeline-marker circle"></div>
-                                <div class="timeline-info-right" data-aos="flip-up" >
+                                <div class="timeline-info-right" data-aos="flip-up">
                                     <span class="timeline-info-date">2020年2</span>
                                 </div>
                             </li>
 
                             <li class="timeline-item timeline-item-last">
-                                <div class="timeline-info-left" data-aos="flip-up" >
+                                <div class="timeline-info-left" data-aos="flip-up">
                                     <span class="timeline-info-content">採用テックプロダクト「Pasona Crossing」リリース</span>
                                 </div>
                                 <div class="timeline-marker circle"></div>
-                                <div class="timeline-info-right" data-aos="flip-up" >
+                                <div class="timeline-info-right" data-aos="flip-up">
                                     <span class="timeline-info-date">2021年4月</span>
                                 </div>
                             </li>
 
                             <li class="timeline-item ">
-                                <div class="timeline-info-left" data-aos="flip-up" >
+                                <div class="timeline-info-left" data-aos="flip-up">
                                     <span class="timeline-info-content">Salesforceエンジニア育成プログラム開始</span>
                                 </div>
                                 <div class="timeline-marker circle"></div>
-                                <div class="timeline-info-right" data-aos="flip-up" >
+                                <div class="timeline-info-right" data-aos="flip-up">
                                     <span class="timeline-info-date">2021年4月</span>
                                 </div>
                             </li>
 
                         </ul>
+                    </div>
                 </div>
-            </div>
 
-        </section><!-- End content Section -->
+            </section><!-- End content Section -->
 
-        <!-- =======  Other Section ======= -->
-        <div id="other" class="other">
-            <div class="container-fluid">
-                <div class="row">
+            <!-- =======  Other Section ======= -->
+            <div id="other" class="other">
+                <div class="container-fluid">
+                    <div class="row">
 
-                    <div class="left col-lg-6 col-md-12 box d-flex flex-column  align-items-center">
-                        <div  class = "md-1 mouse_scroll" >
-                            <div>
-                                <span class="m_scroll_arrows unu"></span>
-                                <span class="m_scroll_arrows doi"></span>
+                        <div class="left col-lg-6 col-md-12 box d-flex flex-column  align-items-center">
+                            <div class="md-1 mouse_scroll">
+                                <div>
+                                    <span class="m_scroll_arrows unu"></span>
+                                    <span class="m_scroll_arrows doi"></span>
+                                </div>
                             </div>
+                            <p class="title fz-40">
+                                メッセージ
+                            </p>
+                            <a href="./message" target="_self" class="link">
+                                <span class=" fz-14">
+                                    Message
+                                </span>
+                            </a>
                         </div>
-                        <p class="title fz-40">
-                            メッセージ
-                        </p>
-                        <a href="./message" target="_self" class="link">
-                            <span class=" fz-14">
-                                Message
-                            </span>
-                        </a>
-                    </div>
 
-                    <div class=" right col-lg-6 col-md-12 box d-flex flex-column  align-items-center">
-                        <p class="title fz-40">
-                            会社情報
-                        </p>
-                        <a href="./history" target="_self" class="link">
-                            <span class=" fz-14">
-                                About us
-                            </span>
-                        </a>
+                        <div class=" right col-lg-6 col-md-12 box d-flex flex-column  align-items-center">
+                            <p class="title fz-40">
+                                会社情報
+                            </p>
+                            <a href="./history" target="_self" class="link">
+                                <span class=" fz-14">
+                                    About us
+                                </span>
+                            </a>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-        </div><!-- End content Section -->
-    </main>
-    <div id="footer"></div>
+            </div><!-- End content Section -->
+        </main>
 
+    </script>
+
+
+    <div class="header"></div>
+    <div class="target-layout"></div>
     <a href="#" class="back-to-top">
         <div class="top"></div>
         <div class="arrow-up"></div>
         Top
-        <!-- <i class="bi bi-arrow-up-short"></i> -->
     </a>
+    <div class="footer"></div>
 
-    <!-- Vendor JS Files -->
+     <!-- Vendor JS Files -->
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.js"></script>
     <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/mustache/mustache.min.js"></script>
     <script src="assets/vendor/aos/aos.js"></script>
 
 
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
+
+    <script>
+        main.loadHtml('company');
+    </script>
     <script>
         document.querySelector('.navbar li a').classList.add('active');
     </script>
