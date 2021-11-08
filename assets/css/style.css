@@ -1058,6 +1058,7 @@ General
 
 @media (max-width: 768px) {
   .main-top__link {
+    margin-top: 0px;
     margin-left: 10px;
     font-size: 12px;
   }
@@ -1065,6 +1066,12 @@ General
   .main-top p {
     padding-bottom: 0;
     font-size: 38px;
+  }
+}
+
+@media (max-width: 441px) {
+  .main-top__link {
+    margin-top: 60px;
   }
 }
 
