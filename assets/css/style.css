@@ -260,6 +260,17 @@ section#hire {
   padding: 0 53px;
 }
 
+@media (max-width:1065px) {
+  .header .logo img {
+    margin-left: 30px;
+  }
+}
+@media (max-width:768px) {
+  .header .logo img {
+    margin-left: 0px;
+  }
+}
+
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
@@ -1039,11 +1050,21 @@ General
   font-weight: normal;
 }
 
+@media (max-width: 1077px) {
+  .main-top__link {
+    margin-top: 60px;  
+  }
+}
+
 @media (max-width: 768px) {
   .main-top__link {
-    margin-top: 60px;
-    margin-left: 0;
+    margin-left: 10px;
     font-size: 12px;
+  }
+
+  .main-top p {
+    padding-bottom: 0;
+    font-size: 38px;
   }
 }
 
@@ -2298,6 +2319,9 @@ need change after
   #contents,
   #contents-timeline {
     padding: 60px 10px;
+  }
+  .ms-page-title {
+    font-size: 38px;
   }
 }
 
