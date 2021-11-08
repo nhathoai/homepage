@@ -30,70 +30,71 @@
 </head>
 
 <body>
-    <div id="header"></div>
-    <!-- ======= Hero Section ======= -->
-    <section id="main-top" class="main-top d-flex align-items-center">
-        <div class="container-fluid test">
-            <div class="main-top__link">
-                <a href="./">
-                    トップ
-                </a> > 採用情報
-            </div>
-            <div class="row">
-                <p>採用情報</p>
-            </div>
-        </div>
-    </section><!-- End Hero -->
 
-
-    <main id="main">
-        <!-- ======= privacy Section ======= -->
-        <section id="recruit" class="recruit">
-            <div class="container">
+    <script id="template" type="text/template">
+        <!-- ======= Hero Section ======= -->
+        <section id="main-top" class="main-top d-flex align-items-center">
+            <div class="container-fluid test">
+                <div class="main-top__link">
+                    <a href="./">
+                        トップ
+                    </a> > 採用情報
+                </div>
                 <div class="row">
-                    <div class="d-flex flex-column align-items-center">
-                        <p style="font-size: 25px;">
-                            弊社採用につきましては、以下へお問い合わせください
-                        </p>
-
-                        <span>
-                            PASONA TECH VIETNAM CO., LTD.
-                        </span>
-
-                        <span>
-                            inquiry@pasonatech.vn
-                        </span>
-
-                        <span>
-                            電話番号: +84-28-3812-7150 (日本語/英語/ベトナム語)
-                        </span>
-                        
-                    </div>
+                    <p>採用情報</p>
                 </div>
             </div>
-        </section><!-- End content Section -->
-    </main>
+        </section><!-- End Hero -->
 
-    <div id="footer"></div>
 
+        <main id="main">
+            <!-- ======= privacy Section ======= -->
+            <section id="recruit" class="recruit">
+                <div class="container">
+                    <div class="row">
+                        <div class="d-flex flex-column align-items-center">
+                            <p style="font-size: 25px;">
+                                弊社採用につきましては、以下へお問い合わせください
+                            </p>
+
+                            <span>
+                                PASONA TECH VIETNAM CO., LTD.
+                            </span>
+
+                            <span>
+                                inquiry@pasonatech.vn
+                            </span>
+
+                            <span>
+                                電話番号: +84-28-3812-7150 (日本語/英語/ベトナム語)
+                            </span>
+
+                        </div>
+                    </div>
+                </div>
+            </section><!-- End content Section -->
+        </main>
+    </script>
+
+    <div class="header"></div>
+    <div class="target-layout"></div>
     <a href="#" class="back-to-top">
         <div class="top"></div>
         <div class="arrow-up"></div>
         Top
-        <!-- <i class="bi bi-arrow-up-short"></i> -->
     </a>
+    <div class="footer"></div>
 
     <!-- Vendor JS Files -->
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.js"></script>
     <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/mustache/mustache.min.js"></script>
     <script src="assets/vendor/aos/aos.js"></script>
-    
-
 
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
     <script>
-        document.querySelector('.navbar li:nth-child(5) a').classList.add('active');
+        main.loadHtml('index')
     </script>
 
 </body>
