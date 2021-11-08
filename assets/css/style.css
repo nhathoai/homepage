@@ -1270,6 +1270,12 @@ General
  
 }
 
+/* .other .right:hover .link,
+.other .left:hover .link{
+  border-bottom: 1.5px solid #FFFFFF;
+ 
+} */
+
 .other .left:before,
 .other .right:after {
   background-color:#ffd0d0;
@@ -1307,6 +1313,10 @@ General
   z-index: 1;
 }
 
+.other .link{
+  border-bottom: 2px solid transparent; /* <- here */
+  transition: border-bottom 1s;
+}
 
 @media (max-width: 768px) {
 
