@@ -60,13 +60,13 @@ let main = (function () {
     return false;
   }
 
-  function loadHtml(nameClassLayout, nameIdTemplate) {
+  function loadHtml(nameClassLayout, nameIdTemplate, nameJson) {
     var targetContainer = select("." + nameClassLayout),
       template = select("#" + nameIdTemplate).innerHTML;
 
     var locale = localStorage.getItem("locale");
 
-    fetch('./assets/json/header.json')
+    fetch('./assets/json/' + nameJson +'.json')
       .then(response => {
         if (!response.ok) {
           throw new Error("HTTP error " + response.status);
