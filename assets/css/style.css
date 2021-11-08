@@ -310,6 +310,7 @@ section#hire {
 
 .navbar a,
 .navbar a:focus {
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -321,6 +322,10 @@ section#hire {
   position: relative;
   cursor: pointer;
   font-family: var(--font-ja);
+}
+.navbar a,
+.navbar a:focus:nth-child(3) {
+  font-family: var(--font-en);
 }
 
 .navbar .logo-group a {
@@ -2213,7 +2218,7 @@ need change after
     width: 100%;
     padding-right: 51px;
   }
-  #message .ms-first {
+  #message .ms-text {
     display: flex;
     flex-direction: column;  
     justify-content: space-between;
@@ -2277,13 +2282,13 @@ need change after
   #contents-timeline {
     padding: 60px 20px;
   }
-  #message .ms-second {
+  #message .ms-img {
     order: 1;
     display: flex;
     margin-bottom: 1rem;
     justify-content: center;
   }
-  #message .ms-first {
+  #message .ms-text {
     order: 2;
   }
   #message .ms-avatar {
@@ -2313,7 +2318,7 @@ need change after
     padding-right: 20px;
     margin-right: 0;
   } 
-  #message .row:nth-child(2) .ms-second {
+  #message .row:nth-child(2) .ms-img {
     flex-direction: row-reverse;
   }
   #message .row:nth-child(2) .ms-crop {
