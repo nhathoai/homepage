@@ -1698,7 +1698,7 @@ Privacy
 }
 
 #privacy .container-fluid,
-#recruit .container-fluid {
+#recruit .container{
   background: #FFFFFF;
   padding: 100px 70px;
 }
@@ -1903,14 +1903,16 @@ Privacy
   position: absolute;
   max-height: 200px;
   /* visibility: hidden; */
+  z-index: -1;
   transition: 0.1s;
   opacity: 0;
+  width: 220px;
 }
 
 .lang-phone li {
   display: flex;
   align-items: center;
-  padding: 10px 20px 10px 0.75rem;
+  padding: 10px 15px 10px 0.75rem;
   flex-wrap: wrap;
 }
 
@@ -1997,13 +1999,14 @@ need change after
     flex-direction: column-reverse;
   }
 
-  .contact form {
+  .contact form,
+  .contact .contact-right div {
     margin: 64px auto;
     max-width: 480px;
   }
 
   .contact .contact-right {
-    padding: 24px;
+    padding: 0;
   }
 
 }
