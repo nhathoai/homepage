@@ -30,5 +30,37 @@
         "fqa" : "FAQ" ,
         "contact" : "Liên hệ" ,
         "lang" : "Ngôn ngữ" 
-    } 
+    },
+    "en": {
+		"profile" : "会社概要",
+        "message" : "メッセージ" ,
+        "company" : "会社情報" ,
+        "history" : "沿革" ,
+		"service" : "サービス",
+        "it" : "ITソリューション" ,
+        "bpo" : "BPOソリューション" ,
+        "hr" : "BPOソリューション" ,
+        "blog" : "ブログ" ,
+        "news" : "ニュース" ,
+		"recruit" : "採用情報", 
+        "fqa" : "よくある質問" ,
+        "contact" : "お問い合わせ" ,
+        "lang" : "Language" 
+    },
+    "kr": {
+		"profile" : "会社概要",
+        "message" : "メッセージ" ,
+        "company" : "会社情報" ,
+        "history" : "沿革" ,
+		"service" : "サービス",
+        "it" : "ITソリューション" ,
+        "bpo" : "BPOソリューション" ,
+        "hr" : "BPOソリューション" ,
+        "blog" : "ブログ" ,
+        "news" : "ニュース" ,
+		"recruit" : "採用情報", 
+        "fqa" : "よくある質問" ,
+        "contact" : "お問い合わせ" ,
+        "lang" : "Language" 
+    }
 }
