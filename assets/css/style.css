@@ -1061,12 +1061,12 @@ General
   }
   
   .main-top__link {
-    margin-top: 60px;  
+    margin-top: 35px;  
   }
 }
 @media (max-width: 910px) {
   .main-top__link {
-    margin-top: 110px;  
+    margin-top: 85px;  
   }
 }
 
@@ -1085,7 +1085,7 @@ General
 
 @media (max-width: 383px) {
   .main-top__link {
-    margin-top: 80px;
+    margin-top: 35px;
   }
   .main-top p {
     padding-bottom: 0;
