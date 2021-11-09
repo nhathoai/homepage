@@ -1004,6 +1004,7 @@ footer .footer-top .footer-info p:not(.name, .mail) {
   font-size: 16px;
   position: relative;
   margin-bottom: 0;
+  
 }
 
 .footer .footer-top .footer-info .mail {
@@ -1110,6 +1111,7 @@ General
   font-family: var(--font-en);
   font-weight: 700;
   text-align: center;
+  text-transform: uppercase;
 }
 
 .main-top__link {
