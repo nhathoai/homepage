@@ -124,7 +124,7 @@ var Mustache = {
     if(context[name] !== undefined) {
       return context[name];
     }
-    throw("Can't find " + name + " in " + context);
+    // throw("Can't find " + name + " in " + context);
   },
 
   trim: function(s) {
