@@ -52,8 +52,8 @@
         "banner-left-desc": "history"
     },
     "vn": {
-        "breadcrumb-home": "トップ",
-        "breadcrumb-current": "会社情報",
+        "breadcrumb-home": "Trang chủ",
+        "breadcrumb-current": "Thông tin công ty",
         "header": "Thông tin công ty",
         "name": "Tên công ty",
         "company-name": "PASONA TECH VIETNAM CO., LTD.",
@@ -104,8 +104,8 @@
         "banner-left-desc": "history"
     },
     "en": {
-        "breadcrumb-home": "トップ",
-        "breadcrumb-current": "会社情報",
+        "breadcrumb-home": "Home",
+        "breadcrumb-current": "Company info",
         "header": "Company info",
         "name": "Company name",
         "company-name": "PASONA TECH VIETNAM CO., LTD.",

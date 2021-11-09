@@ -45,8 +45,8 @@
         "banner-left-desc": "About us"
     },
     "vn": {
-        "breadcrumb-home": "トップ",
-        "breadcrumb-current": "沿革",
+        "breadcrumb-home": "Trang chủ",
+        "breadcrumb-current": "Lịch sử phát triển",
         "header": "Lịch sử phát triển",
         "time-1": "Tháng 2 Năm 2004",
         "content-1": "Thành lập CS Factory Co.,Ltd.",
@@ -90,8 +90,8 @@
         "banner-left-desc": "About us"
     },
     "en": {
-        "breadcrumb-home": "トップ",
-        "breadcrumb-current": "沿革",
+        "breadcrumb-home": "Home",
+        "breadcrumb-current": "History",
         "header": "History",
         "time-1": "Feb/2004",
         "content-1": "CS Factory Co.,Ltd. 設立",
