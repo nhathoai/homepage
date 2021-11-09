@@ -388,4 +388,5 @@ let main = (function () {
     on: on,
     loadHtml: loadHtml
   }
+  
 })();

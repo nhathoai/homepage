@@ -126,6 +126,41 @@ a:hover {
   margin-bottom: 36px;
 }
 
+
+
+input[type=checkbox]{
+  display: none;
+}
+
+input[type=checkbox]+label {
+  position: relative;
+  padding-left: 36px;
+  cursor: pointer;
+  vertical-align: middle;
+  white-space: nowrap;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+input[type=checkbox]+label::before {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 25px;
+  height: 25px;
+  content: "";
+  border: solid 1px #ddd;
+  -webkit-border-radius: 0.4rem;
+  border-radius: 0.4rem;
+}
+
+input[type=checkbox]:checked+label:before {
+  background: no-repeat 50% 50% url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAiIGhlaWdodD0iMTAwIiB2aWV3Qm94PSIwIDAgMTAwIDEwMCI+PHBhdGggZmlsbD0iI0JBMUQyNCIgZD0iTTc0IDMyLjljLTEuMy0xLjMtMy4zLTEuMy00LjYgMEw0Mi4xIDYwLjIgMzAuNyA0OC44Yy0xLjItMS40LTMuMy0xLjUtNC42LS4zcy0xLjUgMy4zLS4zIDQuNmwuMy4zIDEzLjcgMTMuN2MxLjMgMS4zIDMuMyAxLjMgNC42IDBMNzQgMzcuNWMxLjMtMS4yIDEuMy0zLjMgMC00LjZ6Ii8+PC9zdmc+);
+  -webkit-background-size: 140% auto;
+  background-size: 140% auto;
+}
 /*--------------------------------------------------------------
 # Sections
 --------------------------------------------------------------*/
@@ -1551,20 +1586,6 @@ General
   }
 }
 
-/* @media (max-width: 768px) {
-  .timeline-item.timeline-item-short {
-    height: 45px;
-  }
-
-  .timeline-item {
-    height: 171px;
-  }
-
-  .timeline-item.timeline-item-last {
-    height: 64px;
-  }
-} */
-
 /*
 faq
 */
@@ -1900,7 +1921,9 @@ Privacy
   width: 16rem;
   cursor: pointer;
 }
-
+.contact form select.content-service option{
+  background: #FFFFFF;
+}
 
 .contact form input[type=radio],
 .contact form input[type=checkbox] {
@@ -2410,3 +2433,40 @@ need change after
   }
 
 }
+
+
+
+input[type='radio']:after {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+  content: '';
+  display: inline-block;
+  visibility: visible;
+  border: 1px solid #DDD;
+}
+
+input[type='radio']:checked:after {
+  width: 20px;
+  height: 20px;
+  border-radius: 15px;
+  background-color: #BA1D24 ;
+  content: '';
+  display: inline-block;
+  border: 4px solid #FFFFFF;
+  border-spacing: 5px;
+  box-shadow: 0 0 0px 1px #DDD;
+}
+
+  /* input[type="radio"]:checked:before {
+    content: "";
+    display: block;
+    position: relative;
+    top: 3px;
+    left: 3px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #BA1D24;
+} */
