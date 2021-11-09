@@ -38,11 +38,11 @@
             <div class="container-fluid">
                 <div class="main-top__link">
                     <a href="./">
-                        トップ
-                    </a> > よくある質問
+                        {{breadcrumb-home}}
+                    </a> > {{breadcrumb-current}}
                 </div>
                 <div class="row">
-                    <p>よくある質問</p>
+                    <p>{{header}}</p>
                 </div>
             </div>
         </section><!-- End Hero -->
@@ -51,11 +51,11 @@
         <main id="main" class="faq-category">
             <div class="container faq-header">
                 <div class="row">
-                    <button>弊社に関する質問</button>
-                    <button>ITソリューションに関する質問</button>
-                    <button>BPOソリューションに関する質問</button>
-                    <button>HRソリューションに関する質問</button>
-                    <button>その他の質問</button>
+                    <button>{{qn-1}}</button>
+                    <button>{{qn-2}}</button>
+                    <button>{{qn-3}}</button>
+                    <button>{{qn-4}}</button>
+                    <button>{{qn-5}}</button>
                 </div>
             </div>
 
@@ -64,7 +64,7 @@
 
                 <div class="container">
                     <div id="qs-about" class="row">
-                        <p class="faq-content-title">弊社に関する質問</p>
+                        <p class="faq-content-title">{{qn-1}}</p>
                         <div class="accordion accordion-flush" id="faqlist1">
                             <div class="accordion-item">
                                 <h2 class="accordion-header">
@@ -99,7 +99,7 @@
 
 
                     <div id="qs-it" class="row">
-                        <p class="faq-content-title">ITソリューションに関する質問</p>
+                        <p class="faq-content-title">{{qn-2}}</p>
                         <div class="accordion accordion-flush" id="faqlist1">
                             <div class="accordion-item">
                                 <h2 class="accordion-header">
@@ -132,7 +132,7 @@
                     </div>
 
                     <div class="row">
-                        <p class="faq-content-title">BPOソリューションに関する質問</p>
+                        <p class="faq-content-title">{{qn-3}}</p>
                         <div class="accordion accordion-flush" id="faqlist1">
                             <div class="accordion-item">
                                 <h2 class="accordion-header">
@@ -166,7 +166,7 @@
 
 
                     <div class="row">
-                        <p class="faq-content-title">HRソリューションに関する質問</p>
+                        <p class="faq-content-title">{{qn-4}}</p>
                         <div class="accordion accordion-flush" id="faqlist1">
                             <div class="accordion-item">
                                 <h2 class="accordion-header">
@@ -200,7 +200,7 @@
 
 
                     <div class="row">
-                        <p class="faq-content-title">その他の質問</p>
+                        <p class="faq-content-title">{{qn-5}}</p>
                         <div class="accordion accordion-flush" id="faqlist1">
                             <div class="accordion-item">
                                 <h2 class="accordion-header">
