@@ -1055,28 +1055,41 @@ General
   font-weight: normal;
 }
 
-@media (max-width: 1077px) {
+@media (max-width: 1087px) {
+  .main-top p {
+    font-size: 50px;
+  }
+  
   .main-top__link {
     margin-top: 60px;  
+  }
+}
+@media (max-width: 910px) {
+  .main-top__link {
+    margin-top: 110px;  
   }
 }
 
 @media (max-width: 768px) {
   .main-top__link {
-    margin-top: 0px;
+    margin-top: 50px;
     margin-left: 10px;
     font-size: 12px;
   }
 
   .main-top p {
     padding-bottom: 0;
-    font-size: 38px;
+    font-size: 40px;
   }
 }
 
-@media (max-width: 441px) {
+@media (max-width: 383px) {
   .main-top__link {
-    margin-top: 60px;
+    margin-top: 80px;
+  }
+  .main-top p {
+    padding-bottom: 0;
+    font-size: 32px;
   }
 }
 
