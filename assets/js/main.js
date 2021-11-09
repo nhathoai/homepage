@@ -31,7 +31,7 @@ let main = (function () {
   /**
    * 
    */
-   const openHistory = function (index) {
+  const openHistory = function (index) {
     let pageHistory = window.location.href.indexOf("company");
 
     if (pageHistory >= 0) {
@@ -59,33 +59,193 @@ let main = (function () {
     }
     return false;
   }
- 
 
-  function loadHtml( nameJson) {
-    
-      Promise.all([
-        fetch('./assets/json/header.json') .then(response => { return response.json()}),
-        fetch('./assets/json/footer.json') .then(response => { return response.json()}),
-        fetch('./assets/json/' + nameJson + '.json') .then(response => { if (!response.ok) { debugger;throw new Error("HTTP error " + response.status); } return response.json(); })
+  /**
+   * 
+   * @param {*} nameJson 
+   */
+  function eventPageContact() {
+    on('submit', '.contact form', function (e) {
+      validated([this.elements["radio-group"],
+        this.elements["name"],
+        this.elements["email"],
+        this.elements["tel"],
+        this.elements["comment"],
+        this.elements["accept-terms"]
+      ]);
+
+      e.preventDefault();
+      e.stopPropagation();
+    })
+
+    on('focusout', '.contact input', function (e) {
+      validated([this]);
+    }, true);
+
+    on('focusout', '.contact textarea', function (e) {
+      validated([this]);
+    }, true);
+
+    on('click', '.contact input[type=checkbox]', function (e) {
+      validated([this]);
+    }, true);
+
+    on('click', '[name=radio-group]', function (e) {
+
+      const selectEle = select('.content-service');
+      let display = "none";
+      selectEle.innerHTML = "";
+
+      if (this.value == 'it') {
+        selectEle.insertAdjacentHTML('beforeend', '<option value="オフショア開発について">オフショア開発について</option>');
+        selectEle.insertAdjacentHTML('beforeend', '<option value="拠点進出について">拠点進出について</option>');
+        selectEle.insertAdjacentHTML('beforeend', '<option value="お見積もりの相談">お見積もりの相談</option>');
+        selectEle.insertAdjacentHTML('beforeend', '<option value="その他">その他</option>');
+        display = "block";
+      } else if (this.value == 'bpo') {
+        selectEle.insertAdjacentHTML('beforeend', '<option value="CADアウトソーシングについて">CADアウトソーシングについて</option>');
+        selectEle.insertAdjacentHTML('beforeend', '<option value="拠点進出について">拠点進出について</option>');
+        selectEle.insertAdjacentHTML('beforeend', '<option value="お見積もりの相談">お見積もりの相談</option>');
+        selectEle.insertAdjacentHTML('beforeend', '<option value="その他">その他</option>');
+        display = "block";
+      } else if (this.value == 'hr') {
+        selectEle.insertAdjacentHTML('beforeend', '<option value="採用支援について">採用支援について</option>');
+        selectEle.insertAdjacentHTML('beforeend', '<option value="人材派遣について">人材派遣について</option>');
+        selectEle.insertAdjacentHTML('beforeend', '<option value="人事コンサルティングについて">人事コンサルティングについて</option>');
+        selectEle.insertAdjacentHTML('beforeend', '<option value="教育・ビジネス研修について">教育・ビジネス研修について</option>');
+        selectEle.insertAdjacentHTML('beforeend', '<option value="その他">その他</option>');
+        display = "block";
+      }
+
+
+      select('.content-service').style.display = display;
+    }, true)
+
+    function validated(eles) {
+      let err = false;
+      let errEle;
+      let txt = "";
+
+      eles.forEach(function name(ele) {
+        const name = ele && ele.name;
+        const val = ele.value;
+        errEle = ele.parentNode && (ele.parentNode.querySelector('.error') || ele.parentNode.parentNode.querySelector('.error'));
+
+        if (name == "name") {
+          txt = (val.length <= 1) ? "貴社名は1文字以上で入力してください。" : "";
+          txt = (val.length == 0) ? "お名前を入力してください" : txt;
+        }
+
+        if (name == "email") {
+          txt = (/^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/.test(val)) ? "有効なメールアドレスを入力してください" : "";
+          txt = (val.length == 0) ? "メールアドレスを入力してください" : txt;
+        }
+
+        if (name == "tel") {
+          const match = val.match(/\s*(?:\+?(\d{1,2}))?[-. ]*(\d{2,3})[-. ]*(\d{3,4})[-. ]*(\d{3,4})(?: *x(\d+))?\s*$/im);
+          txt = (!match) ? "有効な電話番号を入力してください" : "";
+        }
+
+        if (name == "comment") {
+          txt = (val.length <= 1) ? "貴社名は1文字以上で入力してください。" : "";
+          txt = (val.length == 0) ? "お問い合わせ内容を記入してください" : txt;
+        }
+
+        if (name == "accept-terms") {
+          txt = (!ele.checked) ? "当社個人情報保護方針に同意してください" : "";
+        }
+
+        if (ele[0] && ele[0].name == 'radio-group') {
+          const arrChecked = Array.from(ele).filter(function name(ele) {
+            return ele.checked;
+          })
+
+          errEle = ele[0].parentNode.parentNode.querySelector('.error');
+          txt = (arrChecked == 0) ? "お問い合わせ内容を選択してください" : "";
+        }
+
+        errEle.innerText = txt;
+        if (txt) {
+          err = true;
+        }
+      })
+
+      return err;
+    }
+
+    var openDrop = false;
+
+    on("click", ".flag", function (e) {
+      openDrop = !openDrop;
+      select('.lang-phone').style.opacity = openDrop ? "1" : "0";
+      select('.lang-phone').style.visibility = openDrop ? "visible" : "hidden";
+      select('.lang-phone').style.zIndex = openDrop ? "1" : "-1";
+    })
+
+    on("click", 'body', function (e) {
+      const smTar = select('.select-flag').contains(e.target);
+      select('.lang-phone').style.visibility = smTar ? "" : "hidden";
+      select('.flag').style.boxShadow = smTar ? "0 0 0 0.2rem hsl(357deg 73% 42% / 20%)" : "";
+    })
+
+    on("click", '.lang-phone', function (e) {
+      const tagName = e.target.tagName.toLowerCase();
+      let liEle = e.target;
+
+      if (tagName == "ul") {
+        return;
+      }
+
+      if (tagName == "img" || tagName == "span") {
+        liEle = e.target.parentNode;
+      }
+
+      select('.flag').innerHTML = liEle.innerHTML;
+
+      select('.lang-phone').style.opacity = "0";
+      select('.lang-phone').style.visibility = "hidden";
+      select('.lang-phone').style.zIndex = "-1";
+
+      openDrop = false;
+
+    })
+  }
+
+  function loadHtml(nameJson) {
+
+    Promise.all([
+        fetch('./assets/json/header.json').then(response => {
+          return response.json()
+        }),
+        fetch('./assets/json/footer.json').then(response => {
+          return response.json()
+        }),
+        fetch('./assets/json/' + nameJson + '.json').then(response => {
+          if (!response.ok) {
+            debugger;
+            throw new Error("HTTP error " + response.status);
+          }
+          return response.json();
+        })
       ]).then(jsons => {
-        
+
         let locale = localStorage.getItem("locale");
-            locale = locale? locale : "ja";
+        locale = locale ? locale : "ja";
 
         const htmlHeader = Mustache.to_html('<header id="header" class="header fixed-top"> <div class="container-flud d-flex justify-content-between align-items-center "> <a href="./" class="logo d-flex align-items-center"> <img src="assets/img/PTVLogo.png" alt=""> </a> <nav id="navbar" class="navbar"> <ul> <li class="dropdown"> <a class="nav-link scrollto"> {{profile}} <i class="bi bi-chevron-down"></i> </a> <ul> <li><a href="./message">{{message}} </a></li> <li><a href="./company" target="_self">{{company}}</a></li> <li><a href="./history" target="_self">{{history}}</a></li> </ul> </li> <li class="dropdown"> <a class="nav-link scrollto" href="#service">{{service}} <i class="bi bi-chevron-down"></i></a> <ul> <li><a href="#">{{it}}</a></li> <li><a href="#">{{bpo}}</a></li> <li><a href="#">{{hr}}</a></li> </ul> </li> <li><a class="nav-link scrollto" href="#blog">{{blog}}</a></li> <li><a class="nav-link scrollto" href="#news">{{news}}</a></li> <li><a class="nav-link scrollto" href="./recruit">{{recruit}}</a></li> <li><a class="nav-link scrollto" href="./fqa">{{fqa}}</a></li> <li><a class="nav-link sub-contact scrollto" href="./contact">{{contact}}</a></li> <li> <div class="logo-group"> <a href="https://www.facebook.com/PasonaTechVietnam" class="nav-link-social" target="_blank"> <?xml version="1.0" encoding="utf-8"?> <svg class="fb" width="28" height="29" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"> <path d="M1579 128q35 0 60 25t25 60v1366q0 35-25 60t-60 25h-391v-595h199l30-232h-229v-148q0-56 23.5-84t91.5-28l122-1v-207q-63-9-178-9-136 0-217.5 80t-81.5 226v171h-200v232h200v595h-735q-35 0-60-25t-25-60v-1366q0-35 25-60t60-25h1366z" fill="#444444" /></svg> </a> <a href="https://www.linkedin.com/company/pasonatech-vietnam" class="nav-link-social" target="_blank"> <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="lk" class="bi bi-linkedin" viewBox="0 0 16 16"> <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" /> </svg> </a> </div> </li> <li class="dropdown"> <a class="nav-link scrollto" href="#about">{{lang}} <i class="bi bi-chevron-down"></i></a> <ul class="lang"> <li><img src="./assets/img/language/jp.svg"><a href="#" data-lang="ja"> 日本語</a></li> <li><img src="./assets/img/language/gb.svg"><a href="#" data-lang="en"> English</a></li> <li><img src="./assets/img/language/vn.svg"> <a href="#" data-lang="vn">Tiếng Việt</a> </li> <li><img src="./assets/img/language/kr.svg"><a href="#" data-lang="kr"> 한국</a></li> </ul> </li> </ul> <i class="bi bi-list mobile-nav-toggle"></i> </nav> </div> </header> <!-- End Header -->', jsons[0][locale]);
-          select('.header').outerHTML =  htmlHeader;
+        select('.header').outerHTML = htmlHeader;
 
         const htmlFooter = Mustache.to_html('<!-- ======= Footer ======= --> <footer id="footer" class="footer"> <div class="footer-top"> <div class="container"> <div class="row gy-4"> <div class="col-lg-6 col-md-12 col-sm-12 footer-info"> <p class="name">PASONA TECH VIETNAM CO., LTD.</p> <p class="mail">Email: inquiry@pasonatech.vn</p> <p><a href="" onclick="return main.openHistory(0)">ホーチミン本社 拠点情報</a> </p> <p><a href="" onclick="return main.openHistory(0)">ホーチミンサテライトオフィス 拠点情報</a></p> <p><a href="" onclick="return main.openHistory(1)">ハノイはオフィス 拠点情報</a></p> <p><a href="" onclick="return main.openHistory(1)">ダナンオフィス 拠点情報</a></p> </div> <div class=" footer-links-par col-lg-6 col-md-12  col-sm-12 d-flex justify-content-between"> <div class="footer-links  "> <h4>About us</h4> <ul> <li><a href="#">メッセージ</a></li> <li><a href="#">会社情報</a></li> <li><a href="#">沿革</a></li> </ul> </div> <div class="footer-links  "> <h4>What we do</h4> <ul> <li><a href="#">ITソリューション </a></li> <li><a href="#">BPOソリューション </a></li> <li><a href="#">HRソリューション </a></li> </ul> </div> <div class="footer-links  "> <h4>Update</h4> <ul> <li><a href="#">ブログ </a></li> <li><a href="#">ニュース </a></li> <li><a href="./recruit">採用情報 </a></li> <li><a href="#">社員インタビュー </a></li> </ul> </div> <div class="footer-links  "> <h4>Contact</h4> <ul> <li><a href="#">お問い合わせ </a></li> <li><a href="#">よくある質問 </a></li> </ul> </div> </div> </div> </div> </div> <div class="container"> <div class="copyright d-flex"> <p> ©PASONA TECH VIETNAM CO., LTD.</p> <a href="./policy">サイトポリシー&プライバシーポリシー</a> </div> </div> </footer> <!-- End Footer -->', jsons[1][locale]);
-          select('.footer').outerHTML =  htmlFooter;
-        
+        select('.footer').outerHTML = htmlFooter;
+
         var targetContainer = select(".target-layout"),
-            template = select("#template").innerHTML;
-        
+          template = select("#template").innerHTML;
+
         var html = Mustache.to_html(template, jsons[2][locale]);
-        targetContainer.outerHTML =  html;
+        targetContainer.outerHTML = html;
 
         main.select("#template").outerHTML = "";
-        
+
         on("click", ".lang a", function (e) {
           localStorage.setItem("lang", e.target.dataset.lang);
           location.reload();
@@ -194,7 +354,9 @@ let main = (function () {
             disableOnInteraction: true,
           },
         });
-
+        /**
+         * move page on fag
+         */
         on('click', '.faq-category .faq-header button', function (e) {
           let index = select('.faq-category .faq-header button', true).indexOf(e.target);
           let eles = select('.faq-content .row', true);
@@ -212,9 +374,8 @@ let main = (function () {
           })
         }, true)
 
-
-
         openHistory();
+        eventPageContact()
       })
       .catch(function () {
         this.dataError = true;
