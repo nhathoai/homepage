@@ -1,11 +1,11 @@
 {
     "ja": {
-		"profile" : "会社概要",
-        "message" : "メッセージ" ,
-        "company" : "会社情報" ,
-        "history" : "沿革" ,
-		"service" : "サービス",
-        "it" : "ITソリューション" ,
+		"name" : "PASONA TECH VIETNAM CO., LTD.",
+        "email" : "Email: inquiry@pasonatech.vn" ,
+        "off_main_hcm" : "ホーチミン本社 拠点情報" ,
+        "off_hcm" : "ホーチミンサテライトオフィス 拠点情報" ,
+		"off_hn" : "ハノイはオフィス 拠点情報",
+        "off_dn" : "ダナンオフィス 拠点情報" ,
         "bpo" : "BPOソリューション" ,
         "hr" : "BPOソリューション" ,
         "blog" : "ブログ" ,
