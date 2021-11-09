@@ -161,6 +161,30 @@ input[type=checkbox]:checked+label:before {
   -webkit-background-size: 140% auto;
   background-size: 140% auto;
 }
+
+
+input[type='radio']:after {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+  content: '';
+  display: inline-block;
+  visibility: visible;
+  border: 1px solid #DDD;
+}
+
+input[type='radio']:checked:after {
+  width: 20px;
+  height: 20px;
+  border-radius: 15px;
+  background-color: #BA1D24 ;
+  content: '';
+  display: inline-block;
+  border: 4px solid #FFFFFF;
+  border-spacing: 5px;
+  box-shadow: 0 0 0px 1px #DDD;
+}
 /*--------------------------------------------------------------
 # Sections
 --------------------------------------------------------------*/
@@ -1913,7 +1937,7 @@ Privacy
   -webkit-appearance: none;
   -moz-appearance: none;
   background: #F5F5F5;
-  background-image: url("data:image/svg+xml;utf8,<svg fill='grey' height='40' viewBox='0 0 24 24' width='40' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+  background-image: url("data:image/svg+xml;base64,PHN2ZyBmaWxsPSJncmV5IiBoZWlnaHQ9IjQwIiB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSI0MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNNyAxMGw1IDUgNS01eiIvPjxwYXRoIGQ9Ik0wIDBoMjR2MjRIMHoiIGZpbGw9Im5vbmUiLz48L3N2Zz4=");
   background-repeat: no-repeat;
   background-position-x: 100%;
   background-position-y: 4px;
@@ -2436,37 +2460,3 @@ need change after
 
 
 
-input[type='radio']:after {
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background-color: #FFFFFF;
-  content: '';
-  display: inline-block;
-  visibility: visible;
-  border: 1px solid #DDD;
-}
-
-input[type='radio']:checked:after {
-  width: 20px;
-  height: 20px;
-  border-radius: 15px;
-  background-color: #BA1D24 ;
-  content: '';
-  display: inline-block;
-  border: 4px solid #FFFFFF;
-  border-spacing: 5px;
-  box-shadow: 0 0 0px 1px #DDD;
-}
-
-  /* input[type="radio"]:checked:before {
-    content: "";
-    display: block;
-    position: relative;
-    top: 3px;
-    left: 3px;
-    width: 6px;
-    height: 6px;
-    border-radius: 50%;
-    background: #BA1D24;
-} */
