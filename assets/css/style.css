@@ -183,7 +183,7 @@ input[type='radio']:checked:after {
   display: inline-block;
   border: 4px solid #FFFFFF;
   border-spacing: 5px;
-  box-shadow: 0 0 0px 1px #DDD;
+  box-shadow: 0 0 0 1px #DDD;
 }
 /*--------------------------------------------------------------
 # Sections
@@ -197,7 +197,7 @@ section#service,
 section#news,
 section#blog,
 section#hire {
-  padding: 56px 0px;
+  padding: 56px 0;
 }
 
 .section-header {
@@ -301,7 +301,7 @@ section#hire {
 .header.header-scrolled {
   background: #fff;
   padding: 15px 0;
-  box-shadow: 0px 2px 20px rgba(1, 41, 112, 0.1);
+  box-shadow: 0 2px 20px rgba(1, 41, 112, 0.1);
 }
 
 .header {
@@ -326,7 +326,7 @@ section#hire {
 }
 @media (max-width:768px) {
   .header .logo img {
-    margin-left: 0px;
+    margin-left: 0;
   }
 }
 
@@ -433,7 +433,7 @@ section#hire {
   opacity: 0;
   visibility: hidden;
   background: #fff;
-  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+  box-shadow: 0 0 30px rgba(127, 137, 161, 0.25);
   transition: 0.3s;
   border-radius: 4px;
   font-size: 14px;
@@ -884,10 +884,10 @@ section#introduce {
   background-image: url(../img/Recruit.png);
   background-size: cover;
   position: absolute;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
   opacity: 0.2;
   background-repeat: no-repeat;
   background-position: center center;
@@ -1038,7 +1038,7 @@ footer .footer-top .footer-info p:not(.name, .mail) {
 .footer .copyright p,
 .footer .copyright a {
   width: 33.33%;
-  margin: 1rem 0px;
+  margin: 1rem 0;
 }
 
 .footer .copyright a {
@@ -1247,7 +1247,7 @@ General
 }
 
 #office .box .under {
-  margin-bottom: 0px;
+  margin-bottom: 0;
   font-weight: bold;
 }
 
@@ -1342,12 +1342,6 @@ General
  
 }
 
-/* .other .right:hover .link,
-.other .left:hover .link{
-  border-bottom: 1.5px solid #FFFFFF;
- 
-} */
-
 .other .left:before,
 .other .right:after {
   background-color:#ffd0d0;
@@ -1356,17 +1350,17 @@ General
   background-position: center;
   background-size: cover;
   position: absolute;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
   opacity: 0.2;
 }
 
 .other .left:hover,
 .other .right:hover{
   background: #BA1D24;
-  box-shadow: inset 0 0 0 0px white;
+  box-shadow: inset 0 0 0 0 white;
   color: #BA1D24;
  
 }
@@ -1741,7 +1735,7 @@ faq
 }
 
 .faq-content .row:first-child .faq-content-title {
-  margin-top: 0px;
+  margin-top: 0;
 }
 
 @media (max-width: 1300px) {
@@ -1867,8 +1861,8 @@ Privacy
 }
 
 #contact .container {
-  margin: 88px 0px;
-  box-shadow: 0px 4px 10px rgb(0 0 0 / 25%);
+  margin: 88px 0;
+  box-shadow: 0 4px 10px rgb(0 0 0 / 25%);
   width: 1026px;
 }
 
@@ -2000,12 +1994,8 @@ Privacy
 }
 
 .contact button:hover {
-  /* background: #BA1D24; */
-  /* color: #FFFFFF; */
   box-shadow: inset -10em 0 0 0 #ba1d24, inset 10em 0 0 0 #ba1d24;
-    /* background: #ba1d24; */
-    color: #fff;
-    /* box-shadow: rgb(155 155 155 / 40%) 1px 6px 15px 0px;*/
+  color: #fff;
 }
 
 .lang-phone {
@@ -2015,10 +2005,9 @@ Privacy
   z-index: 1;
   overflow-y: auto;
   background-color: white;
-  box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
+  box-shadow: rgb(0 0 0 / 35%) 0 5px 15px;
   position: absolute;
   max-height: 200px;
-  /* visibility: hidden; */
   z-index: -1;
   transition: 0.1s;
   opacity: 0;

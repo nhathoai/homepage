@@ -335,7 +335,8 @@ let main = (function () {
             duration: 1000,
             easing: "ease-in-out",
             once: true,
-            mirror: false
+            mirror: false,
+            offset: 20
           });
         }
         aos_init();
@@ -388,5 +389,5 @@ let main = (function () {
     on: on,
     loadHtml: loadHtml
   }
-  
+
 })();
