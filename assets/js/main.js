@@ -243,6 +243,17 @@ let main = (function () {
         var targetContainer = select(".target-layout"),
           template = select("#template").innerHTML;
 
+        for (const idx in jsons[2][locale]) {
+          
+          const ob = jsons[2][locale][idx];
+
+          if(Array.isArray(ob)) {
+            ob.forEach(function (item, idx) {
+              item["idx"] = idx;
+            })
+          }
+          
+        }
         var html = Mustache.to_html(template, jsons[2][locale]);
         targetContainer.outerHTML = html;
 
