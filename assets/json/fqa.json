@@ -1,42 +1,42 @@
 {
     "ja": {
-        "breadcrumb-home": "トップ",
-        "breadcrumb-current": "よくある質問",
+        "breadcrumb_home": "トップ",
+        "breadcrumb_current": "よくある質問",
         "header": "よくある質問",
-        "qn-1": "弊社に関する質問",
-        "qn-2": "ITソリューションに関する質問",
-        "qn-3": "BPOソリューションに関する質問",
-        "qn-4": "HRソリューションに関する質問",
-        "qn-5": "その他の質問"
+        "qn_1": "弊社に関する質問",
+        "qn_2": "ITソリューションに関する質問",
+        "qn_3": "BPOソリューションに関する質問",
+        "qn_4": "HRソリューションに関する質問",
+        "qn_5": "その他の質問"
     },
     "vn": {
-        "breadcrumb-home": "Trang chủ",
-        "breadcrumb-current": "Các câu hỏi thường gặp",
+        "breadcrumb_home": "Trang chủ",
+        "breadcrumb_current": "Các câu hỏi thường gặp",
         "header": "Các câu hỏi thường gặp",
-        "qn-1": "弊社に関する質問",
-        "qn-2": "Các câu hỏi liên quan tới dịch vụ IT",
-        "qn-3": "Các câu hỏi liên quan tới dịch vụ BPO",
-        "qn-4": "Các câu hỏi liên quan tới dịch vụ HR",
-        "qn-5": "Các câu hỏi khác"
+        "qn_1": "弊社に関する質問",
+        "qn_2": "Các câu hỏi liên quan tới dịch vụ IT",
+        "qn_3": "Các câu hỏi liên quan tới dịch vụ BPO",
+        "qn_4": "Các câu hỏi liên quan tới dịch vụ HR",
+        "qn_5": "Các câu hỏi khác"
     },
     "en": {
-        "breadcrumb-home": "トップ",
-        "breadcrumb-current": "よくある質問",
+        "breadcrumb_home": "トップ",
+        "breadcrumb_current": "よくある質問",
         "header": "よくある質問",
-        "qn-1": "弊社に関する質問",
-        "qn-2": "ITソリューションに関する質問",
-        "qn-3": "BPOソリューションに関する質問",
-        "qn-4": "HRソリューションに関する質問",
-        "qn-5": "その他の質問"
+        "qn_1": "弊社に関する質問",
+        "qn_2": "ITソリューションに関する質問",
+        "qn_3": "BPOソリューションに関する質問",
+        "qn_4": "HRソリューションに関する質問",
+        "qn_5": "その他の質問"
     },
     "kr": {
-        "breadcrumb-home": "トップ",
-        "breadcrumb-current": "よくある質問",
+        "breadcrumb_home": "トップ",
+        "breadcrumb_current": "よくある質問",
         "header": "よくある質問",
-        "qn-1": "弊社に関する質問",
-        "qn-2": "ITソリューションに関する質問",
-        "qn-3": "BPOソリューションに関する質問",
-        "qn-4": "HRソリューションに関する質問",
-        "qn-5": "その他の質問"
+        "qn_1": "弊社に関する質問",
+        "qn_2": "ITソリューションに関する質問",
+        "qn_3": "BPOソリューションに関する質問",
+        "qn_4": "HRソリューションに関する質問",
+        "qn_5": "その他の質問"
     }
 }
