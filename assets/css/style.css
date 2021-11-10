@@ -13,7 +13,9 @@
   --letter-style: -0.015em;
 }
 
-html[lang="ja"] body{
+html[lang="ja"] body,
+html[lang="kr"] body,
+html[lang="en"] body{
   font-family: "Hiragino Kaku Gothic Pro";
 }
 
