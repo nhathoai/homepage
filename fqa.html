@@ -95,136 +95,44 @@
                     <div id="qs-it" class="row">
                         <p class="faq-content-title">{{qn_2}}</p>
                         <div class="accordion accordion-flush">
+                            {{#it}}
                             <div class="accordion-item">
                                 <h2 class="accordion-header">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#faq-it-1">
-                                        {{q_it_1}}
+                                        data-bs-target="#faq-it-{{idx}">
+                                        {{quest}}
                                     </button>
                                 </h2>
-                                <div id="faq-it-1" class="accordion-collapse collapse">
+                                <div id="faq-it-{{idx}}" class="accordion-collapse collapse">
                                     <div class="accordion-body">
-                                        {{{a_it_1}}}
+                                        {{{ans}}}
                                     </div>
                                 </div>
                             </div>
+                            {{/it}}
 
-                            <div class="accordion-item">
-                                <h2 class="accordion-header">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#faq-it-2">
-                                        {{q_it_2}}
-                                    </button>
-                                </h2>
-                                <div id="faq-it-2" class="accordion-collapse collapse">
-                                    <div class="accordion-body">
-                                        {{{a_it_2}}}
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="accordion-item">
-                                <h2 class="accordion-header">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#faq-it-3">
-                                        {{q_it_3}}
-                                    </button>
-                                </h2>
-                                <div id="faq-it-3" class="accordion-collapse collapse">
-                                    <div class="accordion-body">
-                                        {{{a_it_3}}}
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="accordion-item">
-                                <h2 class="accordion-header">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#faq-it-4">
-                                        {{q_it_4}}
-                                    </button>
-                                </h2>
-                                <div id="faq-it-4" class="accordion-collapse collapse">
-                                    <div class="accordion-body">
-                                        {{{a_it_4}}}
-                                    </div>
-                                </div>
-                            </div>
                         </div>
                     </div>
 
                     <div class="row">
                         <p class="faq-content-title">{{qn_3}}</p>
                         <div class="accordion accordion-flush">
+                            {{#bpo}}
                             <div class="accordion-item">
                                 <h2 class="accordion-header">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#faq-bpo-1">
-                                        {{q_bpo_1}}
+                                        data-bs-target="#faq-bpo-{{idx}}">
+                                        {{quest}}
                                     </button>
                                 </h2>
-                                <div id="faq-bpo-1" class="accordion-collapse collapse">
+                                <div id="faq-bpo-{{idx}}" class="accordion-collapse collapse">
                                     <div class="accordion-body">
-                                        {{{a_bpo_1}}}
+                                        {{{ans}}}
                                     </div>
                                 </div>
                             </div>
+                            {{/bpo}}
 
-                            <div class="accordion-item">
-                                <h2 class="accordion-header">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#faq-bpo-2">
-                                        {{q_bpo_2}}
-                                    </button>
-                                </h2>
-                                <div id="faq-bpo-2" class="accordion-collapse collapse">
-                                    <div class="accordion-body">
-                                        {{{a_bpo_2}}}
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="accordion-item">
-                                <h2 class="accordion-header">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#faq-bpo-3">
-                                        {{q_bpo_3}}
-                                    </button>
-                                </h2>
-                                <div id="faq-bpo-3" class="accordion-collapse collapse">
-                                    <div class="accordion-body">
-                                        {{{a_bpo_3}}}
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="accordion-item">
-                                <h2 class="accordion-header">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#faq-bpo-4">
-                                        {{q_bpo_4}}
-                                    </button>
-                                </h2>
-                                <div id="faq-bpo-4" class="accordion-collapse collapse">
-                                    <div class="accordion-body">
-                                        {{{a_bpo_4}}}
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="accordion-item">
-                                <h2 class="accordion-header">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#faq-bpo-5">
-                                        {{q_bpo_5}}
-                                    </button>
-                                </h2>
-                                <div id="faq-bpo-5" class="accordion-collapse collapse">
-                                    <div class="accordion-body">
-                                        {{{a_bpo_5}}}
-                                    </div>
-                                </div>
-                            </div>
                         </div>
                     </div>
 
@@ -232,89 +140,22 @@
                     <div class="row">
                         <p class="faq-content-title">{{qn_4}}</p>
                         <div class="accordion accordion-flush">
+                            {{#hr}}
                             <div class="accordion-item">
                                 <h2 class="accordion-header">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#faq-hr-1">
-                                        {{q_hr_1}}
+                                        data-bs-target="#faq-hr-{{idx}}">
+                                        {{quest}}
                                     </button>
                                 </h2>
-                                <div id="faq-hr-1" class="accordion-collapse collapse">
+                                <div id="faq-hr-{{idx}}" class="accordion-collapse collapse">
                                     <div class="accordion-body">
-                                        {{{a_hr_1}}}
+                                        {{{ans}}}
                                     </div>
                                 </div>
                             </div>
+                            {{/hr}}
 
-                            <div class="accordion-item">
-                                <h2 class="accordion-header">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#faq-hr-2">
-                                        {{q_hr_2}}
-                                    </button>
-                                </h2>
-                                <div id="faq-hr-2" class="accordion-collapse collapse">
-                                    <div class="accordion-body">
-                                        {{{a_hr_2}}}
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="accordion-item">
-                                <h2 class="accordion-header">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#faq-hr-3">
-                                        {{q_hr_3}}
-                                    </button>
-                                </h2>
-                                <div id="faq-hr-3" class="accordion-collapse collapse">
-                                    <div class="accordion-body">
-                                        {{{a_hr_3}}}
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="accordion-item">
-                                <h2 class="accordion-header">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#faq-hr-4">
-                                        {{q_hr_4}}
-                                    </button>
-                                </h2>
-                                <div id="faq-hr-4" class="accordion-collapse collapse">
-                                    <div class="accordion-body">
-                                        {{{a_hr_4}}}
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="accordion-item">
-                                <h2 class="accordion-header">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#faq-hr-5">
-                                        {{q_hr_5}}
-                                    </button>
-                                </h2>
-                                <div id="faq-hr-5" class="accordion-collapse collapse">
-                                    <div class="accordion-body">
-                                        {{{a_hr_5}}}
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="accordion-item">
-                                <h2 class="accordion-header">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#faq-hr-6">
-                                        {{q_hr_6}}
-                                    </button>
-                                </h2>
-                                <div id="faq-hr-6" class="accordion-collapse collapse">
-                                    <div class="accordion-body">
-                                        {{{a_hr_6}}}
-                                    </div>
-                                </div>
-                            </div>
                         </div>
                     </div>
 
@@ -349,22 +190,6 @@
                                     </div>
                                 </div>
                             </div>
-
-                            {{#others}}
-                            <div class="accordion-item">
-                                <h2 class="accordion-header">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#faq-other-{{@index}}">
-                                        {{q_1}}
-                                    </button>
-                                </h2>
-                                <div id="faq-other-{{@index}}" class="accordion-collapse collapse">
-                                    <div class="accordion-body">
-                                        {{a_1}}
-                                    </div>
-                                </div>
-                            </div>
-                            {{/others}}
                         </div>
                     </div>
 
