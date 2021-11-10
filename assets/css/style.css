@@ -1989,7 +1989,6 @@ Privacy
 }
 
 .contact .contact-right {
-  /* width: 320px; */
   padding: 135px 24px;
   background: #F5F5F5;
 }
@@ -2088,12 +2087,6 @@ Privacy
 
 .flag img {
   margin-right: 0.75rem;
-}
-/*
-need change after
-*/
-.select-flag:hover .lang-phone {
-  /* opacity: 1; */
 }
 
 .flag::before {
