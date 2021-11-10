@@ -38,11 +38,11 @@
             <div class="container-fluid test">
                 <div class="main-top__link">
                     <a href="./">
-                        トップ
-                    </a> > 採用情報
+                        {{breadcrumb-home}}
+                    </a> > {{breadcrumb-current}}
                 </div>
                 <div class="row">
-                    <p>採用情報</p>
+                    <p>{{header}}</p>
                 </div>
             </div>
         </section><!-- End Hero -->
@@ -55,11 +55,11 @@
                     <div class="row">
                         <div class="d-flex flex-column align-items-center">
                             <p style="font-size: 25px;">
-                                弊社採用につきましては、以下へお問い合わせください
+                                {{message}}
                             </p>
 
                             <span>
-                                PASONA TECH VIETNAM CO., LTD.
+                                {{company}}
                             </span>
 
                             <span>
@@ -67,7 +67,7 @@
                             </span>
 
                             <span>
-                                電話番号: +84-28-3812-7150 (日本語/英語/ベトナム語)
+                                {{tel}}
                             </span>
 
                         </div>
@@ -97,7 +97,7 @@
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
     <script>
-        main.loadHtml('index')
+        main.loadHtml('recruit')
     </script>
 
 </body>

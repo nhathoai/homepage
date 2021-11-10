@@ -1,0 +1,14 @@
+{
+    "ja": {
+        "message": "サーバーで問題が発生しているためページを表示できません。<br>しばらく時間をおいてからやり直してください"
+    },
+    "vn": {
+        "message": "Không thể hiển thị trang bạn muốn truy cập do vấn đề server.<br>Xin hãy đợi trong vài phút và thực hiện truy cập lại."
+    },
+    "en": {
+        "message": "サーバーで問題が発生しているためページを表示できません。<br>しばらく時間をおいてからやり直してください"
+    },
+    "kr": {
+        "message": "サーバーで問題が発生しているためページを表示できません。<br>しばらく時間をおいてからやり直してください"
+    }
+}
