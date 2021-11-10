@@ -99,9 +99,9 @@
         "dn_add": "3rd Floor, Vinadco Building, 01_03 Ho Quy Ly Str., <br> Thanh Khe Tay Ward, Thanh Khe Dist., Da Nang",
         "dn_tel": "+84-28-3812-7150 (tiếng Nhật/tiếng Anh/tiếng Việt)",
         "banner_right_title": "Thông điệp",
-        "banner_right_desc": "message",
+        "banner_right_desc": "Message",
         "banner_left_title": "Lịch sử phát triển",
-        "banner_left_desc": "history"
+        "banner_left_desc": "History"
     },
     "en": {
         "breadcrumb_home": "Home",
@@ -151,9 +151,9 @@
         "dn_add": "3rd Floor, Vinadco Building, 01_03 Ho Quy Ly Str., <br> Thanh Khe Tay Ward, Thanh Khe Dist., Da Nang",
         "dn_tel": "+84-28-3812-7150 (Japanese/English/Vietnamese)",
         "banner_right_title": "メッセージ",
-        "banner_right_desc": "message",
+        "banner_right_desc": "Message",
         "banner_left_title": "沿革",
-        "banner_left_desc": "history"
+        "banner_left_desc": "History"
     },
     "kr": {
         "breadcrumb_home": "トップ",
