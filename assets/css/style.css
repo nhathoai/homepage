@@ -13,7 +13,9 @@
   --letter-style: -0.015em;
 }
 
-html[lang="ja"] body{
+html[lang="ja"] body,
+html[lang="kr"] body,
+html[lang="en"] body{
   font-family: "Hiragino Kaku Gothic Pro";
 }
 
@@ -1927,7 +1929,7 @@ Privacy
   border: none;
   caret-color: auto;
   padding: 0.75rem;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   color: #5C5C5C;
 }
 
@@ -1949,7 +1951,7 @@ Privacy
   background-position-x: 100%;
   background-position-y: 4px;
   padding: 0.75rem;
-  width: 16rem;
+  width: 15.5rem;
   cursor: pointer;
 }
 .contact form select.content-service option{
@@ -1974,7 +1976,7 @@ Privacy
   border: none;
   caret-color: auto;
   padding: 0.75rem;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   color: #5C5C5C;
 }
 
@@ -1989,7 +1991,6 @@ Privacy
 }
 
 .contact .contact-right {
-  /* width: 320px; */
   padding: 135px 24px;
   background: #F5F5F5;
 }
@@ -2089,12 +2090,6 @@ Privacy
 .flag img {
   margin-right: 0.75rem;
 }
-/*
-need change after
-*/
-.select-flag:hover .lang-phone {
-  /* opacity: 1; */
-}
 
 .flag::before {
   right: 10px;
@@ -2135,9 +2130,9 @@ need change after
     width: 100%;
   }
 
-  .contact form {
+  .contact form, .contact .contact-right div {
     max-width: 100%;
-    margin: 10px;
+    margin: 30px 10px;
   }
 
   .contact .pa-flag{
