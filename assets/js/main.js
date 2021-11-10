@@ -249,11 +249,13 @@ let main = (function () {
 
           if(Array.isArray(ob)) {
             ob.forEach(function (item, idx) {
-              item["idx"] = idx;
+              item["idx"] = idx.toString();
             })
           }
           
         }
+
+        debugger
         var html = Mustache.to_html(template, jsons[2][locale]);
         targetContainer.outerHTML = html;
 
