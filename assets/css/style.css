@@ -1608,7 +1608,7 @@ faq
 .faq-content .accordion-body {
   color: #5C5C5C;
   font-style: normal;
-  font-weight: bold;
+  /* font-weight: bold; */
   font-size: 18px;
   line-height: 20px;
   letter-spacing: var(--letter-style);
