@@ -1117,7 +1117,7 @@ General
   }
 }
 
-@media (max-width: 383px) {
+@media (max-width: 440px) {
   .main-top p {
     font-size: 30px;
   }
@@ -1391,7 +1391,6 @@ General
   }
 }
 
-
 /*
 # history 
 */
@@ -1411,7 +1410,6 @@ General
 .timeline-item {
   position: relative;
   display: flex;
-  /* height: 111px; */
   height: 140px;
 }
 
@@ -1420,7 +1418,6 @@ General
 }
 
 .timeline-item.timeline-item-last {
-  /* height: 54px; */
   height: 105px;
 }
 
