@@ -1239,6 +1239,9 @@ General
   padding: 88px 0;
 }
 
+#office .container .row {
+  margin: 0
+}
 
 #office .box {
   margin-bottom: 1rem;
