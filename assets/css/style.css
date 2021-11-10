@@ -2152,6 +2152,12 @@ Privacy
   background-color: rgba(211, 101, 28, .7);
 }
 
+@media (max-width: 768px) {
+  #recruit {
+    padding: 60px 10px;
+  }
+}
+
 /*
 #Message
 */
