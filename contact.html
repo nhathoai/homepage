@@ -32,11 +32,11 @@
             <div class="container-fluid">
                 <div class="main-top__link">
                     <a href="./">
-                        トップ
-                    </a> > お問い合わせ
+                        {{breadcrumb_home}}
+                    </a> > {{breadcrumb_current}}
                 </div>
                 <div class="row">
-                    <p>お問い合わせ</p>
+                    <p>{{breadcrumb_current}}</p>
                 </div>
             </div>
         </section><!-- End Hero -->
@@ -48,24 +48,24 @@
                 <div class="container">
                     <div class="row ">
                         <div class="pd-0 contact-form">
-                            <form action="#" class="d-flex flex-column needs-validation" novalidate>
-                                <p>お気軽にお問い合わせください。</p>
+                            <form action="#" class="d-flex flex-column" >
+                                <p>{{mess_contact}}</p>
                                 <div class="d-flex flex-column">
-                                    <label for="">貴社名</label>
-                                    <input type="text" name="company" maxlength="100" value="" class="">
+                                    <label for="">{{company_name}}</label>
+                                    <input type="text" name="company" maxlength="100">
                                 </div>
                                 <div class="d-flex flex-column">
-                                    <label for="" class="required">お名前</label>
-                                    <input type="text" name="name" maxlength="20" class="test2">
+                                    <label for="" class="required">{{name}}</label>
+                                    <input type="text" name="name" maxlength="20" >
                                     <div class="error"></div>
                                 </div>
                                 <div class="d-flex flex-column">
-                                    <label for="" class="required">メールアドレス</label>
+                                    <label for="" class="required">{{email}}</label>
                                     <input type="email" name="email" maxlength="100" value="">
                                     <div class="error"></div>
                                 </div>
                                 <div>
-                                    <label for="">電話番号</label>
+                                    <label for="">{{tel}}</label>
                                     <div class="pa-flag">
                                         <div class="select-flag">
                                             <div class="flag">
@@ -159,7 +159,7 @@
                                     </select>
                                 </div>
                                 <div class="d-flex flex-column">
-                                    <label for="">お問い合わせ内容</label>
+                                    <label for="" class="required">{{contact}}</label>
                                     <textarea maxlength="200" type="text" name="comment" ></textarea><label
                                         for="content"></label>
                                     <div class="error"></div>
@@ -185,8 +185,7 @@
                                 margin-bottom: 32px;
                             ">PASONA TECH VIETNAM CO., LTD.</p>
                                     <p class="st-14-fw-5">Email: inquiry@pasonatech.vn</p>
-                                    <p class="st-14-fw-5">電話番号: +84-28-3812-7150 <br>
-                                        (日本語/英語/ベトナム語)
+                                    <p class="st-14-fw-5">{{{tel_contact}}}
                                     </p>
                                     <p class="st-14-un" style="
                                 margin-top: 32px;
@@ -220,7 +219,7 @@
     <script src="assets/js/main.js"></script>
     <script src="assets/js/contact.js"></script>
     <script>
-        main.loadHtml('fqa')
+        main.loadHtml('contact')
     </script>
 </body>
 
