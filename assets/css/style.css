@@ -203,7 +203,7 @@ input[type='radio']:checked:after {
 # Sections
 --------------------------------------------------------------*/
 #main-top {
-  height: 316px;
+  margin-top: 90px;
 }
 
 section#introduce,
@@ -1114,7 +1114,6 @@ General
 */
 .main-top p {
   padding-top: 50px;
-  padding-bottom: 0;
   font-size: 60px;
   font-family: var(--font-en);
   font-weight: 700;
@@ -1123,32 +1122,21 @@ General
 }
 
 .main-top__link {
-  margin-top: 30px;
   margin-left: 40px;
   font-size: 14px;
   font-weight: normal;
 }
 
-@media (max-width: 1087px) {
-  .main-top p {
-    font-size: 50px;
-  }
-  
-  .main-top__link {
-    margin-top: 35px;  
-  }
-}
 @media (max-width: 910px) {
-  .main-top__link {
-    margin-top: 85px;  
+  .main-top p {
+    font-size: 40px;
   }
+
 }
 
 @media (max-width: 768px) {
   .main-top__link {
-    margin-top: 50px;
     margin-left: 10px;
-    font-size: 12px;
   }
 
   .main-top p {
@@ -1158,9 +1146,6 @@ General
 }
 
 @media (max-width: 383px) {
-  .main-top__link {
-    margin-top: 35px;
-  }
   .main-top p {
     padding-bottom: 0;
     font-size: 32px;
