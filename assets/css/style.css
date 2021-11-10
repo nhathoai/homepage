@@ -1616,7 +1616,6 @@ faq
   background-repeat: no-repeat;
   background-position: center center; 
   content: "";
-  width: 16px;
   height: 16px;
   background-size: 1rem;
 }
@@ -1721,10 +1720,6 @@ faq
     background: rgb(245 245 245);
   }
 
-  .faq-content .container {
-    padding: 0;
-  }
-
   .faq-content-title {
     padding-left: 32px;
     font-size: 20px;
@@ -1736,6 +1731,18 @@ faq
   }
 }
 
+@media (max-width: 440px) {
+  .faq-content .container{
+    padding: 50px 15px;
+  }
+
+  .faq-content .accordion-header .accordion-button, .faq-content .accordion-body{
+    padding: 20px 20px;
+  }
+  .faq-content .accordion-header .accordion-button:before{
+    margin-right: 20px;
+  }
+}
 /*
 # Error
 */
