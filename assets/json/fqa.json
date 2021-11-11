@@ -79,15 +79,15 @@
         "breadcrumb_home": "Trang chủ",
         "breadcrumb_current": "Các câu hỏi thường gặp",
         "header": "Các câu hỏi thường gặp",
-        "qn_1": "弊社に関する質問",
+        "qn_1": "Các câu hỏi về công ty chúng tôi",
         "qn_2": "Các câu hỏi liên quan tới dịch vụ IT",
         "qn_3": "Các câu hỏi liên quan tới dịch vụ BPO",
         "qn_4": "Các câu hỏi liên quan tới dịch vụ HR",
         "qn_5": "Các câu hỏi khác",
         "it": [
             {
-                "quest": "業務における連絡時の言語は？通訳は可能ですか？",
-                "ans": "経験豊富な日本語通訳者が10名ほど在籍しております。<br>エンジニアとコミュニケーションをとる際に、通訳を通すことで、潤滑に業務を進められるようにしています。<br>また、社内では日本語教師による日本語研修を積極的に行い、日本語能力の向上を図っております。"
+                "quest": "Ngôn ngữ dùng khi liên hệ để bàn bạc công việc là gì? Có thể thông dịch được không?",
+                "ans": "Có khoảng 10 thông dịch viên tiếng Nhật nhiều kinh nghiệm đang làm việc trong công ty chúng tôi.<br>エンジニアとコミュニケーションをとる際に、通訳を通すことで、潤滑に業務を進められるようにしています。<br>また、社内では日本語教師による日本語研修を積極的に行い、日本語能力の向上を図っております。"
             },
             {
                 "quest": "社内のセキュリティーに関してはどのような対策をとられてますか？",
