@@ -412,6 +412,10 @@ section#hire {
   transition: 0.25s ease-out;
 }
 
+.navbar li.dropdown a:not(.sub-contact, .nav-link-social):before {
+  bottom: -3px;
+}
+
 .navbar li a:hover {
   transition: 0.25s ease-out;
   color: rgba(186, 29, 36, 1);

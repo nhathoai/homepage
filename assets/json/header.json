@@ -29,7 +29,7 @@
 		"recruit" : "Tuyển dụng", 
         "fqa" : "FAQ" ,
         "contact" : "Liên hệ" ,
-        "lang" : "Ngôn ngữ" 
+        "lang" : "Language" 
     },
     "en": {
 		"profile" : "会社概要",
