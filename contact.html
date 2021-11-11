@@ -134,25 +134,12 @@
                                 </div>
                                 <div class="d-flex flex-row justify-content-between" style=" margin-top: 60px;">
                                     <div>
-                                        <div class="d-flex flex-row align-items-center" style="margin-bottom: 10px;">
-                                            <input type="radio" name="radio-group" value="it">
-                                            <label for="" class="fz-14">ITソリューションについて</label>
-                                        </div>
-
-                                        <div class="d-flex flex-row align-items-center" style="margin-bottom: 10px;">
-                                            <input type="radio" name="radio-group" value="bpo">
-                                            <label for="" class="fz-14">BPOソリューションについて</label>
-                                        </div>
-
-                                        <div class="d-flex flex-row align-items-center" style="margin-bottom: 10px;">
-                                            <input type="radio" name="radio-group" value="hr">
-                                            <label for="" class="fz-14">HRソリューションについて</label>
-                                        </div>
-
-                                        <div class="d-flex flex-row align-items-center" style="margin-bottom: 10px;">
-                                            <input type="radio" name="radio-group">
-                                            <label for="" class="fz-14">その他</label>
-                                        </div>
+                                        {{#service}}
+                                            <div class="d-flex flex-row align-items-center" style="margin-bottom: 10px;">
+                                                <input type="radio" name="radio-group" value="{{value}}">
+                                                <label for="" class="fz-14">{{name}}</label>
+                                            </div>
+                                        {{/service}}
                                         <div class="error"></div>
                                     </div>
                                     <select name="" class="content-service">
@@ -168,15 +155,14 @@
                                     class="d-flex align-items-center justify-content-start flex-column mr-t-36 mr-bt-36">
                                     <div class="d-flex  align-items-start justify-content-center">
                                         <input type="checkbox" name="accept-terms" value="false" id="test">
-                                        <label for="test"><a href="./policy" class="under ">当社個人情報保護方針</a> に同意される場合は、<br>
-                                            こちらにチェックをお願いします。</label>
+                                        <label for="test">{{{policy}}}</label>
                                         <!-- <div class=""> -->
                                     </div>
                                     <div class="error"></div>
 
                                 </div>
                                 <div class="d-flex justify-content-center">
-                                    <button type="submit" class="contact-sm">送信</button>
+                                    <button type="submit" class="contact-sm">{{send}}</button>
                                 </div>
                             </form>
                             <div class="contact-right lign-items-center justify-content-center">
@@ -189,7 +175,7 @@
                                     </p>
                                     <p class="st-14-un" style="
                                 margin-top: 32px;
-                            "> よくある質問は <a href="./fqa" class="under">こちら</a> </p>
+                            "> {{{fqa}}} </p>
 
                                 </div>
                             </div>

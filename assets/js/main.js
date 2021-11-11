@@ -64,7 +64,7 @@ let main = (function () {
    * 
    * @param {*} nameJson 
    */
-  function eventPageContact() {
+  function eventPageContact(data) {
     on('submit', '.contact form', function (e) {
       validated([this.elements["radio-group"],
         this.elements["name"],
@@ -95,29 +95,14 @@ let main = (function () {
       const selectEle = select('.content-service');
       let display = "none";
       selectEle.innerHTML = "";
+      let vl = this.value;
 
-      if (this.value == 'it') {
-        selectEle.insertAdjacentHTML('beforeend', '<option value="オフショア開発について">オフショア開発について</option>');
-        selectEle.insertAdjacentHTML('beforeend', '<option value="拠点進出について">拠点進出について</option>');
-        selectEle.insertAdjacentHTML('beforeend', '<option value="お見積もりの相談">お見積もりの相談</option>');
-        selectEle.insertAdjacentHTML('beforeend', '<option value="その他">その他</option>');
-        display = "block";
-      } else if (this.value == 'bpo') {
-        selectEle.insertAdjacentHTML('beforeend', '<option value="CADアウトソーシングについて">CADアウトソーシングについて</option>');
-        selectEle.insertAdjacentHTML('beforeend', '<option value="拠点進出について">拠点進出について</option>');
-        selectEle.insertAdjacentHTML('beforeend', '<option value="お見積もりの相談">お見積もりの相談</option>');
-        selectEle.insertAdjacentHTML('beforeend', '<option value="その他">その他</option>');
-        display = "block";
-      } else if (this.value == 'hr') {
-        selectEle.insertAdjacentHTML('beforeend', '<option value="採用支援について">採用支援について</option>');
-        selectEle.insertAdjacentHTML('beforeend', '<option value="人材派遣について">人材派遣について</option>');
-        selectEle.insertAdjacentHTML('beforeend', '<option value="人事コンサルティングについて">人事コンサルティングについて</option>');
-        selectEle.insertAdjacentHTML('beforeend', '<option value="教育・ビジネス研修について">教育・ビジネス研修について</option>');
-        selectEle.insertAdjacentHTML('beforeend', '<option value="その他">その他</option>');
-        display = "block";
-      }
-
-
+      data.service.forEach(function name(item) {
+          if(vl && item.value == vl){
+            selectEle.insertAdjacentHTML('beforeend', item.type.map(function (i){return '<option value="' + i+ '">'+ i +'</option>'}).join("\n") );
+            display = "block";
+          }
+      })
       select('.content-service').style.display = display;
     }, true)
 
@@ -255,7 +240,6 @@ let main = (function () {
           
         }
 
-        debugger
         var html = Mustache.to_html(template, jsons[2][locale]);
         targetContainer.outerHTML = html;
 
@@ -391,7 +375,7 @@ let main = (function () {
         }, true)
 
         openHistory();
-        eventPageContact()
+        eventPageContact(jsons[2][locale])
       })
       .catch(function () {
         this.dataError = true;

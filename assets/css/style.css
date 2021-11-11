@@ -154,6 +154,7 @@ input[type=checkbox]+label {
   -webkit-box-align: center;
   -webkit-align-items: center;
   align-items: center;
+  white-space: pre-wrap;
 }
 
 input[type=checkbox]+label::before {

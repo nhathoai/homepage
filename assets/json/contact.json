@@ -7,8 +7,32 @@
         "email": "メールアドレス",
         "tel": "電話番号",
         "contact" : "お問い合わせ内容",
+        "policy" : "<a href='./policy' class='under'>当社個人情報保護方針</a> に同意される場合は、<br> こちらにチェックをお願いします。",
         "tel_contact": "電話番号: +84-28-3812-7150 <br>(日本語/英語/ベトナム語)",
-        "mess_contact": "お気軽にお問い合わせください。"
+        "mess_contact": "お気軽にお問い合わせください。",
+        "fqa" : "よくある質問は <a href='./fqa' class='under'>こちら</a>",
+        "service": [
+            {
+                "name" : "ITソリューションについて",
+                "value": "it",
+                "type": ["オフショア開発について", "拠点進出について", "お見積もりの相談", "その他"]
+            },
+            {
+                "name" : "BPOソリューションについて",
+                "value": "bpo",
+                "type":  ["CADアウトソーシングについて", "拠点進出について", "お見積もりの相談", ""]
+            },
+            {
+                "name" : "HRソリューションについて",
+                "value": "hr",
+                "type": ["採用支援について", "人材派遣について", "人事コンサルティングについて", "教育・ビジネス研修について","その他"]
+            },
+            {
+                "name" : "その他",
+                "value": ""
+            }
+        ],
+        "send": "送信"
     },
     "vn": {
         "breadcrumb_home": "Trang chủ",
@@ -18,8 +42,33 @@
         "email": "Email",
         "tel": "Số điện thoại",
         "contact" : "Nội dung liên hệ",
+        "policy" : "Vui lòng đánh dấu vào đây nếu bạn đồng ý với <a href='./policy' class='under'>Điều khoản sử dụng và Chính sách riêng tư của Pasona Tech Vietnam.</a> ",
         "tel_contact": "TEL: +84-28-3812-7150 <br>(tiếng Nhật/tiếng Anh/tiếng Việt)",
-        "mess_contact": "Vui lòng liên hệ với chúng tôi"
+        "mess_contact": "Vui lòng liên hệ với chúng tôi",
+        "fqa" : "Click vào đây để tìm hiểu về <a href='./fqa' class='under'>FAQ</a>",
+        "service": [
+            {
+                "name" : "Về dịch vụ IT",
+                "value": "it",
+                "type": ["Dịch vụ Offshore", "Dịch vụ mở rộng chi nhánh", "Thảo luận báo giá", "Khác"]
+            },
+            {
+                "name" : "Về dịch vụ BPO",
+                "value": "bpo",
+                "type":  ["Dịch vụ Outsource CAD", "Dịch vụ mở rộng chi nhánh", "Thảo luận báo giá", "Khác"]
+            },
+            {
+                "name" : "Về dịch vụ HR",
+                "value": "hr",
+                "type": ["Dịch vụ hỗ trợ tuyển dụng", "Dịch vụ cho thuê nhân sự", "Dịch vụ tư vấn nhân sự", "Đào tạo giáo dục và kinh doanh","Khác"]
+            },
+            {
+                "name" : "Khác",
+                "value": ""
+            }
+        ],
+        "send": "Gửi"
+
     },
     "en": {
         "breadcrumb_home": "トップ",
@@ -29,8 +78,32 @@
         "email": "メールアドレス",
         "tel": "電話番号",
         "contact" : "お問い合わせ内容",
+        "policy" : "<a href='./policy' class='under'>当社個人情報保護方針</a> に同意される場合は、<br> こちらにチェックをお願いします。",
         "tel_contact": "電話番号: +84-28-3812-7150 <br>(日本語/英語/ベトナム語)",
-        "mess_contact": "お気軽にお問い合わせください。"
+        "mess_contact": "お気軽にお問い合わせください。",
+        "fqa" : "よくある質問は <a href='./fqa' class='under'>こちら</a>",
+        "service": [
+            {
+                "name" : "ITソリューションについて",
+                "value": "it",
+                "type": ["オフショア開発について", "拠点進出について", "お見積もりの相談", "その他"]
+            },
+            {
+                "name" : "BPOソリューションについて",
+                "value": "bpo",
+                "type":  ["CADアウトソーシングについて", "拠点進出について", "お見積もりの相談", ""]
+            },
+            {
+                "name" : "HRソリューションについて",
+                "value": "hr",
+                "type": ["採用支援について", "人材派遣について", "人事コンサルティングについて", "教育・ビジネス研修について","その他"]
+            },
+            {
+                "name" : "その他",
+                "value": ""
+            }
+        ],
+        "send": "送信"
     },
     "kr": {
         "breadcrumb_home": "トップ",
@@ -40,7 +113,31 @@
         "email": "メールアドレス",
         "tel": "電話番号",
         "contact" : "お問い合わせ内容",
+        "policy" : "<a href='./policy' class='under'>当社個人情報保護方針</a> に同意される場合は、<br> こちらにチェックをお願いします。",
         "tel_contact": "電話番号: +84-28-3812-7150 <br>(日本語/英語/ベトナム語)",
-        "mess_contact": "お気軽にお問い合わせください。"
+        "mess_contact": "お気軽にお問い合わせください。",
+        "fqa" : "よくある質問は <a href='./fqa' class='under'>こちら</a>",
+        "service": [
+            {
+                "name" : "ITソリューションについて",
+                "value": "it",
+                "type": ["オフショア開発について", "拠点進出について", "お見積もりの相談", "その他"]
+            },
+            {
+                "name" : "BPOソリューションについて",
+                "value": "bpo",
+                "type":  ["CADアウトソーシングについて", "拠点進出について", "お見積もりの相談", ""]
+            },
+            {
+                "name" : "HRソリューションについて",
+                "value": "hr",
+                "type": ["採用支援について", "人材派遣について", "人事コンサルティングについて", "教育・ビジネス研修について","その他"]
+            },
+            {
+                "name" : "その他",
+                "value": ""
+            }
+        ],
+        "send": "送信"
     }
 }
