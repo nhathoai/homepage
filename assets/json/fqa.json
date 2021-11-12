@@ -120,8 +120,8 @@
                 "ans": "対象業務および工数を精査したうえで、適正な体制をご提供いたします。"
             },
             {
-                "quest": "社内のセキュリティーに関してはどのような対策をとられてますか？",
-                "ans": "オフィス入り口にはセキュリティーカードを導入し、ご要望に応じて専用ルームや専用のネットワークのご準備も承っております。"
+                "quest": "Công ty đang thực hiện các chính sách gì đối với việc bảo mật nội bộ?",
+                "ans": "Tại văn phòng, chúng tôi có lắp đặt security card tại cửa ra vào, và chúng tôi cũng có thể chuẩn bị một phòng chuyên dụng hoặc một network chuyên dụng theo yêu cầu của khách hàng."
             }
         ],
         "hr": [
