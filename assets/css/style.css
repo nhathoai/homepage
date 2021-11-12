@@ -2417,4 +2417,11 @@ Privacy
 }
 
 
+button.home {
+  padding: 1rem 2rem;
+  border: none;
+  color: #dc3545;
+  background: #f8f9fa;
+  font-weight: 700;
+}
 
