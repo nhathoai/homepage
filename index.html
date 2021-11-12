@@ -89,39 +89,6 @@
                                 </a>
                             </div>
                        {{/service}}
-                        <!-- <div class="box col-lg-4 col-sm-4" data-aos="fade-up" data-aos-delay="400">
-                            <h4>BPOソリューション</h4>
-                            <img src="assets/img/Image_1.png" class="img-fluid" alt="">
-                            <ul>
-                                <li>CADオペレーション</li>
-                                <li>ラボ型アウトソーシング</li>
-                                <li>拠点進出支援</li>
-                            </ul>
-                            <a href="" class="link">
-                                <div class="s-border">
-                                    <span>
-                                        View more
-                                    </span>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="box col-lg-4 col-sm-4" data-aos="fade-up" data-aos-delay="600">
-                            <h4>HRソリューション</h4>
-                            <img src="assets/img/Image_2.png" class="img-fluid" alt="">
-                            <ul>
-                                <li>採用支援</li>
-                                <li>人材派遣</li>
-                                <li>人事コンサルティング</li>
-                                <li>教育・ビジネス研修</li>
-                            </ul>
-                            <a href="" class="link">
-                                <div class="s-border">
-                                    <span>
-                                        View more
-                                    </span>
-                                </div>
-                            </a>
-                        </div> -->
                     </div>
 
                 </div>
@@ -140,48 +107,16 @@
 
                     <div class="row">
                         <div>
-                            <div class="box">
-                                <span class="date">2021-10-10</span>
-                                <a href=""><span class="link">イベント</span></a>
-                                <p>
-                                    【8月18日(水)18:30】未経験からエンジニアへキャリアシフト！新たな働き方！オンラインセミナー開催！
-                                </p>
-                            </div>
-                            <div class="box">
-                                <span class="date">2021-10-10</span>
-                                <a href=""><span class="link">イベント</span></a>
-                                <p>
-                                    【8月18日(水)18:30】未経験からエンジニアへキャリアシフト！新たな働き方！オンラインセミナー開催！
-                                </p>
-                            </div>
-                            <div class="box">
-                                <span class="date">2021-10-10</span>
-                                <a href=""><span class="link">イベント</span></a>
-                                <p>
-                                    【8月18日(水)18:30】未経験からエンジニアへキャリアシフト！新たな働き方！オンラインセミナー開催！
-                                </p>
-                            </div>
-                            <div class="box">
-                                <span class="date">2021-10-10</span>
-                                <a href=""><span class="link">イベント</span></a>
-                                <p>
-                                    【8月18日(水)18:30】未経験からエンジニアへキャリアシフト！新たな働き方！オンラインセミナー開催！
-                                </p>
-                            </div>
-                            <div class="box">
-                                <span class="date">2021-10-10</span>
-                                <a href=""><span class="link">イベント</span></a>
-                                <p>
-                                    【8月18日(水)18:30】未経験からエンジニアへキャリアシフト！新たな働き方！オンラインセミナー開催！
-                                </p>
-                            </div>
-                            <div class="box">
-                                <span class="date">2021-10-10</span>
-                                <a href=""><span class="link">イベント</span></a>
-                                <p>
-                                    【8月18日(水)18:30】未経験からエンジニアへキャリアシフト！新たな働き方！オンラインセミナー開催！
-                                </p>
-                            </div>
+                            {{#news}}
+                                <div class="box">
+                                    <span class="date">{{date}}</span>
+                                    <a href=""><span class="link">{{title}}</span></a>
+                                    <p>
+                                        {{content}}
+                                    </p>
+                                </div>
+
+                            {{/news}}
                         </div>
                     </div>
                     <div class="row">
@@ -209,44 +144,21 @@
 
                     <div class="row" data-aos="fade-up" data-aos-delay="400">
 
-                        <div class="col-lg-4">
-                            <div class="post-box">
-                                <div class="post-img"><img src="assets/img/blog/AdobeStock_104004033.jpeg"
-                                        class="img-fluid" alt=""></div>
+                        {{#blogs}}
+                            <div class="col-lg-4">
+                                <div class="post-box">
+                                    <div class="post-img"><img src="assets/img/blog/AdobeStock_104004033.jpeg"
+                                            class="img-fluid" alt=""></div>
 
 
-                                <div class="post-detail">
-                                    <h4 class="post-title">アジャイル開発のメリットとデメリットについてわかりやすく解説します</h4>
-                                    <span class="category">カテゴリ</span>
-                                    <span class="post-date">2021-10-05</span>
+                                    <div class="post-detail">
+                                        <h4 class="post-title">{{header}}</h4>
+                                        <span class="category">{{title}}</span>
+                                        <span class="post-date">{{date}}</span>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-
-                        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="600">
-                            <div class="post-box">
-                                <div class="post-img"><img src="assets/img/blog/AdobeStock_164655627.jpeg"
-                                        class="img-fluid" alt=""></div>
-                                <div class="post-detail">
-                                    <h4 class="post-title">アジャイル開発のメリットとデメリットについてわかりやすく解説します</h4>
-                                    <span class="category">カテゴリ</span>
-                                    <span class="post-date">2021-10-05</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="800">
-                            <div class="post-box">
-                                <div class="post-img"><img src="assets/img/blog/AdobeStock_279757072.jpeg"
-                                        class="img-fluid" alt=""></div>
-                                <div class="post-detail">
-                                    <h4 class="post-title">アジャイル開発のメリットとデメリットについてわかりやすく解説します</h4>
-                                    <span class="category">カテゴリ</span>
-                                    <span class="post-date">2021-10-05</span>
-                                </div>
-                            </div>
-                        </div>
-
+                        {{/blogs}}
                     </div>
 
                     <div class="row">
