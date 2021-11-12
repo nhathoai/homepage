@@ -392,7 +392,6 @@ section#hire {
 }
 .navbar .lang li:nth-child(2) a,
 .navbar .lang li:nth-child(3) a {
-  font-family: var(--font-en);
   font-weight: 600;
 }
 
