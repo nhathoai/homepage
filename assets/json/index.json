@@ -1,6 +1,7 @@
 {
     "ja": {
         "text_intro" : "<p>「Humanware＝人とテクノロジーのつながり」を 最大化できるサービスカンパニーとして、<br> より多くの「人＝エンジニア」に寄り添い、限りない支援を行い、豊かな社会をつくる「テクノロジー」とつなぎあわせ、<br> 私たちだからできるシナジーを生み出します。</p>",
+        "signature" : "Pasona Tech Vietnamについてさらに詳しく",
         "service" : [
             {
                 "name" : "ITソリューション",
@@ -51,6 +52,7 @@
     },
     "vn": {
         "text_intro" : "<p>Là một công ty dịch vụ được tối đa hóa về「Humanware＝ Sự kết nối giữa con người và công nghệ」,<br> chúng tôi sẽ làm việc gần gũi hơn với nhiều「Người = Kỹ sư」hơn, cung cấp sự hỗ trợ không giới hạn và kết nối với「Công nghệ」để tạo ra một xã hội thịnh vượng, tạo ra sức mạnh tổng hợp mà chỉ Pasona có thể thực hiện.</p>",
+        "signature" : "Pasona Tech Vietnamについてさらに詳しく",
         "service" : [
             {
                 "name" : "Dịch vụ IT",
@@ -101,6 +103,7 @@
     },
     "en": {
         "text_intro" : "<p>「Humanware＝人とテクノロジーのつながり」を 最大化できるサービスカンパニーとして、<br> より多くの「人＝エンジニア」に寄り添い、限りない支援を行い、豊かな社会をつくる「テクノロジー」とつなぎあわせ、<br> 私たちだからできるシナジーを生み出します。</p>",
+        "signature" : "Pasona Tech Vietnamについてさらに詳しく",
         "service" : [
             {
                 "name" : "ITソリューション",
@@ -151,6 +154,7 @@
     },
     "kr": {
         "text_intro" : "<p>「Humanware＝人とテクノロジーのつながり」を 最大化できるサービスカンパニーとして、<br> より多くの「人＝エンジニア」に寄り添い、限りない支援を行い、豊かな社会をつくる「テクノロジー」とつなぎあわせ、<br> 私たちだからできるシナジーを生み出します。</p>",
+        "signature" : "Pasona Tech Vietnamについてさらに詳しく",
         "service" : [
             {
                 "name" : "ITソリューション",

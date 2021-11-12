@@ -690,7 +690,6 @@ section#introduce {
 
 .introduce .signature {
   text-align: right;
-  font-weight: 600;
 }
 
 .introduce .signature span:before {
@@ -1699,6 +1698,11 @@ faq
   margin-top: 0;
 }
 
+
+.accordion-collapse{
+  background: #ffd0d0;
+  font-weight: 700;
+}
 @media (max-width: 1300px) {
 
   .faq-category {
