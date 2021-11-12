@@ -3,11 +3,9 @@
         "breadcrumb_home": "トップ",
         "breadcrumb_current": "よくある質問",
         "header": "よくある質問",
-        "qn_1": "弊社に関する質問",
-        "qn_2": "ITソリューションに関する質問",
-        "qn_3": "BPOソリューションに関する質問",
-        "qn_4": "HRソリューションに関する質問",
-        "qn_5": "その他の質問",
+        "ques_it": "ITソリューションに関する質問",
+        "ques_bpo": "BPOソリューションに関する質問",
+        "ques_hr": "HRソリューションに関する質問",
         "it": [
             {
                 "quest": "業務における連絡時の言語は？通訳は可能ですか？",
@@ -79,11 +77,9 @@
         "breadcrumb_home": "Trang chủ",
         "breadcrumb_current": "Các câu hỏi thường gặp",
         "header": "Các câu hỏi thường gặp",
-        "qn_1": "Các câu hỏi về công ty chúng tôi",
-        "qn_2": "Các câu hỏi liên quan tới dịch vụ IT",
-        "qn_3": "Các câu hỏi liên quan tới dịch vụ BPO",
-        "qn_4": "Các câu hỏi liên quan tới dịch vụ HR",
-        "qn_5": "Các câu hỏi khác",
+        "ques_it": "Các câu hỏi liên quan tới dịch vụ IT",
+        "ques_bpo": "Các câu hỏi liên quan tới dịch vụ BPO",
+        "ques_hr": "Các câu hỏi liên quan tới dịch vụ HR",
         "it": [
             {
                 "quest": "Ngôn ngữ dùng khi liên hệ để bàn bạc công việc là gì? Có thể thông dịch được không?",
@@ -155,11 +151,9 @@
         "breadcrumb_home": "トップ",
         "breadcrumb_current": "よくある質問",
         "header": "よくある質問",
-        "qn_1": "弊社に関する質問",
-        "qn_2": "ITソリューションに関する質問",
-        "qn_3": "BPOソリューションに関する質問",
-        "qn_4": "HRソリューションに関する質問",
-        "qn_5": "その他の質問",
+        "ques_it": "ITソリューションに関する質問",
+        "ques_bpo": "BPOソリューションに関する質問",
+        "ques_hr": "HRソリューションに関する質問",
         "it": [
             {
                 "quest": "業務における連絡時の言語は？通訳は可能ですか？",
@@ -231,11 +225,9 @@
         "breadcrumb_home": "トップ",
         "breadcrumb_current": "よくある質問",
         "header": "よくある質問",
-        "qn_1": "弊社に関する質問",
-        "qn_2": "ITソリューションに関する質問",
-        "qn_3": "BPOソリューションに関する質問",
-        "qn_4": "HRソリューションに関する質問",
-        "qn_5": "その他の質問",
+        "ques_it": "ITソリューションに関する質問",
+        "ques_bpo": "BPOソリューションに関する質問",
+        "ques_hr": "HRソリューションに関する質問",
         "it": [
             {
                 "quest": "業務における連絡時の言語は？通訳は可能ですか？",
