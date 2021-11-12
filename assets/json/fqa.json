@@ -90,30 +90,30 @@
                 "ans": "Có khoảng 10 thông dịch viên tiếng Nhật nhiều kinh nghiệm đang làm việc trong công ty chúng tôi.<br>Mỗi khi khách hàng giao tiếp với kỹ sư của công ty chúng tôi, thông qua thông dịch, sẽ giúp cho công việc được tiến hành suôn sẻ hơn.<br>Ngoài ra, chúng tôi cũng tích cực tổ chức các buổi học tập tiếng Nhật trong nội bộ với mục đích nâng cao năng lực Nhật ngữ của nhân viên."
             },
             {
-                "quest": "社内のセキュリティーに関してはどのような対策をとられてますか？",
-                "ans": "オフィス入り口にはセキュリティーカードを導入し、ご要望に応じて専用ルームや専用のネットワークのご準備も承っております。"
+                "quest": "Công ty đang thực hiện các chính sách gì đối với việc bảo mật nội bộ?",
+                "ans": "Tại văn phòng, chúng tôi có lắp đặt security card tại cửa ra vào, và chúng tôi cũng có thể chuẩn bị một phòng chuyên dụng hoặc một network chuyên dụng theo yêu cầu của khách hàng."
             },
             {
-                "quest": "エンジニアは何名ほど在籍していますか？",
-                "ans": "70名ほど在籍しております"
+                "quest": "Hiện có bao nhiêu kỹ sư đang làm việc trong công ty?",
+                "ans": "Hiện tại, có khoảng 70 kỹ sư đang làm việc trong công ty chúng tôi."
             },
             {
-                "quest": "ブリッジとなる日本人はいますか？",
-                "ans": "日本人は、現地に10名ほど在籍しております。<br>お客様と現地とのコミュニケーションを潤滑にできるよう対応いたします。"
+                "quest": "Trong công ty có nhân viên người Nhật nào để làm cầu nối với khách hàng không？",
+                "ans": "Hiện giờ, công ty chúng tôi có khoảng 10 nhân viên người Nhật đang làm việc onsite tại Việt Nam.<br>Chúng tôi luôn nỗ lực đáp ứng để sao cho việc giao tiếp trao đổi giữa khách hàng và các nhân viên onsite được thực hiện suôn sẻ."
             }
         ],
         "bpo": [
             {
-                "quest": "見積依頼あたり、必要な要件。また導入に必要な費用を教えてください。",
-                "ans": "お見積につきましては、運営時間、予定する業務、言語要件等を元に算出いたします。<br>サービス導入・運用におきましては、業務設計・マニュアル整備等も含め、適宜ご相談をさせていただきます。"
+                "quest": "Hãy cho biết công ty cần các thông tin gì để làm bản báo giá. Ngoài ra cũng hãy cho biết chi phí cần thiết để sử dụng dịch vụ.",
+                "ans": "Về bản báo giá thì công ty chúng tôi sẽ tính toán dựa theo các thông tin như thời gian làm việc, loại công việc dự định, yêu cầu về ngôn ngữ v.v...<br>Về các bước chuẩn bị để đăng ký・sử dụng dịch vụ, bao gồm cả việc thiết kế nghiệp vụ・chỉnh sửa tài liệu manual, thì chúng tôi sẽ thảo luận với khách hàng để cùng đưa ra một cách thức thích hợp."
             },
             {
-                "quest": "稼働するスタッフの採用基準について教えてください。",
-                "ans": "人材要件につきましてお客様と協議したうえで、その基準を満たす採用を行っております。"
+                "quest": "Hãy cho biết các tiêu chí tuyển dụng của công ty khi tuyển nhân viên vào làm việc.",
+                "ans": "Sau khi bàn bạc với khách hàng về các yêu cầu nhân sự cụ thể, công ty chúng tôi sẽ tiến hành tuyển dụng lao động thỏa mãn các tiêu chí đã đề ra."
             },
             {
-                "quest": "日本語でのコミュニケーションは可能でしょうか？",
-                "ans": "リーダーとなるスタッフが、日本語でお客様とコミュニケーションを行います。"
+                "quest": "Nhân viên của công ty có thể giao tiếp bằng tiếng Nhật không?",
+                "ans": "Những nhân viên có chức vụ leader sẽ phụ trách việc trao đổi với khách hàng bằng tiếng Nhật."
             },
             {
                 "quest": "業務量の変動があるのですが、必要に応じて契約業務の拡張・変更は可能でしょうか？",
