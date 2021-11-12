@@ -117,27 +117,27 @@ let main = (function () {
         errEle = ele.parentNode && (ele.parentNode.querySelector('.error') || ele.parentNode.parentNode.querySelector('.error'));
 
         if (name == "name") {
-          txt = (val.length <= 1) ? "貴社名は1文字以上で入力してください。" : "";
-          txt = (val.length == 0) ? "お名前を入力してください" : txt;
+          txt = (val.length <= 1) ? data.mess_name.only_one : "";
+          txt = (val.length == 0) ? data.mess_name.empty : txt;
         }
 
         if (name == "email") {
-          txt = (/^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/.test(val)) ? "有効なメールアドレスを入力してください" : "";
-          txt = (val.length == 0) ? "メールアドレスを入力してください" : txt;
+          txt = (/^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/.test(val)) ? data.mess_email.wrong : "";
+          txt = (val.length == 0) ? data.mess_email.empty : txt;
         }
 
         if (name == "tel") {
           const match = val.match(/\s*(?:\+?(\d{1,2}))?[-. ]*(\d{2,3})[-. ]*(\d{3,4})[-. ]*(\d{3,4})(?: *x(\d+))?\s*$/im);
-          txt = (!match) ? "有効な電話番号を入力してください" : "";
+          txt = (!match) ? data.mess_tel.wrong : "";
         }
 
         if (name == "comment") {
-          txt = (val.length <= 1) ? "貴社名は1文字以上で入力してください。" : "";
-          txt = (val.length == 0) ? "お問い合わせ内容を記入してください" : txt;
+          txt = (val.length <= 1) ? data.mess_comment.only_one : "";
+          txt = (val.length == 0) ? data.mess_comment.empty : txt;
         }
 
         if (name == "accept-terms") {
-          txt = (!ele.checked) ? "当社個人情報保護方針に同意してください" : "";
+          txt = (!ele.checked) ? data.mess_accept_term : "";
         }
 
         if (ele[0] && ele[0].name == 'radio-group') {
@@ -146,7 +146,7 @@ let main = (function () {
           })
 
           errEle = ele[0].parentNode.parentNode.querySelector('.error');
-          txt = (arrChecked == 0) ? "お問い合わせ内容を選択してください" : "";
+          txt = (arrChecked == 0) ? data.mess_chosen_service : "";
         }
 
         errEle.innerText = txt;
@@ -225,9 +225,6 @@ let main = (function () {
           select('.footer').outerHTML = htmlFooter;
         }
 
-        var targetContainer = select(".target-layout"),
-          template = select("#template").innerHTML;
-
         for (const idx in jsons[2][locale]) {
           
           const ob = jsons[2][locale][idx];
@@ -239,6 +236,10 @@ let main = (function () {
           }
           
         }
+
+        
+        var targetContainer = select(".target-layout"),
+          template = select("#template").innerHTML;
 
         var html = Mustache.to_html(template, jsons[2][locale]);
         targetContainer.outerHTML = html;

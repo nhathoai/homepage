@@ -49,9 +49,7 @@
                         <div class="col-lg-12 d-flex flex-column justify-content-center" data-aos="fade-right"
                             data-aos-delay="200">
                             <div class="content">
-                                <p>「Humanware＝人とテクノロジーのつながり」を 最大化できるサービスカンパニーとして、<br>
-                                    より多くの「人＝エンジニア」に寄り添い、限りない支援を行い、豊かな社会をつくる「テクノロジー」とつなぎあわせ、<br>
-                                    私たちだからできるシナジーを生み出します。</p>
+                                {{{text_intro}}}
                             </div>
                             <div class="signature" data-aos="fade-left" data-aos-delay="200">
                                 <span>
@@ -73,24 +71,25 @@
 
                     <div class="row d-flex justify-content-around">
 
+                        {{#service}}
                         <div class="box col-lg-4 col-sm-4" data-aos="fade-up" data-aos-delay="200">
-                            <h4>ITソリューション</h4>
-                            <img src="assets/img/Image.png" class="img-fluid" alt="">
-                            <ul>
-                                <li>Androidアプリ開発</li>
-                                <li>QA/QC</li>
-                                <li>ラボ型アウトソーシング</li>
-                                <li>拠点進出支援</li>
-                            </ul>
-                            <a href="" class="link">
-                                <div class="s-border">
-                                    <span>
-                                        View more
-                                    </span>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="box col-lg-4 col-sm-4" data-aos="fade-up" data-aos-delay="400">
+                                <h4>{{name}}</h4>
+                                <img src="assets/img/Image.png" class="img-fluid" alt="">
+                                <ul>
+                                   {{#field}}
+                                        <li>{{name}}</li>
+                                   {{/field}}
+                                </ul>
+                                <a href="" class="link">
+                                    <div class="s-border">
+                                        <span>
+                                            View more
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+                       {{/service}}
+                        <!-- <div class="box col-lg-4 col-sm-4" data-aos="fade-up" data-aos-delay="400">
                             <h4>BPOソリューション</h4>
                             <img src="assets/img/Image_1.png" class="img-fluid" alt="">
                             <ul>
@@ -122,7 +121,7 @@
                                     </span>
                                 </div>
                             </a>
-                        </div>
+                        </div> -->
                     </div>
 
                 </div>
