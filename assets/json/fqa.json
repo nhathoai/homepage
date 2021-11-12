@@ -116,8 +116,8 @@
                 "ans": "Những nhân viên có chức vụ leader sẽ phụ trách việc trao đổi với khách hàng bằng tiếng Nhật."
             },
             {
-                "quest": "業務量の変動があるのですが、必要に応じて契約業務の拡張・変更は可能でしょうか？",
-                "ans": "対象業務および工数を精査したうえで、適正な体制をご提供いたします。"
+                "quest": "Khi có thay đổi về khối lượng công việc, thì nếu cần có thể bổ sung・cập nhật hợp đồng nghiệp vụ hay không？",
+                "ans": "Phía chúng tôi sẽ đề xuất cho khách hàng một hệ thống phù hợp dựa trên sự xem xét kỹ lưỡng về nội dung công việc và số giờ công."
             },
             {
                 "quest": "Công ty đang thực hiện các chính sách gì đối với việc bảo mật nội bộ?",
@@ -126,15 +126,15 @@
         ],
         "hr": [
             {
-                "quest": "人材の紹介が可能な地域を教えてください。",
-                "ans": "ベトナム国内全土へ人材の紹介が可能です。"
+                "quest": "Hãy cho biết các khu vực địa phương mà công ty có thể giới thiệu nhân sự.",
+                "ans": "Công ty chúng tôi có thể giới thiệu nhân sự đến toàn bộ địa phương trên khắp nước Việt Nam."
             },
             {
-                "quest": "どのような方が登録されていますか？",
-                "ans": "実務経験年数が3年以上で、外国語能力を有した即戦力人材となる方に多くご登録いただいています。"
+                "quest": "Các nhân sự đã đăng ký với công ty là những người thế nào?",
+                "ans": "Công ty chúng tôi đã ký kết với nhiều nhân sự có thâm niên kinh nghiệm từ 3 năm trở lên, và có khả năng ngoại ngữ sẵn sàng để nhận việc."
             },
             {
-                "quest": "人材紹介の料金システムについて教えてください。",
+                "quest": "Hãy cho biết hệ thống chi phí của dịch vụ giới thiệu nhân sự.",
                 "ans": "人材紹介サービスは完全成功報酬型となりますので、人材のご決定をいただくまでは料金は発生いたしません。詳しくはお問い合わせください。"
             },
             {
