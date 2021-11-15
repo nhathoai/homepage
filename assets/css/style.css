@@ -2170,6 +2170,7 @@ Privacy
 }
 #philosophy .ms-description {
   padding-top: 104px;
+  /* width: 480px; */
   font-weight: normal;
   font-size: 18px;
   line-height: 35px;
@@ -2211,7 +2212,7 @@ Privacy
   color: #5C5C5C;
 }
 #vision .ms-description {
-  padding-top: 108px;
+  padding: 108px 185px 0;
   font-weight: normal;
   font-size: 18px;
   line-height: 35px;
