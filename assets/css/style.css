@@ -2212,7 +2212,7 @@ Privacy
   color: #5C5C5C;
 }
 #vision .ms-description {
-  padding: 108px 185px 0;
+  padding-top: 108px;
   font-weight: normal;
   font-size: 18px;
   line-height: 35px;
