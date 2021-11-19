@@ -122,7 +122,7 @@ let main = (function () {
         }
 
         if (name == "email") {
-          txt = (/\S+@\S+\.\S+/.test(val)) ? data.mess_email.wrong : "";
+          txt = !(/\S+@\S+\.\S+/.test(val)) ? data.mess_email.wrong : "";
           txt = (val.length == 0) ? data.mess_email.empty : txt;
         }
 
