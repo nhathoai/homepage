@@ -129,7 +129,7 @@
         },
         "mess_comment": {
             "only_one": "Nội dung tin nhắn cần nhiều hơn 1 ký tự",
-            "empty": "Vui lòng điền chi tiết yêu cầu."
+            "empty": "Xin hãy nhập nội dung liên hệ"
         },
         "mess_accept_term": "Xin hãy đánh dấu đồng ý với Điều khoản sử dụng và Chính sách riêng tư của Pasona Tech Vietnam.",
         "mess_chosen_service": "Xin hãy lựa chọn nội dung liên hệ",
@@ -200,7 +200,7 @@
             "empty": "お問い合わせ内容を記入してください"
         },
         "mess_accept_term": "当社個人情報保護方針に同意してください",
-        "mess_chosen_service": "お問い合わせ内容を選択してください"
+        "mess_chosen_service": "お問い合わせ内容を選択してください",
         "send": "送信"
     },
     "kr": {
@@ -268,7 +268,7 @@
             "empty": "お問い合わせ内容を記入してください"
         },
         "mess_accept_term": "当社個人情報保護方針に同意してください",
-        "mess_chosen_service": "お問い合わせ内容を選択してください"
+        "mess_chosen_service": "お問い合わせ内容を選択してください",
         "send": "送信"
     }
 }
