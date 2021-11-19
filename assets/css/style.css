@@ -1276,7 +1276,6 @@ General
   display: block;
   width: 0;
   height: 2px;
-  transition: width .8s;
   background: #FFFFFF;
 }
 
@@ -1292,6 +1291,7 @@ General
 .other .right:hover .link:after,
 .other .left:hover .link:after{
   width: 100%;
+  transition: width .6s;
 }
 
 
