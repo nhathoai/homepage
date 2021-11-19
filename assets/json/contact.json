@@ -50,15 +50,15 @@
         ],
         "send": "送信",
         "mess_name": {
-            "only_one": "貴社名は1文字以上で入力してください。",
-            "empty": "お名前を入力してください"
+            "only_one": "お名前は1文字以上で入力してください。",
+            "empty": "お名前を入力してください。"
         },
         "mess_email": {
-            "wrong": "有効なメールアドレスを入力してください",
-            "empty": "メールアドレスを入力してください"
+            "wrong": "有効なメールアドレスを入力してください。",
+            "empty": "メールアドレスを入力してください。"
         },
         "mess_tel": {
-            "wrong": "有効な電話番号を入力してください"
+            "wrong": "有効な電話番号を入力してください。"
         },
         "mess_comment": {
             "only_one": "メッセージは1文字以上で入力してください。",
@@ -125,11 +125,11 @@
             "empty": "Xin hãy nhập email"
         },
         "mess_tel": {
-            "wrong": "Xin hãy nhập email hợp lệ"
+            "wrong": "Xin hãy nhập số điện thoại hợp lệ"
         },
         "mess_comment": {
             "only_one": "Nội dung tin nhắn cần nhiều hơn 1 ký tự",
-            "empty": "Xin hãy nhập số điện thoại hợp lệ"
+            "empty": "Vui lòng điền chi tiết yêu cầu."
         },
         "mess_accept_term": "Xin hãy đánh dấu đồng ý với Điều khoản sử dụng và Chính sách riêng tư của Pasona Tech Vietnam.",
         "mess_chosen_service": "Xin hãy lựa chọn nội dung liên hệ",
@@ -185,22 +185,22 @@
             }
         ],
         "mess_name": {
-            "only_one": "貴社名は1文字以上で入力してください。",
-            "empty": "お名前を入力してください"
+            "only_one": "お名前は1文字以上で入力してください。",
+            "empty": "お名前を入力してください。"
         },
         "mess_email": {
-            "wrong": "有効なメールアドレスを入力してください",
-            "empty": "メールアドレスを入力してください"
+            "wrong": "有効なメールアドレスを入力してください。",
+            "empty": "メールアドレスを入力してください。"
         },
         "mess_tel": {
-            "wrong": "有効な電話番号を入力してください"
+            "wrong": "有効な電話番号を入力してください。"
         },
         "mess_comment": {
             "only_one": "メッセージは1文字以上で入力してください。",
             "empty": "お問い合わせ内容を記入してください"
         },
         "mess_accept_term": "当社個人情報保護方針に同意してください",
-        "mess_chosen_service": "お問い合わせ内容を選択してください",
+        "mess_chosen_service": "お問い合わせ内容を選択してください"
         "send": "送信"
     },
     "kr": {
@@ -252,23 +252,23 @@
                 "value": ""
             }
         ],
-        "mess_name": {
-            "only_one": "貴社名は1文字以上で入力してください。",
-            "empty": "お名前を入力してください"
+       "mess_name": {
+            "only_one": "お名前は1文字以上で入力してください。",
+            "empty": "お名前を入力してください。"
         },
         "mess_email": {
-            "wrong": "有効なメールアドレスを入力してください",
-            "empty": "メールアドレスを入力してください"
+            "wrong": "有効なメールアドレスを入力してください。",
+            "empty": "メールアドレスを入力してください。"
         },
         "mess_tel": {
-            "wrong": "有効な電話番号を入力してください"
+            "wrong": "有効な電話番号を入力してください。"
         },
         "mess_comment": {
             "only_one": "メッセージは1文字以上で入力してください。",
             "empty": "お問い合わせ内容を記入してください"
         },
         "mess_accept_term": "当社個人情報保護方針に同意してください",
-        "mess_chosen_service": "お問い合わせ内容を選択してください",
+        "mess_chosen_service": "お問い合わせ内容を選択してください"
         "send": "送信"
     }
 }
