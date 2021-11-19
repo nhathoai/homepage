@@ -1269,13 +1269,31 @@ General
   color: black; 
 }
 
+
+.other .right .link:after,
+.other .left .link:after{
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  transition: width .8s;
+  background: #FFFFFF;
+}
+
 .other .right:hover .title, 
 .other .right:hover .link,
 .other .left:hover .title, 
 .other .left:hover .link{
   color: #FFFFFF;
- 
 }
+
+
+
+.other .right:hover .link:after,
+.other .left:hover .link:after{
+  width: 100%;
+}
+
 
 .other .left:before,
 .other .right:after {
