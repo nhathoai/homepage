@@ -61,11 +61,11 @@
             },
             {
                 "quest": "求人依頼方法を教えてください。",
-                "ans": "<div>お問い合わせフォームよりお気軽にお問い合わせください。<br><a href='./policy' class='under'>お問い合わせはこちら</a></div>"
+                "ans": "<div>お問い合わせフォームよりお気軽にお問い合わせください。<br><a target='_blank' href='./contact' class='under'>お問い合わせはこちら</a></div>"
             },
             {
                 "quest": "人材派遣サービスはありますか？",
-                "ans": "<div>人材派遣サービスも行っておりますが、業種に限りがございます。詳細はお問い合わせください。<br><a href='./policy' class='under'>お問い合わせはこちら</a></div>"
+                "ans": "<div>人材派遣サービスも行っておりますが、業種に限りがございます。詳細はお問い合わせください。<br><a target='_blank' href='./contact' class='under'>お問い合わせはこちら</a></div>"
             },
             {
                 "quest": "法人向けにはどのような研修をしていますか？",
@@ -135,11 +135,11 @@
             },
             {
                 "quest": "Hãy cho biết cách thức để đặt yêu cầu tuyển dụng lao động.",
-                "ans": "<div>Xin vui lòng liên lạc chi tiết với chúng tôi qua mẫu đơn liên hệ.<br><a href='./policy' class='under'>Để liên hệ xin click vào đây.</a></div>"
+                "ans": "<div>Xin vui lòng liên lạc chi tiết với chúng tôi qua mẫu đơn liên hệ.<br><a target='_blank' href='./contact' class='under'>Để liên hệ xin click vào đây.</a></div>"
             },
             {
                 "quest": "Công ty có dịch vụ cho thuê nhân sự không?",
-                "ans": "<div>Công ty chúng tôi cũng thực hiện dịch vụ cho thuê nhân sự, nhưng chỉ giới hạn với một số loại công việc. Để biết thêm chi tiết xin vui lòng liên hệ với chúng tôi.<br><a href='./policy' class='under'>Để liên hệ xin click vào đây.</a></div>"
+                "ans": "<div>Công ty chúng tôi cũng thực hiện dịch vụ cho thuê nhân sự, nhưng chỉ giới hạn với một số loại công việc. Để biết thêm chi tiết xin vui lòng liên hệ với chúng tôi.<br><a target='_blank' href='./contact' class='under'>Để liên hệ xin click vào đây.</a></div>"
             },
             {
                 "quest": "Công ty có các chương trình đào tạo nhân lực nào dành cho các tập đoàn?",
@@ -209,11 +209,11 @@
             },
             {
                 "quest": "求人依頼方法を教えてください。",
-                "ans": "<div>お問い合わせフォームよりお気軽にお問い合わせください。<br><a href='./policy' class='under'>お問い合わせはこちら</a></div>"
+                "ans": "<div>お問い合わせフォームよりお気軽にお問い合わせください。<br><a target='_blank' href='./contact' class='under'>お問い合わせはこちら</a></div>"
             },
             {
                 "quest": "人材派遣サービスはありますか？",
-                "ans": "<div>人材派遣サービスも行っておりますが、業種に限りがございます。詳細はお問い合わせください。<br><a href='./policy' class='under'>お問い合わせはこちら</a></div>"
+                "ans": "<div>人材派遣サービスも行っておりますが、業種に限りがございます。詳細はお問い合わせください。<br><a target='_blank' href='./contact' class='under'>お問い合わせはこちら</a></div>"
             },
             {
                 "quest": "法人向けにはどのような研修をしていますか？",
@@ -283,11 +283,11 @@
             },
             {
                 "quest": "求人依頼方法を教えてください。",
-                "ans": "<div>お問い合わせフォームよりお気軽にお問い合わせください。<br><a href='./policy' class='under'>お問い合わせはこちら</a></div>"
+                "ans": "<div>お問い合わせフォームよりお気軽にお問い合わせください。<br><a target='_blank' href='./contact' class='under'>お問い合わせはこちら</a></div>"
             },
             {
                 "quest": "人材派遣サービスはありますか？",
-                "ans": "<div>人材派遣サービスも行っておりますが、業種に限りがございます。詳細はお問い合わせください。<br><a href='./policy' class='under'>お問い合わせはこちら</a></div>"
+                "ans": "<div>人材派遣サービスも行っておりますが、業種に限りがございます。詳細はお問い合わせください。<br><a target='_blank' href='./contact' class='under'>お問い合わせはこちら</a></div>"
             },
             {
                 "quest": "法人向けにはどのような研修をしていますか？",
