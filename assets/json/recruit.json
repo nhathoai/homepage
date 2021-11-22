@@ -5,7 +5,7 @@
         "header": "採用情報",
         "message": "弊社採用につきましては、以下へお問い合わせください",
         "company": "PASONA TECH VIETNAM CO., LTD.",
-        "tel": "電話番号: +84-28-3812-7150 (日本語/英語/ベトナム語)"
+        "tel": "電話番号: <a href='tel:+842838127150'>+84-28-3812-7150</a> (日本語/英語/ベトナム語)"
     },
     "vn": {
         "breadcrumb_home": "Trang chủ",
@@ -13,7 +13,7 @@
         "header": "Tuyển dụng",
         "message": "Mọi thắc mắc về thông tin tuyển dụng xin vui lòng liên hệ theo số điện thoại và email bên dưới.",
         "company": "PASONA TECH VIETNAM CO., LTD.",
-        "tel": "Điện thoại: +84-28-3812-7150 (tiếng Nhật/tiếng Anh/tiếng Việt)"
+        "tel": "Điện thoại: <a href='tel:+842838127150'>+84-28-3812-7150</a> (tiếng Nhật/tiếng Anh/tiếng Việt)"
     },
     "en": {
         "breadcrumb_home": "トップ",
@@ -21,7 +21,7 @@
         "header": "採用情報",
         "message": "弊社採用につきましては、以下へお問い合わせください",
         "company": "PASONA TECH VIETNAM CO., LTD.",
-        "tel": "電話番号: +84-28-3812-7150 (日本語/英語/ベトナム語)"
+        "tel": "電話番号: <a href='tel:+842838127150'>+84-28-3812-7150</a> (日本語/英語/ベトナム語)"
     },
     "kr": {
         "breadcrumb_home": "トップ",
@@ -29,6 +29,6 @@
         "header": "採用情報",
         "message": "弊社採用につきましては、以下へお問い合わせください",
         "company": "PASONA TECH VIETNAM CO., LTD.",
-        "tel": "電話番号: +84-28-3812-7150 (日本語/英語/ベトナム語)"
+        "tel": "電話番号: <a href='tel:+842838127150'>+84-28-3812-7150</a> (日本語/英語/ベトナム語)"
     }
 }

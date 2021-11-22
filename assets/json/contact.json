@@ -8,7 +8,7 @@
         "tel": "電話番号",
         "contact": "お問い合わせ内容",
         "policy": "<a href='./policy' class='under'>当社個人情報保護方針</a> に同意される場合は、<br> こちらにチェックをお願いします。",
-        "tel_contact": "<a href='tel:+842838127150'>電話番号: +84-28-3812-7150</a> <br>(日本語/英語/ベトナム語)",
+        "tel_contact": "電話番号: <a href='tel:+842838127150'>+84-28-3812-7150</a> <br>(日本語/英語/ベトナム語)",
         "mess_contact": "お気軽にお問い合わせください。",
         "fqa": "よくある質問は <a href='./fqa' class='under'>こちら</a>",
         "service": [
@@ -76,7 +76,7 @@
         "tel": "Số điện thoại",
         "contact": "Nội dung liên hệ",
         "policy": "Vui lòng đánh dấu vào đây nếu bạn đồng ý với <a href='./policy' class='under'>Điều khoản sử dụng và Chính sách riêng tư của Pasona Tech Vietnam.</a> ",
-        "tel_contact": "<a href='tel:+842838127150'>TEL: +84-28-3812-7150</a> <br>(tiếng Nhật/tiếng Anh/tiếng Việt)",
+        "tel_contact": "TEL: <a href='tel:+842838127150'>+84-28-3812-7150</a> <br>(tiếng Nhật/tiếng Anh/tiếng Việt)",
         "mess_contact": "Vui lòng liên hệ với chúng tôi",
         "fqa": "Click vào đây để tìm hiểu về <a href='./fqa' class='under'>FAQ</a>",
         "service": [
@@ -144,7 +144,7 @@
         "tel": "電話番号",
         "contact": "お問い合わせ内容",
         "policy": "<a href='./policy' class='under'>当社個人情報保護方針</a> に同意される場合は、<br> こちらにチェックをお願いします。",
-        "tel_contact": "<a href='tel:+842838127150'>電話番号: +84-28-3812-7150</a> <br>(日本語/英語/ベトナム語)",
+        "tel_contact": "電話番号: <a href='tel:+842838127150'>+84-28-3812-7150</a> <br>(日本語/英語/ベトナム語)",
         "mess_contact": "お気軽にお問い合わせください。",
         "fqa": "よくある質問は <a href='./fqa' class='under'>こちら</a>",
         "service": [
@@ -212,7 +212,7 @@
         "tel": "電話番号",
         "contact": "お問い合わせ内容",
         "policy": "<a href='./policy' class='under'>当社個人情報保護方針</a> に同意される場合は、<br> こちらにチェックをお願いします。",
-        "tel_contact": "<a href='tel:+842838127150'>電話番号: +84-28-3812-7150</a> <br>(日本語/英語/ベトナム語)",
+        "tel_contact": "電話番号: <a href='tel:+842838127150'>+84-28-3812-7150</a> <br>(日本語/英語/ベトナム語)",
         "mess_contact": "お気軽にお問い合わせください。",
         "fqa": "よくある質問は <a href='./fqa' class='under'>こちら</a>",
         "service": [
@@ -252,7 +252,7 @@
                 "value": ""
             }
         ],
-       "mess_name": {
+        "mess_name": {
             "only_one": "お名前は1文字以上で入力してください。",
             "empty": "お名前を入力してください。"
         },
