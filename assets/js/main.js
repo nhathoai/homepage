@@ -168,6 +168,7 @@ let main = (function () {
     })
 
     on("click", 'body', function (e) {
+      if(!select('.select-flag')) return;
       const smTar = select('.select-flag').contains(e.target);
       select('.lang-phone').style.visibility = smTar ? "" : "hidden";
       select('.flag').style.boxShadow = smTar ? "0 0 0 0.2rem hsl(357deg 73% 42% / 20%)" : "";
