@@ -194,6 +194,16 @@ let main = (function () {
       openDrop = false;
 
     })
+
+
+    ///
+    on('click', '.other .right', function (e) {
+      window.location.href = './' + select('.other .right').dataset.url;
+    }, true);
+
+    on('click', '.other .left', function (e) {
+      window.location.href = './' + select('.other .left').dataset.url;
+    }, true);
   }
 
   function loadHtml(nameJson, activeIndex) {
