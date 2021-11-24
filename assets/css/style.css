@@ -1793,6 +1793,9 @@ faq
   letter-spacing: var(--letter-style);
 }
 
+#error p{
+  text-align: center;
+}
 /*
 Privacy
 */
