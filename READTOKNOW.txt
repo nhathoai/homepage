@@ -1,0 +1,6 @@
+
+
+Use boostrap for responsive
+Use aos.js for Animate on scroll library ( https://michalsnik.github.io/aos/)
+Use swiper for slider (https://swiperjs.com/swiper-api)
+Use mustach for render mutiple language (https://github.com/janl/mustache.js/)
