@@ -12,10 +12,10 @@
         "breadcrumb_home": "Trang chủ",
         "breadcrumb_current": "Tuyển dụng",
         "header": "Tuyển dụng",
-        "message": "Mọi thắc mắc về thông tin tuyển dụng xin vui lòng liên hệ theo số điện thoại và email bên dưới.",
+        "message": "Mọi thắc mắc về thông tin tuyển dụng xin vui lòng liên hệ theo thông tin sau.",
         "company": "PASONA TECH VIETNAM CO., LTD.",
         "tel": "Điện thoại: <a href='tel:+842838127150'>+84-28-3812-7150</a> (tiếng Nhật/tiếng Anh/tiếng Việt)",
-        "link": "募集中の職種は<a class='under' href='https://pasonacrossing.vn/pasona-tech'>こちら</a>"
+        "link": "<a class='under' href='https://pasonacrossing.vn/pasona-tech'>Click vào đây</a> để biết thêm về các công việc đang tuyển dụng."
     },
     "en": {
         "breadcrumb_home": "トップ",
