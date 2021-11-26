@@ -1336,6 +1336,24 @@ General
   z-index: 1;
 }
 
+.psn-gr {
+  margin-top: 60px;
+}
+.psn-gr-link {
+  border: 3px solid #ba1d24;
+  color: #ba1d24;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  line-height: 14px;
+  letter-spacing: var(--letter-style);
+  font-size: var(--font-en);
+  transition: 0.5s;
+  padding: 1rem;
+}
+
 @media (max-width: 1300px) {
   #content {
     padding: 60px 60px;
