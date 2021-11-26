@@ -2020,7 +2020,7 @@ Privacy
 .lang-phone li {
   display: flex;
   align-items: center;
-  padding: 10px 15px 10px 0.75rem;
+  padding: 10px 0px 10px 0.75rem;
   flex-wrap: wrap;
 }
 
