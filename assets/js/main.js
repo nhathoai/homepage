@@ -237,7 +237,6 @@ let main = (function () {
         select('.header').outerHTML = htmlHeader;
 
         //set active menu
-        debugger
         activeClass &&  select('a.nav-link.' + activeClass).classList.add('active');
 
         //render footer
