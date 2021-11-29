@@ -1201,6 +1201,9 @@ General
   margin-bottom: 1rem;
   width: 47%;
 }
+#office .container .row:nth-child(2) .box {
+  margin-bottom: 128px;
+}
 
 #office .box .under {
   margin-bottom: 0;
@@ -1336,9 +1339,6 @@ General
   z-index: 1;
 }
 
-.psn-gr {
-  margin-top: 60px;
-}
 .psn-gr-link {
   border: 3px solid #ba1d24;
   color: #ba1d24;
